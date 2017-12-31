@@ -1,0 +1,8 @@
+body,html{
+    padding: 0px;
+    margin: 0px;
+    background-image: url(assets/extrasblur.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+}
