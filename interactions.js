@@ -1,5 +1,5 @@
 $("#home-icon").click(function() {
-    window.location.href = "home.html";
+    window.location.href = "index.html";
 });
 
 $("#skills-icon").click(function() {
