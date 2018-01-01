@@ -91,3 +91,7 @@ $("#infinite").click(function() {
 $("#plastic-promises").click(function() {
     window.location.href = "https://vimeo.com/249258739";
 });
+
+$("#stitches").click(function() {
+    window.location.href = "https://vimeo.com/249324773";
+});

@@ -1,6 +1,11 @@
+@font-face {
+    font-family: "UniqueDistrictThin";
+    src: url(assets/DistTh.ttf);
+}
+
 body,html{
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: visible;
     padding: 0px;
     margin: 0px;
     background-image: url(assets/bridgeblur.jpg);
@@ -39,7 +44,7 @@ body,html{
 
 .nav > .tab > a{
     position: relative;
-    font-family: "DistrictThin";
+    font-family: "UniqueDistrictThin";
     font-size: 15x;
     font-weight: lighter;
     color: white;
@@ -61,7 +66,7 @@ body,html{
 
 .nav > .tab > a{
     position: relative;
-    font-family: "DistrictThin";
+    font-family: "UniqueDistrictThin";
     font-size: 15px;
     font-weight: lighter;
     letter-spacing: 1px;
@@ -107,7 +112,7 @@ body,html{
 
 .nav-bottom > .bottom-tab > a{
     position: relative;
-    font-family: "DistrictThin";
+    font-family: "UniqueDistrictThin";
     font-size: 15x;
     font-weight: lighter;
     letter-spacing: 1px;
@@ -148,7 +153,6 @@ body,html{
 .bridge{
     position: relative;
     box-shadow: 0px 0px 50px;
-    margin-bottom: 50px;
     opacity: 0;
     transition: all 0.5s;
 }
@@ -179,7 +183,7 @@ body,html{
 
 .center{
     position: fixed;
-    font-family: "DistrictThin";
+    font-family: "UniqueDistrictThin";
     font-size: 50px;
     font-weight: lighter;
     text-align: center;
@@ -238,7 +242,7 @@ body,html{
 }
 
 p{
-    font-family: "DistrictThin";
+    font-family: "UniqueDistrictThin";
     font-size: 18px;
     font-weight: lighter;
     letter-spacing: 1px;
@@ -252,7 +256,7 @@ p{
 }
 
 li{
-    font-family: "DistrictThin";
+    font-family: "UniqueDistrictThin";
     font-size: 18px;
     font-weight: lighter;
     letter-spacing: 1px;
@@ -522,8 +526,18 @@ li{
     transition: all 0.5s;
 }
 
+#transparent{
+    
+}
+
 @media screen and (max-width: 600px) {
 
+    body,html{
+        background-size: 660px 372px;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    
     #circle{
         width: 150px;
         height: 150px;
@@ -558,7 +572,11 @@ li{
         width: 200px;
         height: 1px;
         left: calc(50% - 100px);
-        top: calc(50% - 20px);
+        top: calc(25% - 20px);
+    }
+    
+    .center{
+        top: calc(25% - 33px);
     }
     
     .center-fadeIn{
@@ -571,7 +589,7 @@ li{
         width: 200px;
         height: 1px;
         left: calc(50% - 100px);
-        top: calc(50% + 20px);
+        top: calc(25% + 20px);
     }
     
     .rectangle-animate01{
@@ -580,11 +598,17 @@ li{
     }
         
     .rectangle-animate021{
-        top: calc(50% - 20px);
+        top: calc(25% - 20px);
     }
     
     .rectangle-animate022{
-        top: calc(50% + 20px);
+        top: calc(25% + 20px);
+    }
+    
+    .bridge{
+        width: 600px;
+        height: 338px;
+        margin-bottom: 0px;
     }
     
     .nav > .tab > a{
@@ -649,15 +673,15 @@ li{
     }
     
     #side-text{
-        font-size: 20px;
-        margin-left: 5%;
+        font-size: 18px;
+        margin-left: 3%;
         margin-top: 0px;
     }
 
     #small-side-text{
         width: 50%;
         font-size: 12px;
-        margin-left: 5%;
+        margin-left: 3%;
         margin-top: 0px;
     }
     
@@ -720,8 +744,9 @@ li{
     }
     
     #contact-side-text{
-        font-size: 12px;
+        font-size: 15px;
         width: 65%;
+        text-align: left;
     }
     
     .cover-image{
@@ -757,3 +782,8 @@ li{
         margin-left: 5%;
         width: 70%;
     }
+    
+    #transparent{
+        width: 600px;
+    }
+}
