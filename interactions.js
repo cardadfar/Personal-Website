@@ -1,21 +1,21 @@
 $("#home-icon").click(function() {
-    window.location.href = "index.html";
+    window.location.href = "index";
 });
 
 $("#skills-icon").click(function() {
-    window.location.href = "skills.html";
+    window.location.href = "skills";
 });
 
 $("#projects-icon").click(function() {
-    window.location.href = "projects.html";
+    window.location.href = "projects";
 });
 
 $("#extras-icon").click(function() {
-    window.location.href = "extras.html";
+    window.location.href = "extras";
 });
 
 $("#contact-icon").click(function() {
-    window.location.href = "contact.html";
+    window.location.href = "contact";
 });
 
 $("#vimeo-icon").click(function() {
