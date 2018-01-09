@@ -526,8 +526,14 @@ li{
     transition: all 0.5s;
 }
 
-#transparent{
+@media screen and (max-width: 900px) {
+    #video-text{
+        font-size: 20px;
+    }
     
+    #video-text-right{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
