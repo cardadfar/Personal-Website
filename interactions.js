@@ -80,6 +80,10 @@ $(".cover-image-right").hover(function() {
     $(this).removeClass("video-screen-on");
 });
 
+$("#peace-sign").click(function() {
+    window.location.href = "https://vimeo.com/250210552";
+});
+
 $("#null-space").click(function() {
     window.location.href = "https://vimeo.com/249094937";
 });
@@ -94,4 +98,8 @@ $("#plastic-promises").click(function() {
 
 $("#stitches").click(function() {
     window.location.href = "https://vimeo.com/249324773";
+});
+
+$("#rondo").click(function() {
+    window.location.href = "https://vimeo.com/250281441";
 });
