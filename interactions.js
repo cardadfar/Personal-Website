@@ -30,8 +30,8 @@ $("#git-icon").click(function() {
     window.location.href = "https://github.com/cardadfar";
 });
 
-$("#extra-icon").click(function() {
-    window.location.href = "https://www.google.com/";
+$("#handshake-icon").click(function() {
+    window.location.href = "https://cmu.joinhandshake.com/users/4719694";
 });
 
 
