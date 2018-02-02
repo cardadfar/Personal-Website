@@ -18,20 +18,20 @@ $("#contact-icon").click(function() {
     window.location.href = "contact";
 });
 
-$("#vimeo-icon").click(function() {
-    window.location.href = "https://www.vimeo.com/cardadfar";
-});
-
 $("#linkedin-icon").click(function() {
     window.location.href = "https://www.linkedin.com/in/oscar-dadfar-3699b15b";
 });
 
-$("#git-icon").click(function() {
-    window.location.href = "https://github.com/cardadfar";
+$("#vimeo-icon").click(function() {
+    window.location.href = "https://www.vimeo.com/cardadfar";
 });
 
-$("#handshake-icon").click(function() {
-    window.location.href = "https://cmu.joinhandshake.com/users/4719694";
+$("#processing-icon").click(function() {
+    window.location.href = "https://www.openprocessing.org/user/103089";
+});
+
+$("#git-icon").click(function() {
+    window.location.href = "https://github.com/cardadfar";
 });
 
 
