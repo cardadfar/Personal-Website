@@ -103,3 +103,11 @@ $("#stitches").click(function() {
 $("#rondo").click(function() {
     window.location.href = "https://vimeo.com/250281441";
 });
+
+$("#sound-map").click(function() {
+    window.location.href = "https://www.openprocessing.org/sketch/500725";
+});
+
+$("#my-minor-melody").click(function() {
+    window.location.href = "https://www.openprocessing.org/sketch/478222";
+});
