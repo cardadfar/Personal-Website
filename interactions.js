@@ -19,7 +19,7 @@ $("#contact-icon").click(function() {
 });
 
 $("#linkedin-icon").click(function() {
-    window.location.href = "https://www.linkedin.com/in/oscar-dadfar-3699b15b";
+    window.location.href = "https://www.linkedin.com/in/oscar-dadfar-3699b15b/";
 });
 
 $("#vimeo-icon").click(function() {
