@@ -1,3 +1,14 @@
 body,html{
     background-image: url(assets/tab-backgrounds/projects-blur.jpg);
 }
+
+@media screen and (max-width: 900px) {
+
+    #skill-icon{
+        height: 38px;
+    }
+
+    #skill-type{
+        font-size: 16px;
+    }
+}

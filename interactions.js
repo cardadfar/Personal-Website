@@ -104,12 +104,12 @@ $("#rondo").click(function() {
     window.location.href = "https://vimeo.com/250281441";
 });
 
-$("#worm-park").click(function() {
-    window.location.href = "https://www.openprocessing.org/sketch/505150";
+$("#web-dev").click(function() {
+    window.location.href = "https://cardadfar.github.io/Web-Dev-Weekend-Website/index.html";
 });
 
-$("#carnegie-clock").click(function() {
-    window.location.href = "https://www.openprocessing.org/sketch/504115";
+$("#worm-park").click(function() {
+    window.location.href = "https://www.openprocessing.org/sketch/505150";
 });
 
 $("#sound-map").click(function() {
