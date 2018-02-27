@@ -81,51 +81,51 @@ $(".cover-image-right").hover(function() {
 });
 
 $("#idance").click(function() {
+    $("iframe").attr("src","https://player.vimeo.com/video/257607289");
     $(".video-player").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
-    $("iframe").attr("src","https://player.vimeo.com/video/257607289");
 });
 
 $("#break-free").click(function() {
+    $("iframe").attr("src","https://player.vimeo.com/video/253337182");
     $(".video-player").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
-    $("iframe").attr("src","https://player.vimeo.com/video/253337182");
 });
 
 $("#peace-sign").click(function() {
+    $("iframe").attr("src","https://player.vimeo.com/video/250210552");
     $(".video-player").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
-    $("iframe").attr("src","https://player.vimeo.com/video/250210552");
 });
 
 $("#null-space").click(function() {
+    $("iframe").attr("src","https://player.vimeo.com/video/249094937");
     $(".video-player").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
-    $("iframe").attr("src","https://player.vimeo.com/video/249094937");
 });
 
 $("#infinite").click(function() {
+    $("iframe").attr("src","https://player.vimeo.com/video/249187332");
     $(".video-player").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
-    $("iframe").attr("src","https://player.vimeo.com/video/249187332");
 });
 
 $("#plastic-promises").click(function() {
+    $("iframe").attr("src","https://player.vimeo.com/video/249258739");
     $(".video-player").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
-    $("iframe").attr("src","https://player.vimeo.com/video/249258739");
 });
 
 $("#stitches").click(function() {
+    $("iframe").attr("src","https://player.vimeo.com/video/249324773");
     $(".video-player").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
-    $("iframe").attr("src","https://player.vimeo.com/video/249324773");
 });
 
 $("#rondo").click(function() {
+    $("iframe").attr("src","https://player.vimeo.com/video/250281441");
     $(".video-player").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
-    $("iframe").attr("src","https://player.vimeo.com/video/250281441");
 });
 
 $("#web-dev").click(function() {
