@@ -80,28 +80,52 @@ $(".cover-image-right").hover(function() {
     $(this).removeClass("video-screen-on");
 });
 
+$("#idance").click(function() {
+    $(".video-player").addClass("video-player-on");
+    $(".dark-frame").addClass("dark-frame-on");
+    $("iframe").attr("src","https://player.vimeo.com/video/257607289");
+});
+
+$("#break-free").click(function() {
+    $(".video-player").addClass("video-player-on");
+    $(".dark-frame").addClass("dark-frame-on");
+    $("iframe").attr("src","https://player.vimeo.com/video/253337182");
+});
+
 $("#peace-sign").click(function() {
-    window.location.href = "https://vimeo.com/250210552";
+    $(".video-player").addClass("video-player-on");
+    $(".dark-frame").addClass("dark-frame-on");
+    $("iframe").attr("src","https://player.vimeo.com/video/250210552");
 });
 
 $("#null-space").click(function() {
-    window.location.href = "https://vimeo.com/249094937";
+    $(".video-player").addClass("video-player-on");
+    $(".dark-frame").addClass("dark-frame-on");
+    $("iframe").attr("src","https://player.vimeo.com/video/249094937");
 });
 
 $("#infinite").click(function() {
-    window.location.href = "https://vimeo.com/249187332";
+    $(".video-player").addClass("video-player-on");
+    $(".dark-frame").addClass("dark-frame-on");
+    $("iframe").attr("src","https://player.vimeo.com/video/249187332");
 });
 
 $("#plastic-promises").click(function() {
-    window.location.href = "https://vimeo.com/249258739";
+    $(".video-player").addClass("video-player-on");
+    $(".dark-frame").addClass("dark-frame-on");
+    $("iframe").attr("src","https://player.vimeo.com/video/249258739");
 });
 
 $("#stitches").click(function() {
-    window.location.href = "https://vimeo.com/249324773";
+    $(".video-player").addClass("video-player-on");
+    $(".dark-frame").addClass("dark-frame-on");
+    $("iframe").attr("src","https://player.vimeo.com/video/249324773");
 });
 
 $("#rondo").click(function() {
-    window.location.href = "https://vimeo.com/250281441";
+    $(".video-player").addClass("video-player-on");
+    $(".dark-frame").addClass("dark-frame-on");
+    $("iframe").attr("src","https://player.vimeo.com/video/250281441");
 });
 
 $("#web-dev").click(function() {
@@ -119,3 +143,12 @@ $("#sound-map").click(function() {
 $("#my-minor-melody").click(function() {
     window.location.href = "https://www.openprocessing.org/sketch/478222";
 });
+
+$(".dark-frame").click(function() {
+    $(".video-player").removeClass("video-player-on");
+    $(".dark-frame").removeClass("dark-frame-on");
+    setTimeout(function() {
+        $("iframe").attr("src","");
+    }, 500);
+});
+
