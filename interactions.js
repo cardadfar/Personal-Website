@@ -83,48 +83,56 @@ $(".cover-image-right").hover(function() {
 $("#idance").click(function() {
     $("iframe").attr("src","https://player.vimeo.com/video/257607289");
     $(".video-player").addClass("video-player-on");
+    $(".video-bg").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
 });
 
 $("#break-free").click(function() {
     $("iframe").attr("src","https://player.vimeo.com/video/253337182");
     $(".video-player").addClass("video-player-on");
+    $(".video-bg").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
 });
 
 $("#peace-sign").click(function() {
     $("iframe").attr("src","https://player.vimeo.com/video/250210552");
     $(".video-player").addClass("video-player-on");
+    $(".video-bg").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
 });
 
 $("#null-space").click(function() {
     $("iframe").attr("src","https://player.vimeo.com/video/249094937");
     $(".video-player").addClass("video-player-on");
+    $(".video-bg").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
 });
 
 $("#infinite").click(function() {
     $("iframe").attr("src","https://player.vimeo.com/video/249187332");
     $(".video-player").addClass("video-player-on");
+    $(".video-bg").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
 });
 
 $("#plastic-promises").click(function() {
     $("iframe").attr("src","https://player.vimeo.com/video/249258739");
     $(".video-player").addClass("video-player-on");
+    $(".video-bg").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
 });
 
 $("#stitches").click(function() {
     $("iframe").attr("src","https://player.vimeo.com/video/249324773");
     $(".video-player").addClass("video-player-on");
+    $(".video-bg").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
 });
 
 $("#rondo").click(function() {
     $("iframe").attr("src","https://player.vimeo.com/video/250281441");
     $(".video-player").addClass("video-player-on");
+    $(".video-bg").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
 });
 
@@ -146,6 +154,7 @@ $("#my-minor-melody").click(function() {
 
 $(".dark-frame").click(function() {
     $(".video-player").removeClass("video-player-on");
+    $(".video-bg").removeClass("video-player-on");
     $(".dark-frame").removeClass("dark-frame-on");
     setTimeout(function() {
         $("iframe").attr("src","");

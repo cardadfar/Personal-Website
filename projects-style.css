@@ -13,6 +13,19 @@ body,html{
     transition: all 0.5s;
 }
 
+.video-bg {
+    width: 67vw;
+    height: 38vw;
+    top: calc((100vh - 38vw) / 2);
+    left: 16.5vw;
+    transform: scale(0);
+    position: fixed;
+    z-index: 97;
+    background-image: url(assets/project-covers/video-bg.svg);
+    background-size: cover;
+    transition: all 0.5s;
+}
+
 .video-player-on {
     transform: scale(1);
     transition: all 0.5s;
