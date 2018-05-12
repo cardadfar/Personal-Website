@@ -4,6 +4,7 @@ body,html{
 
 .all {
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .video-player {
@@ -37,6 +38,10 @@ body,html{
 
 .video-bg-error {
     /*background-image: url(assets/project-covers/video-bg-error.svg); */
+}
+
+#start-image {
+    height: 100vh;
 }
 
 .video-bg > img {
@@ -97,4 +102,8 @@ body,html{
     #skill-type{
         font-size: 16px;
     }
+}
+
+@media screen and (max-width: 900px) {
+
 }

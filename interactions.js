@@ -1,5 +1,8 @@
 
 
+
+
+
 var file = "";
 
 $("#home-icon").click(function() {
@@ -52,7 +55,22 @@ $(document).ready(function() {
     setTimeout(function() {
         $(".center").addClass("center-fadeIn");
     }, 1000);
+
+    //bug();
 });
+
+function bug() {
+    var docWidth = document.documentElement.offsetWidth;
+    [].forEach.call(
+      document.querySelectorAll('*'),
+      function(el) {
+        if (el.offsetWidth > docWidth) {
+          console.log(el);
+        }
+      }
+    );
+    bug();
+}
 
 $(".resume-button-hover").hover(function() {
     $(this).addClass("resume-button-on");
