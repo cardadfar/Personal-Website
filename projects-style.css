@@ -63,8 +63,8 @@ body,html{
 }
 
 .indent {
-    text-indent: 2.0em; 
-    font-size: 16px;
+    text-indent: 1.0em; 
+    font-size: 14px;
 }
 
 #text-bounce {
