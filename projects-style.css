@@ -105,5 +105,8 @@ body,html{
 }
 
 @media screen and (max-width: 900px) {
-
+    .video-bg {
+        width: 74vw;
+        left: 13vw;
+    }
 }
