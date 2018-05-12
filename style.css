@@ -37,7 +37,7 @@ body,html{
     height: 40px;
     background: #0f0f0f;
     box-shadow: 0px 0px 50px;
-    z-index: 1;
+    z-index: 99;
     transition: all 0.5s;
 
 }
@@ -462,18 +462,56 @@ li{
     transition: all 0.5s;
 }
 
+.video-skills {
+    position: absolute;
+    width: 50%;
+    opacity: 100;
+    margin-left: 15%;
+    margin-top: 1%;
+    transition: all 0.7s;
+    z-index: 4;
+    transform: scale(1);
+}
+
+#video-skills-icon {
+    width: 40px;
+    transform: scale(0);
+    transition: all 0.7s;
+}
+
+.active-cover{
+    position: absolute;
+    z-index: 2;
+    width: 35%;
+    height: 19.6875vw;
+    margin-left: 10%;
+    transition: all 0.5s;
+}
+
 .cover-image{
     position: absolute;
-    width: 35%;
-    margin-left: 10%;
+    width: 100%;
     opacity: 0;
+    transition: all 0.5s;
+}
+
+@keyframes mask {
+    from {clip-path: inset(0px 110% 0px 0px);}
+    to {clip-path: inset(0 0 0 0);}
+}
+
+.active-cover-right{
+    position: absolute;
+    z-index: 2;
+    width: 35%;
+    height: 19.6875vw;
+    margin-left: 5%;
     transition: all 0.5s;
 }
 
 .cover-image-right{
     position: absolute;
-    width: 35%;
-    margin-left: 5%;
+    width: 100%;
     opacity: 0;
     transition: all 0.5s;
 }
@@ -526,6 +564,254 @@ li{
     transition: all 0.5s;
 }
 
+.tabs {
+    width: 45%;
+    margin-left: 15%;
+    overflow: hidden;
+    background-color: #232528;
+}
+
+.tab-year {
+    width: 25%;
+    height: 40px;
+    transition: all 0.5s;
+}
+
+.tab-year:hover {
+    background-color: #34383d;
+}
+
+.tab-content {
+    width: 80%;
+    margin-left: 10%;
+    overflow: hidden;
+    background-color: #232528;
+}
+
+.tab-content > #left {
+    width: 50%;
+    float: left;
+}
+
+.course > .left-text {
+    float: left;
+    text-align: left;
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 0%;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.course-title > .left-text-title {
+    float: left;
+    text-align: left;
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 0%;
+    font-size: 15px;
+}
+
+.course > .right-text {
+    float: left;
+    text-align: right;
+    color:grey;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: 10%;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+#underline {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 0.7px;
+    background-color: grey;
+}
+
+.year-text {
+    font-size: 15px;
+    width: 100%;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+.year-box {
+  position: absolute;
+  font-size: 12px;
+  width: 11.25%;
+  margin: 0 0 0 0;
+  background: rgba(62, 66, 71, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  transition: opacity .2s, visibility .2s;
+}
+
+.course-box {
+  position: relative;
+  float: left;
+  font-size: 12px;
+  color: #a8a8a8;
+  margin: 0 0 0 0;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  width: auto;
+  visibility: hidden;
+  opacity: 0;
+  text-align: left;
+  transition: 1s ease-in-out;
+  transition: -webkit-transform 0.8s ease;
+}
+
+#year1-tab:hover #year-box1 {
+  visibility: visible;
+  opacity: 1;
+  animation-name: myFrames;
+  animation-duration: 0.2s;
+}
+
+#year2-tab:hover #year-box2 {
+  visibility: visible;
+  opacity: 1;
+  animation-name: myFrames;
+  animation-duration: 0.2s;
+}
+
+#year3-tab:hover #year-box3 {
+  visibility: visible;
+  opacity: 1;
+  animation-name: myFrames;
+  animation-duration: 0.2s;
+}
+
+#year4-tab:hover #year-box4 {
+  visibility: visible;
+  opacity: 1;
+  animation-name: myFrames;
+  animation-duration: 0.2s;
+}
+
+@keyframes myFrames {
+    from {transform: translate(0, -7px);}
+    to {transform: translate(0, 0);}
+}
+
+.course {
+    overflow: auto;
+    padding-top: 5px;
+    transition: all 0.2s;
+}
+
+.course:hover {
+    background: rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+.video-bg > p {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.sub-title {
+    font-size: 30px;
+}
+
+/**********************    Hovers for course description boxes ******************/
+
+#C-F17-01:hover #course-box-F17-01 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F17-02:hover #course-box-F17-02 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F17-03:hover #course-box-F17-03 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F17-04:hover #course-box-F17-04 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F17-05:hover #course-box-F17-05 {
+    visibility: visible;
+    opacity: 100;
+}
+
+
+#C-S18-01:hover #course-box-S18-01 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-S18-02:hover #course-box-S18-02 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-S18-03:hover #course-box-S18-03 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-S18-04:hover #course-box-S18-04 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-S18-05:hover #course-box-S18-05 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-S18-06:hover #course-box-S18-06 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F18-01:hover #course-box-F18-01 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F18-02:hover #course-box-F18-02 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F18-03:hover #course-box-F18-03 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F18-04:hover #course-box-F18-04 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F18-05:hover #course-box-F18-05 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F18-06:hover #course-box-F18-06 {
+    visibility: visible;
+    opacity: 100;
+}
+
+
+
 @media screen and (max-width: 900px) {
     #video-text{
         font-size: 20px;
@@ -547,6 +833,33 @@ li{
         margin-left: 5%;
         width: 70%;
     }
+
+    .tabs{
+        width: 55%;
+    }
+
+    .year-text > p {
+        font-size: 14px;
+        margin: 0 0 0 0;
+        width: 100%;
+    }
+
+    .course > .left-text {
+        font-size: 14px;
+    }
+
+    .course-title > .left-text-title {
+        font-size: 14px;
+    }
+
+    .course > .right-text {
+        font-size: 14px;
+    }
+
+    .year-box {
+        width: 13.7%;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -767,17 +1080,18 @@ li{
         width: 65%;
         text-align: left;
     }
-    
-    .cover-image{
+
+    .active-cover{
         width: 56%;
+        height: 30.3vw;
         margin-left: 12%;
     }
 
-    .cover-image-right{
+    .active-cover-right{
         width: 56%;
+        height: 30.3vw;
         margin-left: 12%;
     }
-    
     .resume-button{
         width: 150px;
         height: 20px;
@@ -804,5 +1118,58 @@ li{
     
     #transparent{
         width: 600px;
+    }
+
+    .tabs {
+        width: 75%;
+    }
+
+    .tab-year > p{
+        font-size: 12px;
+
+    }
+
+    .course > .left-text {
+        font-size: 12px;
+        width: 85%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+      .course-title > .left-text-title {
+        font-size: 12px;
+        width: 85%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .course > .right-text {
+        font-size: 10px;
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 0%;
+        margin-top: 2%;
+        margin-bottom: 6%;
+        width: 90%;
+    }
+
+    #year-box1 {
+        width: 18.8%;
+    }
+
+    #year-box2 {
+        width: 18.8%;
+    }
+
+    #year-box3 {
+        width: 18.8%;
+    }
+
+    #year-box4 {
+        width: 18.8%;
+    }
+
+    .course-box {
+        display: none;
     }
 }

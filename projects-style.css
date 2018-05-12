@@ -2,24 +2,33 @@ body,html{
     background-image: url(assets/tab-backgrounds/projects-blur.jpg);
 }
 
+.all {
+    overflow-y: hidden;
+}
+
 .video-player {
     width: 65vw;
     height: 36.5625vw;
     top: calc((100vh - 36.5625vw) / 2);
     left: 17.5vw;
     transform: scale(0);
-    position: fixed;
+    position: absolute;
     z-index: 99;
     transition: all 0.5s;
 }
 
+.transparent-blur {
+    opacity: 0;
+    filter: blur(50px);
+}
+
 .video-bg {
     width: 67vw;
-    height: 38vw;
     top: calc((100vh - 38vw) / 2);
     left: 16.5vw;
+    margin-bottom: 75px;
     transform: scale(0);
-    position: fixed;
+    position: absolute;
     z-index: 98;
     background-image: url(assets/project-covers/video-bg.svg);
     background-size: cover;
@@ -27,7 +36,36 @@ body,html{
 }
 
 .video-bg-error {
-    background-image: url(assets/project-covers/video-bg-error.svg);
+    /*background-image: url(assets/project-covers/video-bg-error.svg); */
+}
+
+.video-bg > img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.video-bg > .subtitle {
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.video-bg > .description {
+    font-size: 15px;
+    text-align: center;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.indent {
+    text-indent: 2.0em; 
+    font-size: 16px;
+}
+
+#text-bounce {
+    position: absolute; 
+    transition: all 1s; 
+    transition-timing-function: linear;
 }
 
 .video-player-on {
@@ -43,13 +81,12 @@ body,html{
     background: black;
     opacity: 0;
     display: none;
-    transition: all 0.5s;
+    transition: all 2s;
 }
 
 .dark-frame-on {
     display: block;
-    opacity: 0.75;
-    transition: all 0.5s;
+    opacity: 0.6;
 }
 
 @media screen and (max-width: 900px) {

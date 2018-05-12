@@ -1,0 +1,12 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "La Da Dee.",
+  "p_1": "Starting in Flash Professional, I drew out an animatic based on memories I had of the last year. I took pictures in the areas where those memories occured and drew out the backgrounds based on the photos in Photoshop. I used a slighlty jittery brush with basic, light solid colors as fills. I then went back into each background and drew characters as seperate layers. Importing the Photoshop files by layers (making sure to seperate backgrounds from characters), I created 3 default compositions of 3D solid objects falling and swinging from a string. This was done by attaching the anchor point to the top of the string and 3D rotating it forwards and backwards in a pendulum-like manner. The three compositions were for 1, 2, & 3 itterations of falling. I could then copy these compositions and add the character drawings into the compositions. For each character, I added an additional 3D white solid that I would very roughly mask around the character to mimmic a paper-cutout effect. I would then add a drop shadow with the reverse pendulum effect (if the rope rotated forwards, the shadow would get farther, else, the shadow would get closer). About halfway through, I began to go back and add a folded paper texture to all the characters to make them feel more like paper cutouts."
+}

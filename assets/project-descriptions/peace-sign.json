@@ -1,0 +1,12 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "Peace Sign.",
+  "p_1": "Using Flash, I first began by tracing out the typography component on a 24fps composition. I animated over 2s, using 3 distinct frames and cycling through them. Following the typography, I rendered out footage from My Hero Academia in After Effects so that it was compatible in Flash. Importing it into Flash, I traced over the frames over 2s so that the animation would sync with the text. I made sure to keep the timing as precise as possible over a 12fps composition. I then exported it to After Effects as a separate typography and animation .swf so as to edit the layers separately. Adding in a paper background animation, I rendered the composition with a couple timing and color tweaks."
+}

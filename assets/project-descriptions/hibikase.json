@@ -1,0 +1,12 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "Hibikase.",
+  "p_1": "By using Displacement Map, I masked multiple adjustment layers containing this effect and randomized their position to create an overall glitch effect that would be an overlay for the animation. The text was a separate composition where each character was its own layer and had its position randomly set over time to create a shaky effect. The background was a radial gradient with multiple adjustment layers with varying glows masked over it. Multiple lines were animated in the background with their position and orientations changing randomly each time the text would change."
+}

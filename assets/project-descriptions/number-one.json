@@ -1,0 +1,12 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "Number One.",
+  "p_1": "As a continuation of my iDance project, I used the dancing animation cycles mixed with kinetic typography elements. The entire project remains on a 2D surface. No cameras are used, rather every text object is parented to a null object in some way. I use the 'We Are Number One', 'Hey Mama', and 'Epic Sax Guy' MVs as found footage to overlay over certain scenes. I found that using the hard light transparency effect works well when layering footage over footage, or footage over solids. I used Illustrator at the beginning to create the vector components needed for the stage animation, and had intentions to use it later in the video with the dancers, but because of the perspective contrast between the stage and dances, I had to drop it. In order to give backgrounds more of a texture, I add a small ellipse layer and add a repeater in both dimen sions to make a grid-like pattern from dots."
+}

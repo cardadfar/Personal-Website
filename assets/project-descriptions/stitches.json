@@ -1,0 +1,12 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "Stitches.",
+  "p_1": "Using a jitter effect with thin text, the text was animated in a separate composition with the jitter effect being added as an adjustment layer at the end of the process. Vectors were done in Illustrator and later imported on top of the text.Their layer attributes were preserved when exported so that components within an Illustrator vector could be animated separately in After Effects."
+}

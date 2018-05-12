@@ -1,0 +1,12 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "How Far We've Come.",
+  "p_1": "Using AR Core, I intercepted the point cloud data and created independent tracking planes that could work on grounds or walls. When tapping the screen, the app will project the active 3D point cloud data (active referring to points visible to the camera) onto a 2D surface and find the closest point to where the screen was touched. Iterating over the point cloud data, this point will find the next two closest point in order to find the best cross product that represents the orientation of the point. The point now contains information about the position and orientation that can be used to generate the text. Using this, I went around campus and places text in areas to make an immersive typography environment. This, coupled with found footage complementary of cmuTV and other sources, allowed me to make a video about my college."
+}

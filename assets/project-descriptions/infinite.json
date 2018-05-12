@@ -1,0 +1,12 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "Infinite.",
+  "p_1": "Using Particular, I generated a sphere comprised of particles with the radius of the sphere as a function of the amplitude of the audio. The sphere was placed in a 3D environment where a camera would move forward to emulate zooming in. Optical Flares and Twitches assisted in making the scene more powerful and dramatic. The red twitch effect was created using translucent red rectangles with high frequency and magnitude set as their wiggle parameters. The rectangles would then duplicate and offset to cover the screen. The text for the typography component was a separate composition layered over it all."
+}

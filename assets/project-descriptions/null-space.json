@@ -1,0 +1,12 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "Null Space.",
+  "p_1": "This kinetic typography merges elements of standard typography with vector-based motion graphics to a fast-paced beat. Using cameras with 2D objects, I created a 2.5 dimension environment for the camera to move around to give the user a sense of depth and speed. The colors are vibrant to compliment the uplifting beat of the tune, bouncing their way into and out of scenes using easing mechanics.The colored streams at the end were created by repeating the Particular effect, emulating the lines with a straight path of circles."
+}
