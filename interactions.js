@@ -229,6 +229,10 @@ function loadData() {
             $(".video-bg").append("<p class='description'>" + val + "</p>");
         else if (key.charAt(0) == 'i')   //image
             $(".video-bg").append("<img src='assets/project-descriptions/images/" + val + "'>");
+
+        else if (key.charAt(0) == 'l')   //list element
+            $(".video-bg").append("<li>" + val + "</li");
+
         else if (key.charAt(0) == 'p')   //text
             $(".video-bg").append("<p class='indent'>" + val + "</p>");
         });

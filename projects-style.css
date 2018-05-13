@@ -55,6 +55,14 @@ body,html{
     margin-left: 10%;
     margin-bottom: 20px;
     font-size: 14px;
+    word-wrap: break-word;
+}
+
+.video-bg > li {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .video-bg > .subtitle {
@@ -111,9 +119,29 @@ body,html{
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
+
     .video-bg {
         width: 74vw;
         left: 13vw;
     }
+
+    .video-bg > p {
+        margin-bottom: 15px;
+        font-size: 11px;
+    }
+
+    .video-bg > li {
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-size: 11px;
+        text-align: left;
+    }
+
+    .video-bg > .description {
+        font-size: 9px;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
 }

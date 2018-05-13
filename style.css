@@ -280,6 +280,7 @@ li{
 }
 
 #start-text{
+    font-size: 50px;
     padding-top: 40px;
     margin-bottom: 20px;
     transition: all 0.5s;
@@ -711,11 +712,6 @@ li{
 .course:hover {
     background: rgba(0, 0, 0, 0.15);
     transform: scale(1.05);
-}
-
-.video-bg > p {
-    width: 80%;
-    margin-left: 10%;
 }
 
 .sub-title {
