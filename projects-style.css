@@ -78,10 +78,6 @@ body,html{
     margin-bottom: 20px;
 }
 
-.indent {
-    text-indent: 1.0em; 
-}
-
 #text-bounce {
     position: absolute; 
     transition: all 1s; 

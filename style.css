@@ -46,7 +46,7 @@ body,html{
 .nav > .tab > a{
     position: relative;
     font-family: "UniqueDistrictThin";
-    font-size: 15x;
+    font-size: 15px;
     font-weight: lighter;
     color: white;
     text-align: center;
@@ -54,6 +54,80 @@ body,html{
     z-index: 2;
     transition: all 0.5s;
 
+}
+
+.top-icon {
+    display: none;
+}
+
+.tab:hover .top-icon{
+    display: block;
+    position: relative;
+    float: left;
+    display: block;
+    width: 16px;
+    height: 16px;
+    left: calc(50% - 8px);
+    top: calc(50% - 8px);
+    animation: positionShift 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes positionShift {
+    0% {
+        opacity: 0;
+        left: calc(50% - 8px);
+    }
+
+    100% {
+        opacity: 1;
+        left: calc(45% - 8px);
+    }
+}
+
+#home-icon:hover a{
+    color: #00FFFF;
+    margin-left: 25px;
+}
+
+#home-icon:hover .top-icon{
+    content:url("assets/home-icon-color.png");
+}
+
+#skills-icon:hover a{
+    color: #00FF00;
+    margin-left: 21px;
+}
+
+#skills-icon:hover .top-icon{
+    content:url("assets/skills-icon-color.png");
+}
+
+#projects-icon:hover a{
+    color: #f956ff;
+    margin-left: 36px;
+}
+
+#projects-icon:hover .top-icon{
+    content:url("assets/projects-icon-color.png");
+}
+
+#extras-icon:hover a{
+    color: #ff812d;
+    margin-left: 25px;
+}
+
+#extras-icon:hover .top-icon{
+    content:url("assets/extras-icon-color.png");
+}
+
+#contact-icon:hover a{
+    color: #FFFF00;
+    margin-left: 35px;
+}
+
+#contact-icon:hover .top-icon{
+    content:url("assets/contact-icon-color.png");
 }
 
 .tab{
@@ -65,24 +139,9 @@ body,html{
     transition: all 0.5s;
 }
 
-.nav > .tab > a{
-    position: relative;
-    font-family: "UniqueDistrictThin";
-    font-size: 15px;
-    font-weight: lighter;
-    letter-spacing: 1px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    z-index: 2;
-    transition: all 0.5s;
-
-}
-
 .tab:hover{
-    background: #333333;
+    background: #282828;
     transition: all 0.5s;
-
 }
 
 .nav-bottom{
@@ -205,7 +264,7 @@ body,html{
 
 @keyframes moveMask {
   0% {
-    clip-path: circle(46% at 50% 50%);
+    clip-path: circle(54% at 50% 50%);
   }
 
   35% {
@@ -217,7 +276,7 @@ body,html{
   }
 
   100% {
-    clip-path: circle(46% at 50% 50%);
+    clip-path: circle(54% at 50% 50%);
   }
 }
 
@@ -281,11 +340,6 @@ body,html{
     transition: all 0.5s;
 }
 
-.nav > .tab > .top-icon{
-    display: none;
-    transition: all 0.5s;
-}
-
 .nav-bottom > .bottom-tab > .bottom-icon{
     display: none;
     transition: all 0.5s;
@@ -293,7 +347,7 @@ body,html{
 
 p{
     font-family: "UniqueDistrictThin";
-    font-size: 18px;
+    font-size: 17px;
     font-weight: lighter;
     letter-spacing: 1px;
     color: white;
@@ -317,6 +371,10 @@ li{
     margin-bottom: 20px;
     text-align: justify;
     transition: all 0.5s;
+}
+
+.indent {
+    text-indent: 1.0em; 
 }
 
 .hi{
@@ -683,6 +741,57 @@ li{
     background-color: grey;
 }
 
+.tab-box {
+  position: absolute;
+  font-size: 12px;
+  width: calc(20% - 2px);
+  line-height: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 0 0 0 0;
+  background: rgba(40,40,40,0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  transition: opacity .2s, visibility .2s;
+}
+
+#home-icon:hover #tab-box1 {
+    visibility: visible;
+    opacity: 1;
+    animation-name: myFrames;
+    animation-duration: 0.2s;
+}
+
+#skills-icon:hover #tab-box2 {
+    visibility: visible;
+    opacity: 1;
+    animation-name: myFrames;
+    animation-duration: 0.2s;
+}
+
+#projects-icon:hover #tab-box3 {
+    visibility: visible;
+    opacity: 1;
+    animation-name: myFrames;
+    animation-duration: 0.2s;
+}
+
+#extras-icon:hover #tab-box4 {
+    visibility: visible;
+    opacity: 1;
+    animation-name: myFrames;
+    animation-duration: 0.2s;
+}
+
+#contact-icon:hover #tab-box5 {
+    visibility: visible;
+    opacity: 1;
+    animation-name: myFrames;
+    animation-duration: 0.2s;
+}
+
 .year-text {
     font-size: 15px;
     width: 100%;
@@ -749,7 +858,7 @@ li{
 }
 
 @keyframes myFrames {
-    from {transform: translate(0, -7px);}
+    from {transform: translate(0, -10px);}
     to {transform: translate(0, 0);}
 }
 
@@ -1217,5 +1326,25 @@ li{
 
     .course-box {
         display: none;
+    }
+
+    #home-icon:hover #tab-box1 {
+        visibility: hidden;
+    }
+
+    #skills-icon:hover #tab-box2 {
+        visibility: hidden;
+    }
+
+    #projects-icon:hover #tab-box3 {
+        visibility: hidden;
+    }
+
+    #extras-icon:hover #tab-box4 {
+        visibility: hidden;
+    }
+
+    #contact-icon:hover #tab-box5 {
+        visibility: hidden;
     }
 }
