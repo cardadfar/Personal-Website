@@ -42,6 +42,26 @@ $("#git-icon").click(function() {
 });
 
 
+$(".icon").hover(function() {
+    $(".circle-dashed").css({"width": "226px", "height": "226px"});
+    $(".circle-dashed").css({"left": "calc(50% - 113px)", "top": "35px"});
+    $(".circle-dashed").css("animation", "rotate 5s linear infinite");
+
+
+    $("#circle-dashed2").css({"width": "240px", "height": "240px"});
+    $("#circle-dashed2").css({"left": "calc(50% - 120px)", "top": "29px"});
+
+    $(".rect-double").css("animation", "moveMask 2s cubic-bezier(.94,0,.09,1) infinite");
+    }, function () {
+    $(".circle-dashed").css({"width": "", "height": ""});
+    $(".circle-dashed").css({"left": "", "top": ""});
+    $(".circle-dashed").css("animation", "");
+
+    $(".rect-double").css({"width": "", "height": ""});
+    $(".rect-double").css({"left": "", "top": ""});
+    $(".rect-double").css("animation", "");
+});
+
 
 $(document).ready(function() {
     $(".rectangle01").addClass("rectangle-animate01");
@@ -50,7 +70,7 @@ $(document).ready(function() {
     }, 500);
     $(".rectangle02").addClass("rectangle-animate01");
     setTimeout(function() {
-        $(".rectangle02").addClass("rectangle-animate022");
+        $(".rectangle02").addClass("rectangle-animate022"); 
     }, 500);
     setTimeout(function() {
         $(".center").addClass("center-fadeIn");
