@@ -103,6 +103,48 @@ $(".resume-button-hover").click(function() {
 });
 
 
+//-----------------------------------  BOTTOM NAV BAR ICON JUMP   -----------------------------------
+
+
+$("#linkedin-icon").hover(function() {
+    if(!($("#linkedin-icon-jump").hasClass("bottom-icon-jump-anim"))) {
+        $("#linkedin-icon-jump").addClass("bottom-icon-jump-anim");
+        setTimeout(function() {
+            $("#linkedin-icon-jump").removeClass("bottom-icon-jump-anim"); 
+        }, 3000);
+    }
+})
+
+$("#vimeo-icon").hover(function() {
+    if(!($("#vimeo-icon-jump").hasClass("bottom-icon-jump-anim"))) {
+        $("#vimeo-icon-jump").addClass("bottom-icon-jump-anim");
+        setTimeout(function() {
+            $("#vimeo-icon-jump").removeClass("bottom-icon-jump-anim"); 
+        }, 3000);
+    } 
+})
+
+$("#processing-icon").hover(function() {
+    if(!($("#processing-icon-jump").hasClass("bottom-icon-jump-anim"))) {
+        $("#processing-icon-jump").addClass("bottom-icon-jump-anim");
+        setTimeout(function() {
+            $("#processing-icon-jump").removeClass("bottom-icon-jump-anim"); 
+        }, 3000);
+    }
+})
+
+$("#git-icon").hover(function() {
+    if(!($("#git-icon-jump").hasClass("bottom-icon-jump-anim"))) {
+        $("#git-icon-jump").addClass("bottom-icon-jump-anim");
+        setTimeout(function() {
+            $("#git-icon-jump").removeClass("bottom-icon-jump-anim"); 
+        }, 3000);
+    }
+})
+
+//---------------------------------------------------------------------------------------------------
+
+
 $(".icon").hover(function() {
     $(this).attr("src","assets/icon.png");
     }, function() {

@@ -345,6 +345,40 @@ body,html{
     transition: all 0.5s;
 }
 
+.bottom-tab:hover a{
+    color: white;
+}
+
+.bottom-icon-jump {
+    display: none;
+}
+
+.bottom-icon-jump-anim {
+    display: block;
+    position: absolute;
+    width: 30px;
+    margin-left: calc(20% - 15px);
+    animation: 3s jump cubic-bezier(.39,0,0,.99);
+}
+
+@keyframes jump {
+    0% {transform: translate(0, 0);}
+    50% {transform: translate(0, -50px);}
+    100% {transform: translate(0, 0);}
+}
+
+#vimeo-icon-jump {
+    margin-left: calc(40% - 15px);
+}
+
+#processing-icon-jump {
+    margin-left: calc(60% - 15px);
+}
+
+#git-icon-jump {
+    margin-left: calc(80% - 15px);
+}
+
 p{
     font-family: "UniqueDistrictThin";
     font-size: 17px;
@@ -870,7 +904,7 @@ li{
 
 .course:hover {
     background: rgba(0, 0, 0, 0.15);
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .sub-title {
