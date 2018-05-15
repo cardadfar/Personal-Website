@@ -32,5 +32,12 @@
   "d_13": "Creating text objects in the Unity environment",
   "p_14": "To demonstrate AR Core, I went around campus filming shots of me placing text around the area. Since it was in the Unity app, I could not use the built in camera feature, and had to use the external screen recording app AZ Recorder. I compiled the footage in After Effects with additional found footage at the end.",
   "i_15": "how-far-weve-come/after-effects.jpg",
-  "d_15": "Composing footage in After Effects"
+  "d_15": "Composing footage in After Effects",
+  "s_16": "Using AR Typography",
+  "p_17": "AR Typography runs in Unity with the AR Core plugin. Download the main TextCore.cs file and place it in the scripts folder of the HelloAR Example in the AR Core extension pack.",
+  "a_18": "https://github.com/cardadfar/AR-Typography",
+  "p_19": "Create a new 3D text object and attach it to the script's textLayer. Adding TrackedPoint & GeneratePoint prefabs are optional and visualize the point cloud data for you, but can interefere with filming. It is reccomended to keep these fields blank.",
+  "p_20": "Add multiple (or one) strings in the Start function. An example has been provided. Changing the string will change the text being presented. Likewise, adding additional copies with the string inside change will add to a list of strings that can be modulated over for each tap.",
+  "c_21": "void Start() { <br /> content.Add('How Far We've Come'); <br /> }"
+
 }

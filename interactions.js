@@ -283,23 +283,36 @@ function loadData() {
     $(".video-bg").append("<p style='text-align: center; color: grey;'>scroll down for more info</p>");
 
       $.each( data, function( key, val ) {
+
         if (key.charAt(0) == 't')   //title
             $(".video-bg").append("<p class='hi' id='start-text'>" + val + "</p>");
+
         else if (key.charAt(0) == 's')   //subtitle
             $(".video-bg").append("<p class='subtitle'>" + val + "</p>");
+
         else if (key.charAt(0) == 'd')   //subtitle
             $(".video-bg").append("<p class='description'>" + val + "</p>");
+
         else if (key.charAt(0) == 'i')   //image
             $(".video-bg").append("<img src='assets/project-descriptions/images/" + val + "'>");
 
         else if (key.charAt(0) == 'l')   //list element
-            $(".video-bg").append("<li>" + val + "</li");
+            $(".video-bg").append("<li>" + val + "</li>");
+
+        else if (key.charAt(0) == 'a') {  //link element
+            $(".video-bg").append("<a href='" + val + "'>" + val + "</a>");
+            $(".video-bg").append("<div class='line'></div>");
+        }
+
+        else if (key.charAt(0) == 'c')  //link element
+            $(".video-bg").append("<div id='codeBit'><code>" + val + "</code></div>");
 
         else if (key.charAt(0) == 'p')   //text
             $(".video-bg").append("<p class='indent'>" + val + "</p>");
         });
     });
 }
+
 
 function bounceText() {
     $("#text-bounce").css("transform", "translate(0,15px)");

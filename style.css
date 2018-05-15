@@ -407,6 +407,10 @@ li{
     transition: all 0.5s;
 }
 
+code {
+    color: grey;
+}
+
 .indent {
     text-indent: 1.0em; 
 }

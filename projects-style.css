@@ -65,6 +65,45 @@ body,html{
     font-size: 14px;
 }
 
+.video-bg > a {
+    font-family: "UniqueDistrictThin";
+    font-weight: lighter;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 80%;
+    color: white;
+    margin-left: 10%;
+    margin-bottom: 0;
+    font-size: 14px;
+    word-wrap: break-word;
+    transition: all 0.3s;
+}
+
+.video-bg > a:hover {
+    color: grey;
+}
+
+
+.video-bg > #codeBit {
+    margin-left: 15%;
+    margin-bottom: 20px;
+}
+
+.video-bg > .line {
+    width: 0;
+    margin-left: 50%;
+    height: 0.75px;
+    background: grey;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+a:hover + .line{
+    width: 56%;
+    margin-left: 22%;
+}
+
 .video-bg > .subtitle {
     font-size: 28px;
     text-align: left;

@@ -9,15 +9,15 @@
 
   "t_0": "iDance.",
   "p_1": "This was an assignment for my Creativity and Computation class in which we had to use motion capture data (real-time or pre-recorded) in some way, for some form of art. One of the options we had was to use OpenPose, a newly developed human motion tracker developed by Carnegie Mellon's Perceptual Computing Lab.",
-  "p_2": "https://github.com/CMU-Perceptual-Computing-Lab/openpose",
+  "a_2": "https://github.com/CMU-Perceptual-Computing-Lab/openpose",
   "p_3": "OpenPose tracks key points of the human body from 2D video and saves the data to a JSON file.",
   "i_4": "idance/data.png",
   "d_5": "body part: [x-pos, y-pos, confidence]",
   "p_6": "The data above was produced from running OpenPose on the infamous Napoleon Dynamite scene.",
   "p_7": "Having experience in video editing, I had some ideas to use the motion tracking data in After Effects, but that required me to build an interpreter for the data first. After Effect's scripting platform is ExtendScript, an old, and maybe quite obsolete, scripting language that merges javascript with Adobe classes. There was little results on StackOverflow and other forums for ExtendScript, with the only available resource being the official manual.",
-  "p_8": "https://blogs.adobe.com/creativecloud/files/2012/06/After-Effects-CS6-Scripting-Guide.pdf",
+  "a_8": "https://blogs.adobe.com/creativecloud/files/2012/06/After-Effects-CS6-Scripting-Guide.pdf",
   "p_9": "First thing first, I needed a JSON interpreter, since ExtendScript did not have one built in. I was able to find one online and import it into the script.",
-  "p_10": "https://raw.githubusercontent.com/douglascrockford/JSON-js/master/json2.js",
+  "a_10": "https://raw.githubusercontent.com/douglascrockford/JSON-js/master/json2.js",
   "s_11": "Design.",
   "p_12": "I began the process of drawing important body segments using ellipses in After Effects. Of the available body segments, I used the following data:",
   "l_1": "left/right_wrist",
@@ -43,12 +43,12 @@
   "i_21": "idance/const.png",
   "d_22": "Joints (Left) | Body (Middle) | Headphones (Right)",
   "p_23": "From here, I had working models that could be generated from the JSON data. The original JSON contained nearly 5000 frames, too much for my laptop to handle. To cope with this, I separated the frames into intervals of 400, copying each batch of 400 frames into a separate JSON for processing. I was left with 11 compositions of data, each with ~20 seconds of animation. Though, nearly half of the data was unusable. This was because the data contained in the JSON was unable to identify certain body parts during certain frames, leaving 0’s in its trail. I could only salvage frames that had non-zero values, or else a body part would fly off-screen.",
-  "i_24": "idance-glitch.png",
+  "i_24": "idance/glitch.png",
   "d_25": "Hey buddy, is your arm okay?",
   "p_26": "After going through all the compositions, I was left with 14 unique dance cycles averaging 5 seconds each. I did some additional layering edits with the cycles before I went into editing. The reason I wanted to use motion capture in After Effects was to be able to animate text over the dancing figures.",
   "i_27": "idance/workflow.png",
   "d_27": "After Effects interface with procedurally-generated poses",
   "s_28": "Results.",
-  "p_29": "https://github.com/cardadfar/OpenPose-After-Effects"
+  "a_29": "https://github.com/cardadfar/OpenPose-After-Effects"
 
 }
