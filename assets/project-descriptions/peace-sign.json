@@ -9,14 +9,16 @@
 
   "t_0": "Peace Sign.",
   "p_1": "Peace Sign is an animation music video mixing hand-drawn components from the My Hero Academia series with hand-drawn typography components.",
-  "s_2": "Reference Rendering",
+  
+  "s_2": "Reference Rendering.",
   "p_3": "I had to gather reference to base the animation off of. In After Effects, this meant going through footage from My Hero Academia and compiling/timing a shots list that I would animate over.",
   "i_4": "peace-sign/reference-rendering.png",
   "d_4": "Clip-splicing references for the animation",
   "p_5": "Most of the footage used for reference came from the My Hero Academia X Peace Sign PV.",
   "a_6": "https://www.youtube.com/watch?v=1oMxrHXzOsY",
   "p_6": "I exported the footage as .mp4 since Flash Professional is able to import the file type.",
-  "s_7": "Animation Tracing",
+  
+  "s_7": "Animation Tracing.",
   "p_8": "After importing the rendered references into Flash Professional, I created another layer with a white translucent solid and an additional layer above that where I would draw. The white solid prevented the original reference from showing too much so that I could see my own brush.",
   "i_9": "peace-sign/animation-01.png",
   "d_9": "Drawing over frames",
@@ -24,12 +26,14 @@
   "p_11": "During scenes where objects would move fast, I exaggerated the speed lines to get a good feel for the motion blur.",
   "i_12": "peace-sign/animation-02.gif",
   "d_12": "Exaggerating speed lines",
-  "s_13": "Typography Tracing",
+  
+  "s_13": "Typography Tracing.",
   "p_14": "I also used reference for the typography components. I dedicated a separate layer to text, where I would use size 70 Arial font. Just like the central animation, I animated the typography on 2s. For each segment of lyrics, I traced the text 3 times and looped it.",
   "i_14": "peace-sign/animation-03.gif",
   "d_14": "Animated text loop of 3 frames",
   "p_15": "To get the text to write itself, I used the lasso tool to delete the text that was not yet said on a given keyframe. I sped this process up by editing multiple keyframes at a time. If I knew a word wasn't said until a certain keyframe, then for all the keyframes before it, I would edit them by using the lasso tool to select the word that hasn't been said and removing it from all previous keyframes.",
-  "s_16": "Animation Composition",
+  
+  "s_16": "Animation Composition.",
   "p_17": "Exporting the typography and animation as separate .swf files, I brought it into After Effects to touch it up. The biggest change was adding a color toner to change the colors of the strokes to a light blue. I did this by mapping the color black to cyan, and keeping other colors (like purple and yellow) consistent.",
   "p_18": "For the paper background, I used a large paper texture and broke it into 4 quadrants. Every 4 frames, the camera would relocate to a different quadrant. This would loop for the entire composition, giving the effect that the paper background is moving.",
   "i_19": "peace-sign/paper-background.png",

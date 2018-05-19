@@ -8,8 +8,12 @@
   },
 
   "t_0": "Build Our Machine.",
-  "p_0": "For tis animation, I wanted to capture the old, vintage animation style of cartoons and film by using modern-day technologies with older effects overlayed on top to make the film feel older. This, coupled with the dark themes of the song, led me to create a old-time music video with some dark scenes.",
-  "s_0": "Write-On Letter",
+  "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=ZstsPUKT5CI", "Build Our Machine by DAGames"]}, 
+          {"software-icon.png": "After Effects CC • Flash Professional CC • Illustrator CC • Photoshop CC"},
+          {"time-icon.png": "3 Weeks"}],
+  "p_0": "For this animation, I wanted to capture the old, vintage animation style of cartoons and film by using modern-day technologies with older effects overlayed on top to make the film feel older. This, coupled with the dark themes of the song, led me to create a old-time music video with some dark scenes.",
+  
+  "s_0": "Write-On Letter.",
   "p_1": "For the first part of the animation, I had a separate composition with script text that I would use masks to show over time. I wanted to achieve a write-on effect this way.",
   "i_2": "build-our-machine/text-mask.png",
   "d_2": "Using masks as a write-on effect for text",
@@ -24,7 +28,7 @@
   "i_8": "build-our-machine/repeated-floor.png",
   "d_8": "Tiling the floor panels and ink bleeds together",
 
-  "s_9": "Ink Text",
+  "s_9": "Ink Text.",
   "p_10": "I generated the ink text in the chorus by drawing the outlines in pen on paper, and going back to fill the letters in pen as well.",
   "i_11": "build-our-machine/ink-text-01.jpg",
   "d_11": "Drawing outlines and fills using pen",
@@ -38,13 +42,13 @@
   "i_17": "build-our-machine/ink-text-04.png",
   "d_17": "Adding additional features to text",
 
-  "s_18": "Character Silhouette Puppets",
+  "s_18": "Character Silhouette Puppets.",
   "p_19": "I began sketching different common death scenes on paper and matching scenes with text to get an idea of what went where.",
   "p_20": "In Photoshop, I drew the outlines and filled them in with the same color to make a silhouette. I was careful to keep the background and foreground different layers so that I could animate them separately.",
   "i_21": "build-our-machine/character-silhouette.png",
   "d_21": "Character silhouette from hanging scene",
 
-  "s_22": "Composing Footage",
+  "s_22": "Composing Footage.",
   "p_23": "In After Effects, I used the wall and floor tiles to create a 3D environment from 2D layers. To each wall, I attached ink splatters and the ink text from Illustrator.",
   "i_24": "build-our-machine/chorus-environment.png",
   "d_24": "Constructing the 3D space from 2D tiles",
@@ -59,7 +63,7 @@
   "i_31": "build-our-machine/chorus-shadows.png",
   "d_31": "Adding animated silhouettes behind the text",
 
-  "s_32": "Frame Animation",
+  "s_32": "Frame Animation.",
   "p_33": "For the animation segment at the end, I rendered out a short audio clip so that I could align the animation to the audio. I began by drawing rough keyframes every couple of frames to get a feel for the animation, and then went back and added additional frames to smoothen it out.",
   "i_34": "build-our-machine/animatic.gif",
   "d_34": "Final scene animatic",
@@ -68,6 +72,6 @@
   "i_37": "build-our-machine/animatic-comparison.png",
   "d_37": "Animatic and composed animation comparison",
 
-  "s_38": "Post-Production",
+  "s_38": "Post-Production.",
   "p_39": "To make the video look more like old-fashioned film, I added additional static effect overlays. Using the noise & grain effect, I randomly generated lines and spline clumps that would act like static. I added an additional brightness adjustment layer and keyframed it to flicker over time. Around the composition, I placed multiple vignettes. To finish it off, I added a particle effect and tweaked the parameters to have the particles float around the canvas. I used color correction to give the overall composition a tan-ish brown look."
 }

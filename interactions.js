@@ -41,7 +41,6 @@ $("#git-icon").click(function() {
     window.location.href = "https://github.com/cardadfar";
 });
 
-
 $(".icon").hover(function() {
     $(".circle-dashed").css({"width": "226px", "height": "226px"});
     $(".circle-dashed").css({"left": "calc(50% - 113px)", "top": "35px"});
@@ -278,14 +277,22 @@ function loadData() {
     $.getJSON( "assets/project-descriptions/" + file +".json", function( data ) {
 
     $(".video-bg").append("<div style='margin-top: calc(36.5625vw + 25px)'></div>");
-    $(".video-bg").append("<p style='text-align: center; color: grey;' id='text-bounce'>v</p>");
+    $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;' id='text-bounce'>v</p>");
     bounceText();
-    $(".video-bg").append("<p style='text-align: center; color: grey;'>scroll down for more info</p>");
+    $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;'>scroll down for more info</p>");
 
       $.each( data, function( key, val ) {
 
-        if (key.charAt(0) == 't')   //title
+        if (key.charAt(0) == 't') {   //title
             $(".video-bg").append("<p class='hi' id='start-text'>" + val + "</p>");
+            var anim_change1 = "<animate fill='freeze' id='animation-to-check1' begin='indefinite' attributeName='points' dur='500ms' to='0,0 10,10, 20,0' />";
+            var anim_change2 = "<animate fill='freeze' id='animation-to-check2' begin='indefinite' attributeName='points' dur='500ms' to='0,0 10,10, 20,0' />";
+            var anim_change3 = "<animate fill='freeze' id='animation-to-check3' begin='indefinite' attributeName='points' dur='500ms' to='0,0 10,10, 20,0' />";
+            var anim_origin1 = "<animate fill='freeze' id='animation-to-origin1' begin='indefinite' attributeName='points' dur='500ms' to='0,0 10,0 20,0' />";
+            var anim_origin2 = "<animate fill='freeze' id='animation-to-origin2' begin='indefinite' attributeName='points' dur='500ms' to='0,5 10,5 20,5' />";
+            var anim_origin3 = "<animate fill='freeze' id='animation-to-origin3' begin='indefinite' attributeName='points' dur='500ms' to='0,10 10,10 20,10' />";
+            $(".video-bg").append("<svg class='trigger' onclick='trigger()' width='25' height='15' style='margin-left:10%'> <polygon points='0,0 10,0 20,0' style='stroke:white;stroke-width:0.75;'>" + anim_change1 + anim_origin1 + "</polygon> <polygon points='0,5 10,5 20,5' style='stroke:white;stroke-width:0.75;'>" + anim_change2 + anim_origin2 + "</polygon> <polygon points='0,10 10,10 20,10' style='stroke:white;stroke-width:1;'>" + anim_change3 + anim_origin3 + "</polygon> </svg>");
+        }
 
         else if (key.charAt(0) == 's')   //subtitle
             $(".video-bg").append("<p class='subtitle'>" + val + "</p>");
@@ -309,8 +316,45 @@ function loadData() {
 
         else if (key.charAt(0) == 'p')   //text
             $(".video-bg").append("<p class='indent'>" + val + "</p>");
+
+        else if (key.charAt(0) == 'w') {   //intro data
+            $(".video-bg").append("<div class='drop-shadow'></div>");
+            $(".video-bg").append("<div class='collapse-menu'></div>");
+            $(".video-bg").append("<div style='margin-top: 10px'></div>");
+            for(var i = 0; i < val.length; i++) {
+                $.each( val[i], function( k_key, k_val ) {
+                    if(k_key == 'music-icon.png')
+                        $(".collapse-menu").append("<div class='more-info'><img src='assets/project-descriptions/images/" + k_key + "'><a href='" + k_val[0] + "'>" + k_val[1] + "</a></div>");
+                    else
+                        $(".collapse-menu").append("<div class='more-info'><img src='assets/project-descriptions/images/" + k_key + "'><p>" + k_val + "</p></div>");
+                });
+            }
+        }
+
         });
     });
+}
+
+var triggerCount = 0;
+
+function trigger() {
+    triggerCount++;
+    $("trigger").css("max-height", "300px");
+    if(triggerCount % 2 == 1) {
+        document.getElementById("animation-to-check1").beginElement();
+        document.getElementById("animation-to-check2").beginElement();
+        document.getElementById("animation-to-check3").beginElement();
+        $(".collapse-menu").css("max-height", "300px");
+        $(".drop-shadow").css("opacity", "0.65");
+    }
+    else
+    {
+        document.getElementById("animation-to-origin1").beginElement();
+        document.getElementById("animation-to-origin2").beginElement();
+        document.getElementById("animation-to-origin3").beginElement();
+        $(".collapse-menu").css("max-height", "");
+        $(".drop-shadow").css("opacity", "");
+    }
 }
 
 
@@ -354,6 +398,7 @@ $(".dark-frame").click(function() {
     $(".dark-frame").removeClass("dark-frame-on");
     $(".all").css("position", "");
     $(".all").css("overflow-y", "");
+    window.scrollTo(0, 0);
     setTimeout(function() {
         $(".video-player").removeClass("video-player-on");
         $(".video-bg").removeClass("video-player-on");

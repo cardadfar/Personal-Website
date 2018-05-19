@@ -8,8 +8,12 @@
   },
 
   "t_0": "La Da Dee.",
+  "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=3cBuQ0PuOcY", "La Da Dee by Cody Simpson"]}, 
+          {"software-icon.png": "After Effects CC • Flash Professional CC • Photoshop CC"},
+          {"time-icon.png": "10 Weeks"}],
   "p_1": "La Da Dee was an assignment given to me as a final project at a time when my first year of college was coming to an end. So much had happened during my first year, and I wanted to capture it all in video-form. Sadly, my younger self didn't go around filming anything in the last year, and I was left with no footage to work with. That's when I realized I could recreate the iconic moments of the last year through animation.",
-  "s_2": "Pre-Production",
+  
+  "s_2": "Pre-Production.",
   "p_2": "I started this project in early March, giving me roughly 2 months to complete it before it was due. My plan was to spend 3/4 of the first month on animatics, another month on drawing frames, and the last week of composing the shots.",
   "p_3": "Given I wanted this to be some variation of a hand-drawn animation, I began drawing out rough frames in Flash Professional, making sure to keep backgrounds and characters/objects on separate layers so that I could go back and animate them. I drew both the backgrounds, which were university locations, and the characters without any reference, making them appear very rough, but still recognizable. So long as I could recognize the location and character pose, then I could move on.",
   "i_4": "la-da-dee/animatic-01.png",
@@ -20,13 +24,17 @@
   "p_7": "I wanted to get a sense of how panning and zooming would work on certain scenes. I went back through the animatic, converting each character and object to a symbol so that I could animate them. Converting them to symbols allowed me to create tweens between keyframes.",
   "i_8": "la-da-dee/animatic-gif.gif",
   "d_8": "Scene 07 animatic timed",
+
+  "s_9": "Background & Character Art.",
   "p_9": "A little less than a month into the project, and I began to move into backgrounds. Using the animatic as reference for what backgrounds I needed, I went around campus and took pictures of the exact location for reference. Bringing the photos into Photoshop, I drew over them using a thin yet rough brush. On a separate layer, I colored the background using the original colors from the photo, yet made them more dull and brighter to give it a more cartoon-like feel.",
   "i_10": "la-da-dee/background-comparison.png",
   "d_10": "Side-by-side comparison of original and sketched backgrounds",
   "p_11": "As for the characters, I exported image sequences from the animatic and drew over them in Photoshop, creating my own color key for each person. Just like the backgrounds, I kept the color pallet basic to make it easier to reproduce and give it more of a cartoon-like feel.",
   "i_12": "la-da-dee/character-drawings.png",
   "d_12": "Characters from Res Side BG 01 & 02",
-  "p_13": "While this was going on, I began to bring in completed backgrounds and characters into After Effects to compose them. In order to make the drawings look like paper cutouts, I layered a white solid behind them and masked an extremely rough shape that resembled the actual shape of the drawing. To make the cutout look more like it's on paper, I overlayed a rough paper texture, reducing the opacity down to 35%, parenting it to the original drawing, and using the paper cutout as a mask for the paper texture.",
+
+  "s_13": "Composition & Effects.",
+  "p_13": "While drawing the backgrounds and characters, I began to bring in completed backgrounds and characters into After Effects to compose them. In order to make the drawings look like paper cutouts, I layered a white solid behind them and masked an extremely rough shape that resembled the actual shape of the drawing. To make the cutout look more like it's on paper, I overlayed a rough paper texture, reducing the opacity down to 35%, parenting it to the original drawing, and using the paper cutout as a mask for the paper texture.",
   "i_14": "la-da-dee/paper-texture-comparison.png",
   "d_14": "Side-by-side comparisons of paper cutouts with [right] and without [left] paper texture overlays",
   "p_15": "To achieve the dangling-from-a-rope effect (apparently that's now an effect), I had a drawing of a rope with the anchor point all the way at the top of of rope. This was its pivot point. Placing the rope in 3D space, I attached drawings of backgrounds and characters to the bottom of the rope. When I rotated the rope in the y-axis, it would rotate the entire system like a pendulum. I animated the rotation to rotate vigorously initially, then gradually slow down over time.",

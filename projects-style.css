@@ -32,7 +32,6 @@ body,html{
     position: absolute;
     z-index: 98;
     background-image: url(assets/project-covers/video-bg.svg);
-    background-size: cover;
     transition: all 0.5s;
 }
 
@@ -113,8 +112,87 @@ a:hover + .line{
 .video-bg > .description {
     font-size: 13px;
     text-align: center;
-    color: grey;
+    color: #b2b2b2;
     margin-bottom: 20px;
+}
+
+.trigger:hover {
+    color: grey;
+}
+
+.collapse-menu {
+    overflow: hidden;
+    background: #1e1e1e;
+    height: auto;
+    max-height: 0;
+    transition: all 1s;
+}
+
+.more-info {
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.more-info > img {
+    height: 100%;
+    float: left;
+}
+
+.more-info > p {
+    margin: 0 0 0 0;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    float: left;
+    word-wrap: break-word;
+}
+
+.more-info > a {
+    font-family: "UniqueDistrictThin";
+    font-weight: lighter;
+    display: inline-block;
+    letter-spacing: 1px;
+    color: white;
+    margin: 0 0 0 0;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    float: left;
+    word-wrap: break-word;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.more-info > a:hover {
+    color: grey;
+}
+
+.rotation {
+    animation: 3s rotate linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.drop-shadow {
+    position: relative;
+    box-shadow: 0px 9px 25px black;
+    height: 18px;
+    opacity: 0;
+    transition: all 1s;
 }
 
 #text-bounce {
@@ -136,7 +214,7 @@ a:hover + .line{
     background: black;
     opacity: 0;
     display: none;
-    transition: all 2s;
+    transition: opacity 2s;
 }
 
 .dark-frame-on {

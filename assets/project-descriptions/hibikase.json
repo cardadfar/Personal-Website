@@ -9,7 +9,8 @@
 
   "t_0": "Hibikase.",
   "p_1": "Hibikase is a result of experimenting with a custom glitch effect on typography. Using displacement maps, noise & grain, light bursts, & wireframes, all centralized within After Effects, I was able to play with the parameters of the glitch to use as adjustment layers and transition effects.",
-  "s_2": "Custom Glitch Effect",
+  
+  "s_2": "Custom Glitch Effect.",
   "p_4": "I first generated a noise & grain filter with dimensions averaging 4000x700, high contrast, and low brightness. Using expressions, I animated the evolution to 2000*time within a composition of 5fps. Every frame, the noise and grain changes rapidly.",
   "i_5": "hibikase/noise-grain.gif",
   "d_5": "Generating a displacement field using noise & grain",
@@ -26,7 +27,8 @@
   "i_14": "hibikase/text-glitch-03.gif",
   "d_14": "Animating character positions individually",
   "p_15": "Between scenes where the text changes, I apply an additional displacement map adjustment layer that spans over the entire screen. This deconstructs the text, allowing for a nice transition into the next scene.",
-  "s_16": "Background Composition",
+  
+  "s_16": "Background Composition.",
   "p_17": "The construction of the chorus background begun with a pink outwards purple radial gradient solid and multiple adjustment layers with various color toner and brightnesses. The adjustment layers were masked into fragments such that:",
   "l_18": "Each mask was at edge with another layer's mask.",
   "l_19": "No two neighboring masks shared the same toner or brightnesses values.",
@@ -42,13 +44,15 @@
   "i_27": "hibikase/glitchy-text.png",
   "d_27": "Colorized text composition",
   "p_28": "To sync it more with the audio, I added an additional adjustment layer on top with a light burst effect that I would enabled at every audio peak.",
-  "s_29": "Cube Waveform",
+  
+  "s_29": "Cube Waveform.",
   "p_30": "During the break in the chorus, I created a few radial waveforms with a 3D cube in the center. The 3D cube is a separate composition composed of 2D solids in 3D space parented to a central null object. The cube's rotation is animated randomly, making sure the keyframe interpolation is set to auto bezier.",
   "p_31": "Around the cube are multiple radial waveforms. Farther waveforms have lower opacities.",
   "i_32": "hibikase/cube-glitch.gif",
   "d_32": "Animated loop of cube waveform animation",
   "p_33": "On top of the waveforms there is an additional group of adjustment layers adding glitch effects as there were with the text",
-  "s_34": "Wireframe Scripting",
+  
+  "s_34": "Wireframe Scripting.",
   "p_35": "For the section before the chorus, I generated grid-like wireframes in as a background for the text. After vectoring out a plus sign, I used 2 repeaters to repeat the symbol over the x and y axis to construct a grid.",
   "p_36": "Beneath the grid, I wrote an extendscript that added a few shape layers, each with their own shape consisting of multiple vectors spanning over the grid. The script's logic is as follows:",
   "l_37": "If this is the first iteration, pick a random (x,y) coordinate on the canvas. Otherwise, resume at the the most recent vertex",
