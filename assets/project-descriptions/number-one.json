@@ -8,8 +8,32 @@
   },
 
   "t_0": "Number One.",
-  "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=vS_STEPqngA", "We Are Number One But It's Co-Performed by Epic Sax Guy Again by Grandayy"]}, 
-          {"software-icon.png": "After Effects CC • Illustrator CC"},
+  "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=vS_STEPqngA", "We Are Number One But It's Co-Performed By Epic Sax Guy Again by Grandayy"]}, 
+          {"software-icon.png": "After Effects CC • Flash Professional CC • Illustrator CC"},
           {"time-icon.png": "2 Weeks"}],
-  "p_1": "As a continuation of my iDance project, I used the dancing animation cycles mixed with kinetic typography elements. The entire project remains on a 2D surface. No cameras are used, rather every text object is parented to a null object in some way. I use the 'We Are Number One', 'Hey Mama', and 'Epic Sax Guy' MVs as found footage to overlay over certain scenes. I found that using the hard light transparency effect works well when layering footage over footage, or footage over solids. I used Illustrator at the beginning to create the vector components needed for the stage animation, and had intentions to use it later in the video with the dancers, but because of the perspective contrast between the stage and dances, I had to drop it. In order to give backgrounds more of a texture, I add a small ellipse layer and add a repeater in both dimen sions to make a grid-like pattern from dots."
+  "p_1": "Number One is a continuation of my iDance project mixed with more advanced kinetic typography and video editing elements.",
+
+  "s_2": "Typography Composition.",
+  "p_3": "Using a radial gradient solid, I overlayed repeaters of tiny ellipses to give the background a grid-like texture. I could go about animating the grids by having separate repeater layers, each with different ellipse sizes, and mask them over a certain region. This was effective making the ellipses appear like they're growing in certain regions when it is just a mask overlaying larger ellipses in a certain region.",
+  "i_3": "number-one/grid.gif",
+  "d_3": "Animating a grid of points via masks",
+  "p_4": "I rendered each line of text as separate text layers where each text layer contained one word. This gave me the ability to animate the transformation properties of each word individually, such as scale-in & panning transitions. Because all the text was kept in 2D, in order to mimic camera panning and transitions, I parented every text layer to a null object, and animated the null's transformation properties to move between text scenes.",
+  "i_5": "number-one/null-parent.png",
+  "d_5": "Parenting individual text layers to an overall camera-like null object",
+  "p_6": "I animated the smooth yet unstable overall rotation by using the wiggler effect on the rotation after scaling the frame up an additional 5% to keep the edges of the frame still hidden when rotating.",
+
+  "s_7": "Clip Splicing.",
+  "p_8": "For the chorus segments, I used found footage and video editing to bring it together with the kinetic typography. I used a combination of the Hey Mamma MV by Sunstroke Project",
+  "a_8": "https://www.youtube.com/watch?v=wA8HvSSFj48",
+  "p_9": "And the We Are Number One MV",
+  "a_9": "https://www.youtube.com/watch?v=PfYnvDL0Qcw",
+
+  "s_10": "Motion Capture Dancing.",
+  "p_11": "Using assets from my iDance projects, I brought over the raw vector data of dancing figures and placed them into separate compositions to treat as rendered footage.",
+  "p_12": "I found that using the hard light transparency effect works well when layering footage over footage, or footage over solids. I used this discovery to overlay the found footage from We Are Number One over the dancing sequences.",
+  "i_12": "number-one/hard-light-overlay.png",
+  "d_12": "Hard-light overlay of We Are Number One footage over a composition of white vectors",
+  "p_13": "I used Illustrator to vector the original stage from the Hey Mamma MV into separate graphics, and used this stage reveal as an animation for the opening scene. I had intentions of bringing back the stage for the motion capture dancing, but because of the perspective difference between the stage and dancing figures, I had to drop the idea.",
+  "i_13": "number-one/stage.png",
+  "d_13": "Construction of the stage vector in Illustrator"
 }

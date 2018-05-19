@@ -53,7 +53,7 @@ body,html{
     width: 80%;
     margin-left: 10%;
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 15px;
     word-wrap: break-word;
 }
 
@@ -110,7 +110,7 @@ a:hover + .line{
 }
 
 .video-bg > .description {
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     color: #b2b2b2;
     margin-bottom: 20px;
@@ -222,6 +222,10 @@ a:hover + .line{
     opacity: 0.6;
 }
 
+#margin-top {
+    margin-top: calc(36.5625vw + 25px)
+}
+
 @media screen and (max-width: 900px) {
     #skill-icon{
         height: 38px;
@@ -234,9 +238,22 @@ a:hover + .line{
 
 @media screen and (max-width: 650px) {
 
+    .video-player {
+        width: 75vw;
+        left: 12.5vw;
+        height: 42.1875vw;
+        top: calc((100vh - 65vw) / 2);
+    }
+
+    #start-text {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
     .video-bg {
-        width: 74vw;
-        left: 13vw;
+        width: 80vw;
+        left: 10vw;
+        top: calc((100vh - 72vw) / 2);;
     }
 
     .video-bg > p {
@@ -255,6 +272,27 @@ a:hover + .line{
         font-size: 9px;
         margin-bottom: 15px;
         margin-top: 0;
+    }
+
+    .more-info {
+        height: 35px;
+        margin-left: 5%;
+    }
+
+    .more-info > a {
+        font-size: 12px;
+    }
+
+    .more-info > p {
+        font-size: 12px;
+    }
+
+    #margin-top {
+        margin-top: calc(42.1875vw + 25px)
+    }
+
+    #text-bounce {
+        display: none;
     }
 
 }

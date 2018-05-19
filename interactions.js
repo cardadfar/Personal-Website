@@ -278,7 +278,7 @@ function loadData() {
 
     $.getJSON( "assets/project-descriptions/" + file +".json", function( data ) {
 
-    $(".video-bg").append("<div style='margin-top: calc(36.5625vw + 25px)'></div>");
+    $(".video-bg").append("<div id='margin-top'></div>");
     $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;' id='text-bounce'>v</p>");
     bounceText();
     $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;'>scroll down for more info</p>");
@@ -334,6 +334,9 @@ function loadData() {
         }
 
         });
+
+    $(".video-bg").append("<div style='height: 25px'></div>");
+
     });
 }
 
