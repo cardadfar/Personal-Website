@@ -8,6 +8,9 @@
   },
 
   "t_0": "iDance.",
+  "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=9aJVr5tTTWk", "Peace Sign by Kenshi Yonezu"]}, 
+          {"software-icon.png": "After Effects CC • ExtendScript Toolkit CC"},
+          {"time-icon.png": "3 Days"}],
   "p_1": "This was an assignment for my Creativity and Computation class in which we had to use motion capture data (real-time or pre-recorded) in some way, for some form of art. One of the options we had was to use OpenPose, a newly developed human motion tracker developed by Carnegie Mellon's Perceptual Computing Lab.",
   "a_2": "https://github.com/CMU-Perceptual-Computing-Lab/openpose",
   "p_3": "OpenPose tracks key points of the human body from 2D video and saves the data to a JSON file.",
