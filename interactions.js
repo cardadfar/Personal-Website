@@ -4,6 +4,7 @@
 
 
 var file = "";
+var scroll = 0;
 
 $("#home-icon").click(function() {
     window.location.href = "index";
@@ -260,6 +261,7 @@ $("#rondo").click(function() {
 });
 
 function loadFrame() {
+    scroll = $(window).scrollTop();
     $(".video-player").addClass("video-player-on");
     $(".video-bg").addClass("video-player-on");
     $(".dark-frame").addClass("dark-frame-on");
@@ -398,7 +400,12 @@ $(".dark-frame").click(function() {
     $(".dark-frame").removeClass("dark-frame-on");
     $(".all").css("position", "");
     $(".all").css("overflow-y", "");
-    window.scrollTo(0, 0);
+    triggerCount = 0;
+
+    setTimeout(function() {
+        $("html, body").animate({ scrollTop: (scroll.toString()) + "px" }, 1000);
+    }, 300);
+
     setTimeout(function() {
         $(".video-player").removeClass("video-player-on");
         $(".video-bg").removeClass("video-player-on");

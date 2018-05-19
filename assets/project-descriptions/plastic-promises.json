@@ -8,5 +8,8 @@
   },
 
   "t_0": "Plastic Promises.",
+  "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=mDP4-_n3hC4", "Plastic Promises by Set It Off"]}, 
+          {"software-icon.png": "After Effects CC • Illustrator CC • Photoshop CC"},
+          {"time-icon.png": "2 Weeks"}],
   "p_1": "Spacing the 2D text in a 3D environment, the camera would move through the environment to display the next sequence of text. The Particular and 3D Stroke effects were placed on layers of their own outside of the camera's influence. Each segment of text was split by syllable and had its glowing animation generated before adding it into the 3D environment mentioned before."
 }

@@ -8,5 +8,8 @@
   },
 
   "t_0": "Stitches.",
+  "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=VbfpW0pbvaU", "Sitches by Shawn Mendes (Cover by ThePinkGuitarGirl)"]}, 
+          {"software-icon.png": "After Effects CC • Illustrator CC"},
+          {"time-icon.png": "1 Week"}],
   "p_1": "Using a jitter effect with thin text, the text was animated in a separate composition with the jitter effect being added as an adjustment layer at the end of the process. Vectors were done in Illustrator and later imported on top of the text.Their layer attributes were preserved when exported so that components within an Illustrator vector could be animated separately in After Effects."
 }
