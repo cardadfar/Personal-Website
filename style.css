@@ -358,7 +358,7 @@ body,html{
     position: absolute;
     width: 30px;
     margin-left: calc(20% - 15px);
-    animation: 3s jump cubic-bezier(.39,0,0,.99);
+    animation: 2s jump cubic-bezier(.39,0,0,.99);
 }
 
 @keyframes jump {
@@ -677,7 +677,6 @@ code {
 
 .resume-button-hover{
     position: absolute;
-    width: 300px;
     height: 40px;
     margin-bottom: 50px;
     opacity: 0;
@@ -1291,7 +1290,6 @@ code {
     }
     
     .resume-button-hover{
-        width: 150px;
         height: 20px;
     }
     

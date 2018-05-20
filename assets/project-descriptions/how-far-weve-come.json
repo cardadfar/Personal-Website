@@ -10,6 +10,7 @@
   "t_0": "How Far We've Come.",
   "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=5d7EbtLb8ok", "How Far We've Come by Matchbox 20"]}, 
           {"software-icon.png": "After Effects CC • Unity 2017 • Google AR Core v1.0"},
+          {"code-icon.png": "C#"},
           {"time-icon.png": "4 Weeks"}],
   "p_1": "I developed AR Typography, a mobile app that delivers real-time text motion tracking to video, allowing for the creation of immerse, real-life kinetic typography videos for any videographer.",
   "i_2": "how-far-weve-come/cover.png",

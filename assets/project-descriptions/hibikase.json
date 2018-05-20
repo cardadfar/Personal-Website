@@ -10,6 +10,7 @@
   "t_0": "Hibikase.",
   "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=dkITtJ_Mnfs", "Hibikase by Reol"]}, 
           {"software-icon.png": "After Effects CC"},
+          {"code-icon.png": "ExtendScript"},
           {"time-icon.png": "2 Weeks"}],
   "p_1": "Hibikase is a result of experimenting with a custom glitch effect on typography. Using displacement maps, noise & grain, light bursts, & wireframes, all centralized within After Effects, I was able to play with the parameters of the glitch to use as adjustment layers and transition effects.",
   

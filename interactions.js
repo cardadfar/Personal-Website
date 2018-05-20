@@ -6,6 +6,9 @@
 var file = "";
 var scroll = 0;
 
+//---  GLOBAL  ------------------------  TOP NAV BAR  ------------------------------
+
+
 $("#home-icon").click(function() {
     window.location.href = "index";
 });
@@ -26,6 +29,12 @@ $("#contact-icon").click(function() {
     window.location.href = "contact";
 });
 
+
+//----------------------------------------------------------------------------------
+
+//---  GLOBAL  -----------------------  BOTTOM NAV BAR  ----------------------------
+
+
 $("#linkedin-icon").click(function() {
     window.location.href = "https://www.linkedin.com/in/oscar-dadfar-3699b15b/";
 });
@@ -42,25 +51,10 @@ $("#git-icon").click(function() {
     window.location.href = "https://github.com/cardadfar";
 });
 
-$(".icon").hover(function() {
-    $(".circle-dashed").css({"width": "226px", "height": "226px"});
-    $(".circle-dashed").css({"left": "calc(50% - 113px)", "top": "35px"});
-    $(".circle-dashed").css("animation", "rotate 5s linear infinite");
 
+//----------------------------------------------------------------------------------
 
-    $("#circle-dashed2").css({"width": "240px", "height": "240px"});
-    $("#circle-dashed2").css({"left": "calc(50% - 120px)", "top": "29px"});
-
-    $(".rect-double").css("animation", "moveMask 2s cubic-bezier(.94,0,.09,1) infinite");
-    }, function () {
-    $(".circle-dashed").css({"width": "", "height": ""});
-    $(".circle-dashed").css({"left": "", "top": ""});
-    $(".circle-dashed").css("animation", "");
-
-    $(".rect-double").css({"width": "", "height": ""});
-    $(".rect-double").css({"left": "", "top": ""});
-    $(".rect-double").css("animation", "");
-});
+//---  GLOBAL  -----------------------  LINE ANIMATION  ----------------------------
 
 
 $(document).ready(function() {
@@ -92,6 +86,32 @@ function bug() {
     bug();
 }
 
+
+//----------------------------------------------------------------------------------
+
+//---  INDEX  -----------------------  INDEX COMPONENTS  ---------------------------
+
+
+$(".icon").hover(function() {
+    $(".circle-dashed").css({"width": "226px", "height": "226px"});
+    $(".circle-dashed").css({"left": "calc(50% - 113px)", "top": "35px"});
+    $(".circle-dashed").css("animation", "rotate 5s linear infinite");
+
+
+    $("#circle-dashed2").css({"width": "240px", "height": "240px"});
+    $("#circle-dashed2").css({"left": "calc(50% - 120px)", "top": "29px"});
+
+    $(".rect-double").css("animation", "moveMask 2s cubic-bezier(.94,0,.09,1) infinite");
+    }, function () {
+    $(".circle-dashed").css({"width": "", "height": ""});
+    $(".circle-dashed").css({"left": "", "top": ""});
+    $(".circle-dashed").css("animation", "");
+
+    $(".rect-double").css({"width": "", "height": ""});
+    $(".rect-double").css({"left": "", "top": ""});
+    $(".rect-double").css("animation", "");
+});
+
 $(".resume-button-hover").hover(function() {
     $(this).addClass("resume-button-on");
     }, function() {
@@ -103,44 +123,29 @@ $(".resume-button-hover").click(function() {
 });
 
 
+//----------------------------------------------------------------------------------
+
+
 //-----------------------------------  BOTTOM NAV BAR ICON JUMP   -----------------------------------
 
 
-$("#linkedin-icon").hover(function() {
-    if(!($("#linkedin-icon-jump").hasClass("bottom-icon-jump-anim"))) {
-        $("#linkedin-icon-jump").addClass("bottom-icon-jump-anim");
-        setTimeout(function() {
-            $("#linkedin-icon-jump").removeClass("bottom-icon-jump-anim"); 
-        }, 3000);
-    }
-})
+$("#linkedin-icon").hover(function() { bottomIconJump("#linkedin-icon-jump") ;})
 
-$("#vimeo-icon").hover(function() {
-    if(!($("#vimeo-icon-jump").hasClass("bottom-icon-jump-anim"))) {
-        $("#vimeo-icon-jump").addClass("bottom-icon-jump-anim");
-        setTimeout(function() {
-            $("#vimeo-icon-jump").removeClass("bottom-icon-jump-anim"); 
-        }, 3000);
-    } 
-})
+$("#vimeo-icon").hover(function() { bottomIconJump("#vimeo-icon-jump") ;})
 
-$("#processing-icon").hover(function() {
-    if(!($("#processing-icon-jump").hasClass("bottom-icon-jump-anim"))) {
-        $("#processing-icon-jump").addClass("bottom-icon-jump-anim");
-        setTimeout(function() {
-            $("#processing-icon-jump").removeClass("bottom-icon-jump-anim"); 
-        }, 3000);
-    }
-})
+$("#processing-icon").hover(function() { bottomIconJump("#processing-icon-jump") ;})
 
-$("#git-icon").hover(function() {
-    if(!($("#git-icon-jump").hasClass("bottom-icon-jump-anim"))) {
-        $("#git-icon-jump").addClass("bottom-icon-jump-anim");
+$("#git-icon").hover(function() { bottomIconJump("#git-icon-jump") ;})
+
+function bottomIconJump(str) {
+    if(!($(str).hasClass("bottom-icon-jump-anim")) && ($(window).width() > 650)) {
+        $(str).addClass("bottom-icon-jump-anim");
         setTimeout(function() {
-            $("#git-icon-jump").removeClass("bottom-icon-jump-anim"); 
-        }, 3000);
+            $(str).removeClass("bottom-icon-jump-anim"); 
+        }, 2000);
     }
-})
+}
+
 
 //---------------------------------------------------------------------------------------------------
 
@@ -293,7 +298,7 @@ function loadData() {
             var anim_origin1 = "<animate fill='freeze' id='animation-to-origin1' begin='indefinite' attributeName='points' dur='500ms' to='0,0 10,0 20,0' />";
             var anim_origin2 = "<animate fill='freeze' id='animation-to-origin2' begin='indefinite' attributeName='points' dur='500ms' to='0,5 10,5 20,5' />";
             var anim_origin3 = "<animate fill='freeze' id='animation-to-origin3' begin='indefinite' attributeName='points' dur='500ms' to='0,10 10,10 20,10' />";
-            $(".video-bg").append("<svg class='trigger' onclick='trigger()' width='25' height='15' style='margin-left:10%'> <polygon points='0,0 10,0 20,0' style='stroke:white;stroke-width:0.75;'>" + anim_change1 + anim_origin1 + "</polygon> <polygon points='0,5 10,5 20,5' style='stroke:white;stroke-width:0.75;'>" + anim_change2 + anim_origin2 + "</polygon> <polygon points='0,10 10,10 20,10' style='stroke:white;stroke-width:1;'>" + anim_change3 + anim_origin3 + "</polygon> </svg>");
+            $(".video-bg").append("<svg class='trigger' onclick='trigger()' width='20' height='10' style='margin-left:10%; padding: 15px'> <polygon points='0,0 10,0 20,0' style='stroke:white;stroke-width:0.75;'>" + anim_change1 + anim_origin1 + "</polygon> <polygon points='0,5 10,5 20,5' style='stroke:white;stroke-width:0.75;'>" + anim_change2 + anim_origin2 + "</polygon> <polygon points='0,10 10,10 20,10' style='stroke:white;stroke-width:1;'>" + anim_change3 + anim_origin3 + "</polygon> </svg>");
         }
 
         else if (key.charAt(0) == 's')   //subtitle
