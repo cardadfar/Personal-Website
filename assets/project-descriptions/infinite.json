@@ -9,7 +9,31 @@
 
   "t_0": "Infinite.",
   "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=XKjOJuPjiu4", "Infinite by Tyler Smyth and Andy Bane"]}, 
-          {"software-icon.png": "After Effects CC"},
+          {"software-icon.png": "After Effects CC • Illustrator CC"},
           {"time-icon.png": "3 Weeks"}],
-  "p_1": "Using Particular, I generated a sphere comprised of particles with the radius of the sphere as a function of the amplitude of the audio. The sphere was placed in a 3D environment where a camera would move forward to emulate zooming in. Optical Flares and Twitches assisted in making the scene more powerful and dramatic. The red twitch effect was created using translucent red rectangles with high frequency and magnitude set as their wiggle parameters. The rectangles would then duplicate and offset to cover the screen. The text for the typography component was a separate composition layered over it all."
+  "p_1": "Infinite was an experiment of 2D typography animated in 3D space. All layers were spaced in 3D space in order to use a camera for reveal and animation properties",
+
+  "s_2": "Concept Sketch.",
+  "p_3": "I generated a few sketches of important scenes of the animation in my sketchbook. For each scene, I attempted to integrate a graphic that would relate to the content of the text. Next to each scene, I would note features such as appear and disappear transitions, as well as different effects that would be used in the scene",
+  "i_3": "infinite/sketch.jpg",
+  "d_3": "Initial sketches for scenes 01-04",
+
+  "s_3": "Sphere Generation.",
+  "p_4": "The main premise of the video was to have a glowing red sphere in the background. Using Particular, I generated a sphere comprised of particles with the radius of the sphere as a function of the amplitude of the audio. The sphere was placed in a 3D environment where a camera would move forward to emulate zooming in. Optical Flares and Twitches assisted in making the scene more powerful and dramatic.",
+  "i_5": "infinite/sphere.gif",
+  "d_5": "A sphere of particles with the radius mapped to the amplitude of the audio",
+  "p_5": "For the chorus section, I zoomed the camera directly into the sphere where the individual particles became clear. I added additional Optical Flares in the sphere to make the scene more dynamic.",
+
+  "s_5": "Typography Generation.",
+  "p_6": "Keeping the text layer to one-word only, I positioned the text in 3D space, where I animated individual text layers as if they were 2D. This meant that I would create one pan/fade-in transition, then copy it onto every text layer of a given scene and offset the transition so that each word would pan/fade-in at the appropriate time.",
+  "i_6": "infinite/text.png",
+  "d_6": "Individually animating words and assets",
+  "p_7": "Most graphics were generated in After Effects directly, while some were brought into Illustrator for vectoring. The graphics were placed in the same 3D space as the text, but were animated differently depending on their purpose (to act as a transition or in-line with the text).",
+
+  "s_8": "Custom Glitch Effect.",
+  "p_9": "I began by masking red solids using a rectangular mask and randomly assigning their position over time. I did this on multiple red solids, each with a different size mask. I reduced the opacity of each solid, and set the transparency to multiply.",
+  "i_9": "infinite/glitch.gif",
+  "d_9": "Custom glitch using jittery translucent red solids",
+  "p_10": "The biggest problem was that the red solids would get to the center of the screen, blocking off what was in front of it. To compromise, I checked each frame of the glitch, and if a red solid's position was near the center, I would move it away to the edge. This ended up creating a vignette-like glitch effect where the magnitude of the glitch was directly proportional to the distance from the center.",
+  "p_11": "I duplicated the red solid layers over time. This led to the screen being consumed by the glitch effect, something that I ended up using at the end of the video. Though, for it to cover the center of the screen that I blocked out previously, I had to move some red solids back into the center."
 }
