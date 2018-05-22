@@ -11,5 +11,20 @@
   "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=XI97jY3FZ9Q", "Fist Bump by Douglas Robb"]}, 
           {"software-icon.png": "After Effects CC • Illustrator CC"},
           {"time-icon.png": "3 Weeks"}],
-  "p_1": "This kinetic typography merges elements of standard typography with vector-based motion graphics to a fast-paced beat. Using cameras with 2D objects, I created a 2.5 dimension environment for the camera to move around to give the user a sense of depth and speed. The colors are vibrant to compliment the uplifting beat of the tune, bouncing their way into and out of scenes using easing mechanics.The colored streams at the end were created by repeating the Particular effect, emulating the lines with a straight path of circles."
+  "p_1": "Null Space merges elements of standard typography with vector-based motion graphics to a fast-paced beat. It takes a lot of inspiration from different UI from Sonic games to achieve this.",
+
+  "s_2": "Grid Opening",
+  "p_3": "Using the grid generation effect, I tiled multiple grid solids in 3D space and generated a camera perpendicular to the grid tiles. The tiles would cut off at a certain distance, so I only animated a potion of the grid-moving-forward cycle, making sure they start and end had the same grid pattern so that I could loop it.",
+  "i_4": "null-space/grid.png",
+  "d_4": "Generating a looping grid space",
+  "p_5": "Atop the grid, I used 3D strokes and particular to reveal the title text.",
+
+  "s_6": "Typography Composition",
+  "p_7": "Following the opening scene, I rerendered the Sonic Generations UI as separate vectors and delayed their animation cycles so that they would appear one after another.",
+  "i_8": "null-space/generations.png",
+  "d_8": "Delaying the animations of each graphic",
+  "p_9": "For the painting scene, I scaled a rough paper texture and overlayed translucent vectors of characters where the camera would sweep across the paper to show each character. The fade-in effect was a ink bleed effect that alpha matted the character vectors to replicate an ink-spill transition.",
+  "i_10": "null-space/camera.png",
+  "d_10": "[left] overhead view of camera panning | [right] camera view with wireframes",
+  "p_11": "For the final scene, I used a particular effect with a warp filter to have particles fall from the sky. Using a repeater effect, I would repeat each particle vertically to replicate a line. This way, multi-colored line streaks would fall form the top bend towards the camera slightly at the point of the warp filter."
 }
