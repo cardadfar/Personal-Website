@@ -11,5 +11,22 @@
   "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=mDP4-_n3hC4", "Plastic Promises by Set It Off"]}, 
           {"software-icon.png": "After Effects CC • Illustrator CC • Photoshop CC"},
           {"time-icon.png": "2 Weeks"}],
-  "p_1": "Spacing the 2D text in a 3D environment, the camera would move through the environment to display the next sequence of text. The Particular and 3D Stroke effects were placed on layers of their own outside of the camera's influence. Each segment of text was split by syllable and had its glowing animation generated before adding it into the 3D environment mentioned before."
+  "p_1": "Plastic Promises was an earlier attempt at Kinetic Typography using limited graphics. The challenge was to limit myself to only two colors. Because the background would be black by default, that left me to make all other typography and graphics white. This posed a challenge by making it hard to overlay graphics on top of each other. Normally, overlayed graphics would have different colors or shadings, making them distinguishable. Since everything was white, I had to be careful that the particle systems I generated wouldn't obstruct from the clarity of the typography and other graphics.",
+
+  "s_2": "Trumpet Animations",
+  "p_3": "The kinetic typography first opens with an animation of trumpets playing. Using the same trumpet vector repeated 6 times, I attached the anchor point of each trumpet to the mouthpiece and scaled the trumpet up every time a certain note was played.",
+  "i_4": "plastic-promises/trumpets.gif",
+  "d_4": "Scaling a series of trumpets to music",
+
+  "s_5": "Chorus Camera",
+  "p_6": "During the chorus component, I 3D positioned text compositions in a line, where each composition had an equal distance away from its neighboring compositions. Within each text composition was the corresponding text and an animate graphic behind it. In the main composition, I used a camera that would zoom into the compositions and rotate as it zoomed in",
+  "i_7": "plastic-promises/camera.png",
+  "d_7": "Main composition camera pathway",
+  "p_8": "Many of the graphics in the text compositions were vectored Illustrator. The heartbreak animation was sketched in Photoshop.",
+
+  "s_9": "Ending",
+  "p_10": "Following the chorus, the transition to a white background with black typography and text contains a series of bursts that were generate using the particular effect. I changed the particles from regular spheres to small cloud burst animations, setting the generation range to the size of the canvas, the velocity of the particles to zero.",
+  "i_11": "plastic-promises/ellipse.gif",
+  "d_11": "Custom ellipse transition",
+  "p_12": "For the ellipse fade at the end, I generated a series of different sized ellipses with strokes and no fills that would twitch a bit after being generated, then stabilize the position before generating the next ellipse. I did this by using the wiggler effect on the first few position keyframes, lowering the wiggler magnitude as time increased."
 }

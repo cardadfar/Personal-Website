@@ -11,5 +11,12 @@
   "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=sB-S2gjc7_0", "World's End, Girl's Rondo by Wakeshima (Off-Vocal)"]}, 
           {"software-icon.png": "After Effects CC • Illustrator CC"},
           {"time-icon.png": "3 Days"}],
-  "p_1": "I wanted to test my ability to use shapes solely, meaning no text or lyrics in the video. Nearly everything in the video was vectored out, with the exception of paint splatters that were jpegs animated by scaling them over time. Some of the more complicated vectors were done in Illustrator, leaving the simpler vectors to be made in After Effects. The repeater function helped a lot in After Effects, allowing me to repeat vectors and symbols with ease to make systems more populated and complicated."
+  "p_1": "Rondo was an early attempt at a motion graphics-based animation using a strings-based score and minimal black and white graphics.",
+
+  "s_2": "Graphics Animation.",
+  "p_3": "Aside for the more basic shapes such as ellipses and rectangles, I used vectored assets from Illustrator and animated their transformation properties. The entire animation was kept in 2D. To make scenes smoother, I parented graphics to a null object and used the null as a camera for the scene, such as in panning and zooming.",
+  "i_4": "rondo/ellipses.gif",
+  "d_4": "Using a null object to zoom into multiple shapes",
+  "p_5": "The repeater function helped a lot, allowing me to repeat vectors with ease to make systems more populated and complicated. I used the repeater's animation offset feature to delay the animation for successive repeated objects.",
+  "p_6": "I used a paint splatter asset library for the paint splatter effect. The splatters came as jpegs, where I would animate the scale to make it look like they were just created."
 }

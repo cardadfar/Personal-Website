@@ -11,5 +11,17 @@
   "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=VbfpW0pbvaU", "Sitches by Shawn Mendes (Cover by ThePinkGuitarGirl)"]}, 
           {"software-icon.png": "After Effects CC • Illustrator CC"},
           {"time-icon.png": "1 Week"}],
-  "p_1": "Using a jitter effect with thin text, the text was animated in a separate composition with the jitter effect being added as an adjustment layer at the end of the process. Vectors were done in Illustrator and later imported on top of the text.Their layer attributes were preserved when exported so that components within an Illustrator vector could be animated separately in After Effects."
+  "p_1": "Stitches uses thin typograhy mixed with a custom jittering effect to give the impression of hand-drawn text being animated.",
+
+  "s_2": "Custom Jitter.",
+  "p_3": "To achieve the custom jitter, I generated noise & grain in a separate composition with high contrast & low brightness.",
+  "i_4": "stitches/noise.png",
+  "d_4": "Noise & Grain parameters",
+  "p_5": "In the main composition, I used an adjustment layer with a displacement map effect where the mapped layer was the noise & grain composition. The jitteriness from the noise & grain was transferred to any layers below the adjustment layer, such as text and graphics.",
+
+  "s_6": "Typography.",
+  "p_7": "The remainder of the typography was either 2D animations with null objects or 3D camera-driven animations. For the 3D camera animations, I placed text layers behind each other and had a camera move into or out of the text.",
+  "i_8": "stitches/camera.png",
+  "d_8": "Camera path",
+  "p_9": "To each 3D text layer, I attached a blur filter. As text would get farther from the camera, I animated the blurriness to increase, and the opacity to reduce."
 }
