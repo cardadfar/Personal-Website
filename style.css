@@ -113,7 +113,7 @@ body,html{
 }
 
 .experience-icon img{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .experience-icon:before {
@@ -130,7 +130,7 @@ body,html{
 
 .experience-icon:hover:before {
 
-    animation: bord-animation-front 1s forwards;
+    animation: bord-animation-front 0.8s forwards;
 
 }
 
@@ -146,7 +146,7 @@ body,html{
         border-left-color: transparent;
     }
 
-    50%
+    40%
     {
         width: 5px;
         height: 80px;
@@ -175,7 +175,7 @@ body,html{
 
 #experience-icon:hover a{
     color: #ff812d;
-    margin-left: 50px;
+    margin-left: 55px;
 }
 
 #experience-icon:hover .top-icon{
@@ -759,7 +759,7 @@ code {
     height: 50px;
     left: 50%;
     padding-bottom: 15px;
-    padding-left: calc(25% - 20px);
+    padding-left: calc(25% - 30px);
     padding-top: 15px;
     transition: all 0.5s;
 }
@@ -1130,6 +1130,14 @@ code {
         padding-left: 13%;
     }
 
+    #skill-icon {
+        height: 50px;
+    }
+
+    #skill-type {
+        font-size: 30px;
+    }
+
     @keyframes bord-animation-front {
         0%
         {
@@ -1142,7 +1150,7 @@ code {
             border-left-color: transparent;
         }
 
-        50%
+        40%
         {
             width: 5px;
             height: 50px;
@@ -1455,7 +1463,15 @@ code {
         height: 40px;
         padding-top: 10px;
         padding-bottom: 10px;
-        padding-left: 13%;
+        padding-left: 10%;
+    }
+
+    #skill-icon {
+        height: 30px;
+    }
+
+    #skill-type {
+        font-size: 15px;
     }
 
     @keyframes bord-animation-front {
@@ -1470,7 +1486,7 @@ code {
             border-left-color: transparent;
         }
 
-        50%
+        40%
         {
             width: 5px;
             height: 50px;
