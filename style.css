@@ -703,12 +703,12 @@ code {
     transition: all 0.5s;
 }
 
-.extras-side {
+.experience-side {
     margin-top: 25px;
     margin-left: 60px;
 }
 
-#extras-side-text{
+#experience-side-text{
     text-align: left;
     font-size: 17px;
     width: 75%;
@@ -719,7 +719,7 @@ code {
     transition: all 0.5s;
 }
 
-#extras-sub-text{
+#experience-sub-text{
     position: absolute;
     text-align: left;
     font-size: 14px;
@@ -733,12 +733,12 @@ code {
     transition: all 0.5s;
 }
 
-.experience-icon:hover #extras-sub-text {
+.experience-icon:hover #experience-sub-text {
     opacity: 0;
     transform: translate(30px, 0);
 }
 
-#extras-year-text{
+#experience-year-text{
     position: absolute;
     text-align: left;
     font-size: 14px;
@@ -753,7 +753,7 @@ code {
     transition: all 0.5s;
 }
 
-.extras-icon:hover #extras-year-text {
+.experience-icon:hover #experience-year-text {
     opacity: 1;
     transform: translate(0, 0);
 }
@@ -1062,28 +1062,28 @@ code {
         font-size: 20px;
     }
 
-    .extras-icon{
+    .experience-icon{
         height: 40px;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 13%;
     }
 
-    .extras-side {
+    .experience-side {
         margin-top: 20px;
     }
 
-    #extras-side-text{
+    #experience-side-text{
         font-size: 14px;
         margin-left: 5%;
         width: 70%;
     }
 
-    #extras-sub-text{
+    #experience-sub-text{
         font-size: 12px;
     }
 
-    #extras-year-text{
+    #experience-year-text{
         font-size: 12px;
     }
 
@@ -1355,24 +1355,24 @@ code {
         height: 20px;
     }
     
-    .extras-icon{
+    .experience-icon{
         height: 40px;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 13%;
     }
     
-    #extras-side-text{
+    #experience-side-text{
         font-size: 12px;
         margin-left: 5%;
         width: 70%;
     }
 
-    #extras-sub-text{
+    #experience-sub-text{
         font-size: 10px;
     } 
 
-    #extras-year-text{
+    #experience-year-text{
         font-size: 10px;
     }
     
