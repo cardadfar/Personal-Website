@@ -112,6 +112,67 @@ body,html{
     content:url("assets/projects-icon-color.png");
 }
 
+.experience-icon img{
+    margin-left: 20px;
+}
+
+.experience-icon:before {
+    content: '';
+    position: absolute;
+    float: left;
+    width: 0;
+    height: 0;
+    transform: translate(-8%, -15px);
+    background: transparent;
+    border: 0.5px solid transparent;
+    border-left-width: 5px;
+}
+
+.experience-icon:hover:before {
+
+    animation: bord-animation-front 1s forwards;
+
+}
+
+@keyframes bord-animation-front {
+    0%
+    {
+        width: 5px;
+        height: 0;
+        transform: translate(-50%, -15px);
+        border-top-color: transparent;
+        border-right-color: white;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+
+    50%
+    {
+        width: 5px;
+        height: 80px;
+        transform: translate(-20%, -15px);
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: white;
+    }
+
+    100%
+    {
+        width: 64%;
+        height: 80px;
+        transform: translate(-8%, -15px);
+        border-top-color: white;
+        border-right-color: white;
+        border-bottom-color: white;
+        border-left-color: white;
+    }
+}
+
+.experience-icon:hover {
+    background: #191919;
+}
+
 #experience-icon:hover a{
     color: #ff812d;
     margin-left: 50px;
@@ -698,7 +759,7 @@ code {
     height: 50px;
     left: 50%;
     padding-bottom: 15px;
-    padding-left: 25%;
+    padding-left: calc(25% - 20px);
     padding-top: 15px;
     transition: all 0.5s;
 }
@@ -726,7 +787,7 @@ code {
     color: grey;
     width: 60%;
     float: left;
-    margin-left: 2%;
+    margin-left: 4%;
     margin-top: 3px;
     margin-bottom: 0px;
     opacity: 1;
@@ -745,7 +806,7 @@ code {
     color: grey;
     width: 75%;
     float: left;
-    margin-left: 2%;
+    margin-left: 4%;
     margin-top: 3px;
     margin-bottom: 0px;
     opacity: 0;
@@ -1069,6 +1130,41 @@ code {
         padding-left: 13%;
     }
 
+    @keyframes bord-animation-front {
+        0%
+        {
+            width: 5px;
+            height: 0;
+            transform: translate(-5%, -5px);
+            border-top-color: transparent;
+            border-right-color: white;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+        }
+
+        50%
+        {
+            width: 5px;
+            height: 50px;
+            transform: translate(-5%, -5px);
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: white;
+        }
+
+        100%
+        {
+            width: 70%;
+            height: 50px;
+            transform: translate(-5%, -5px);
+            border-top-color: white;
+            border-right-color: white;
+            border-bottom-color: white;
+            border-left-color: white;
+        }
+    }
+
     .experience-side {
         margin-top: 20px;
     }
@@ -1360,6 +1456,41 @@ code {
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 13%;
+    }
+
+    @keyframes bord-animation-front {
+        0%
+        {
+            width: 5px;
+            height: 0;
+            transform: translate(-5%, -5px);
+            border-top-color: transparent;
+            border-right-color: white;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+        }
+
+        50%
+        {
+            width: 5px;
+            height: 50px;
+            transform: translate(-5%, -5px);
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: white;
+        }
+
+        100%
+        {
+            width: 85%;
+            height: 50px;
+            transform: translate(-5%, -5px);
+            border-top-color: white;
+            border-right-color: white;
+            border-bottom-color: white;
+            border-left-color: white;
+        }
     }
     
     #experience-side-text{
