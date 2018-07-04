@@ -21,8 +21,8 @@ $("#projects-icon").click(function() {
     window.location.href = "projects";
 });
 
-$("#extras-icon").click(function() {
-    window.location.href = "extras";
+$("#experience-icon").click(function() {
+    window.location.href = "experience";
 });
 
 $("#contact-icon").click(function() {

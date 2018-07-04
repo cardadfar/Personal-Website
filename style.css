@@ -112,13 +112,13 @@ body,html{
     content:url("assets/projects-icon-color.png");
 }
 
-#extras-icon:hover a{
+#experience-icon:hover a{
     color: #ff812d;
-    margin-left: 25px;
+    margin-left: 50px;
 }
 
-#extras-icon:hover .top-icon{
-    content:url("assets/extras-icon-color.png");
+#experience-icon:hover .top-icon{
+    content:url("assets/experience-icon-color.png");
 }
 
 #contact-icon:hover a{
@@ -693,7 +693,7 @@ code {
     transition: all 0.5s;
 }
 
-.extras-icon{
+.experience-icon{
     background: #1c1c1c;
     height: 50px;
     left: 50%;
@@ -703,16 +703,61 @@ code {
     transition: all 0.5s;
 }
 
+.extras-side {
+    margin-top: 25px;
+    margin-left: 60px;
+}
+
 #extras-side-text{
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
     width: 75%;
     float: left;
     margin-left: 2%;
-    margin-top: 14px;
+    margin-top: 5px;
     margin-bottom: 0px;
     transition: all 0.5s;
 }
+
+#extras-sub-text{
+    position: absolute;
+    text-align: left;
+    font-size: 14px;
+    color: grey;
+    width: 60%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.experience-icon:hover #extras-sub-text {
+    opacity: 0;
+    transform: translate(30px, 0);
+}
+
+#extras-year-text{
+    position: absolute;
+    text-align: left;
+    font-size: 14px;
+    color: grey;
+    width: 75%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    opacity: 0;
+    transform: translate(-30px, 0);
+    transition: all 0.5s;
+}
+
+.extras-icon:hover #extras-year-text {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 
 .tabs {
     width: 45%;
@@ -819,7 +864,7 @@ code {
     animation-duration: 0.2s;
 }
 
-#extras-icon:hover #tab-box4 {
+#experience-icon:hover #tab-box4 {
     visibility: visible;
     opacity: 1;
     animation-name: myFrames;
@@ -1024,10 +1069,22 @@ code {
         padding-left: 13%;
     }
 
+    .extras-side {
+        margin-top: 20px;
+    }
+
     #extras-side-text{
         font-size: 14px;
         margin-left: 5%;
         width: 70%;
+    }
+
+    #extras-sub-text{
+        font-size: 12px;
+    }
+
+    #extras-year-text{
+        font-size: 12px;
     }
 
     .tabs{
@@ -1309,6 +1366,14 @@ code {
         font-size: 12px;
         margin-left: 5%;
         width: 70%;
+    }
+
+    #extras-sub-text{
+        font-size: 10px;
+    } 
+
+    #extras-year-text{
+        font-size: 10px;
     }
     
     #transparent{
