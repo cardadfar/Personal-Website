@@ -127,18 +127,19 @@ body,html{
     background: transparent;
     background-image: url(assets/tab-backgrounds/extras-blur.jpg);
     background-attachment: fixed;
-    background-size: contain;
+    background-size: 100%;
+    background-position: center;
     opacity: 0;
     border: 0.5px solid transparent;
     border-left-width: 5px;
 }
 
 #edu1.experience-icon:before {
-    background-image: url(assets/experience-icons/bgs/edu1.jpg);
+    background-image: url(assets/experience-icons/bgs/edu1.png);
 }
 
 #edu2.experience-icon:before {
-    background-image: url(assets/experience-icons/bgs/edu2.jpg);
+    background-image: url(assets/experience-icons/bgs/edu2.png);
 }
 
 #wrk1.experience-icon:before {
@@ -146,27 +147,27 @@ body,html{
 }
 
 #wrk2.experience-icon:before {
-    background-image: url(assets/experience-icons/bgs/wrk2.jpg);
+    background-image: url(assets/experience-icons/bgs/wrk2.png);
 }
 
 #wrk3.experience-icon:before {
-    background-image: url(assets/experience-icons/bgs/wrk3.jpg);
+    background-image: url(assets/experience-icons/bgs/wrk3.png);
 }
 
 #wrk4.experience-icon:before {
-    background-image: url(assets/experience-icons/bgs/wrk4.jpg);
+    background-image: url(assets/experience-icons/bgs/wrk4.png);
 }
 
 #wrk5.experience-icon:before {
-    background-image: url(assets/experience-icons/bgs/wrk5.jpg);
+    background-image: url(assets/experience-icons/bgs/wrk5.png);
 }
 
 #wrk6.experience-icon:before {
-    background-image: url(assets/experience-icons/bgs/wrk6.jpg);
+    background-image: url(assets/experience-icons/bgs/wrk6.png);
 }
 
 #ldr1.experience-icon:before {
-    background-image: url(assets/experience-icons/bgs/ldr1.jpg);
+    background-image: url(assets/experience-icons/bgs/ldr1.png);
 }
 
 #ldr2.experience-icon:before {
@@ -174,11 +175,11 @@ body,html{
 }
 
 #ldr3.experience-icon:before {
-    background-image: url(assets/experience-icons/bgs/ldr3.jpg);
+    background-image: url(assets/experience-icons/bgs/ldr3.png);
 }
 
 #ldr4.experience-icon:before {
-    background-image: url(assets/experience-icons/bgs/ldr4.jpg);
+    background-image: url(assets/experience-icons/bgs/ldr4.png);
 }
 
 .experience-icon:hover:before {
