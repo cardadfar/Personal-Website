@@ -1186,7 +1186,7 @@ code {
         height: 40px;
         padding-top: 10px;
         padding-bottom: 10px;
-        padding-left: 13%;
+        padding-left: 10%;
     }
 
     #skill-icon {
@@ -1224,9 +1224,9 @@ code {
 
         100%
         {
-            width: 70%;
+            width: 80%;
             height: 50px;
-            transform: translate(-5%, -5px);
+            transform: translate(0, -5px);
             border-top-color: white;
             border-right-color: white;
             border-bottom-color: white;
@@ -1525,7 +1525,7 @@ code {
         height: 40px;
         padding-top: 10px;
         padding-bottom: 10px;
-        padding-left: 10%;
+        padding-left: 0%;
     }
 
     #skill-icon {
@@ -1563,9 +1563,9 @@ code {
 
         100%
         {
-            width: 85%;
+            width: 90%;
             height: 50px;
-            transform: translate(-5%, -5px);
+            transform: translate(5%, -5px);
             border-top-color: white;
             border-right-color: white;
             border-bottom-color: white;
@@ -1657,7 +1657,7 @@ code {
         visibility: hidden;
     }
 
-    #extras-icon:hover #tab-box4 {
+    #experience-icon:hover #tab-box4 {
         visibility: hidden;
     }
 
