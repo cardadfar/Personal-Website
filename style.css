@@ -115,6 +115,8 @@ body,html{
 .experience-icon img{
     margin-left: 30px;
     position: relative;
+    opacity: 0.5;
+    transition: all 1s;
 }
 
 .experience-icon:before {
@@ -843,7 +845,7 @@ code {
     position: absolute;
     text-align: left;
     font-size: 14px;
-    color: grey;
+    color: #bcbcbc;
     width: 60%;
     float: left;
     margin-left: 4%;
@@ -851,6 +853,14 @@ code {
     margin-bottom: 0px;
     opacity: 1;
     transition: all 0.5s;
+}
+
+.experience-icon:hover img {
+    opacity: 1;
+}
+
+.experience-icon:hover #experience-side-text {
+    text-shadow: -0.3px 0 white, 0 0.3px white, 0.3px 0 white, 0 -0.3px white;
 }
 
 .experience-icon:hover #experience-sub-text {
@@ -863,7 +873,7 @@ code {
     text-align: left;
     font-size: 14px;
     text-shadow: 2px 2px 2px black;
-    color: #bcbcbc;
+    color: white;
     width: 75%;
     float: left;
     margin-left: 4%;
