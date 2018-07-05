@@ -114,6 +114,7 @@ body,html{
 
 .experience-icon img{
     margin-left: 30px;
+    position: relative;
 }
 
 .experience-icon:before {
@@ -124,8 +125,60 @@ body,html{
     height: 0;
     transform: translate(-8%, -15px);
     background: transparent;
+    background-image: url(assets/tab-backgrounds/extras-blur.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0;
     border: 0.5px solid transparent;
     border-left-width: 5px;
+}
+
+#edu1.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/edu1.jpg);
+}
+
+#edu2.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/edu2.jpg);
+}
+
+#wrk1.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/wrk1.jpg);
+}
+
+#wrk2.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/wrk2.jpg);
+}
+
+#wrk3.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/wrk3.jpg);
+}
+
+#wrk4.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/wrk4.jpg);
+}
+
+#wrk5.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/wrk5.jpg);
+}
+
+#wrk6.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/wrk6.jpg);
+}
+
+#ldr1.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/ldr1.jpg);
+}
+
+#ldr2.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/ldr2.png);
+}
+
+#ldr3.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/ldr3.jpg);
+}
+
+#ldr4.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/ldr4.jpg);
 }
 
 .experience-icon:hover:before {
@@ -137,8 +190,9 @@ body,html{
 @keyframes bord-animation-front {
     0%
     {
-        width: 5px;
+        width: 3px;
         height: 0;
+        opacity: 1;
         transform: translate(-50%, -15px);
         border-top-color: transparent;
         border-right-color: white;
@@ -148,13 +202,14 @@ body,html{
 
     40%
     {
-        width: 5px;
+        width: 3px;
         height: 80px;
         transform: translate(-20%, -15px);
         border-top-color: transparent;
         border-right-color: transparent;
         border-bottom-color: transparent;
         border-left-color: white;
+        opacity: 1;
     }
 
     100%
@@ -166,6 +221,7 @@ body,html{
         border-right-color: white;
         border-bottom-color: white;
         border-left-color: white;
+        opacity: 1;
     }
 }
 
@@ -770,8 +826,10 @@ code {
 }
 
 #experience-side-text{
+    position: relative;
     text-align: left;
     font-size: 17px;
+    text-shadow: 2px 2px 2px black;
     width: 75%;
     float: left;
     margin-left: 2%;
@@ -803,7 +861,8 @@ code {
     position: absolute;
     text-align: left;
     font-size: 14px;
-    color: grey;
+    text-shadow: 2px 2px 2px black;
+    color: #bcbcbc;
     width: 75%;
     float: left;
     margin-left: 4%;
