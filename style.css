@@ -127,7 +127,7 @@ body,html{
     background: transparent;
     background-image: url(assets/tab-backgrounds/extras-blur.jpg);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: contain;
     opacity: 0;
     border: 0.5px solid transparent;
     border-left-width: 5px;
@@ -142,7 +142,7 @@ body,html{
 }
 
 #wrk1.experience-icon:before {
-    background-image: url(assets/experience-icons/bgs/wrk1.jpg);
+    background-image: url(assets/experience-icons/bgs/wrk1.png);
 }
 
 #wrk2.experience-icon:before {
