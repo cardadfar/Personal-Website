@@ -190,19 +190,19 @@ body,html{
 @keyframes bord-animation-front {
     0%
     {
-        width: 3px;
+        width: 0;
         height: 0;
-        opacity: 1;
         transform: translate(-50%, -15px);
         border-top-color: transparent;
-        border-right-color: white;
+        border-right-color: transparent;
         border-bottom-color: transparent;
-        border-left-color: transparent;
+        border-left-color: white;
+        opacity: 1;
     }
 
     40%
     {
-        width: 3px;
+        width: 0;
         height: 80px;
         transform: translate(-20%, -15px);
         border-top-color: transparent;
@@ -1200,24 +1200,26 @@ code {
     @keyframes bord-animation-front {
         0%
         {
-            width: 5px;
+            width: 0;
             height: 0;
             transform: translate(-5%, -5px);
             border-top-color: transparent;
-            border-right-color: white;
+            border-right-color: transparent;
             border-bottom-color: transparent;
-            border-left-color: transparent;
+            border-left-color: white;
+            opacity: 1;
         }
 
         40%
         {
-            width: 5px;
+            width: 0;
             height: 50px;
             transform: translate(-5%, -5px);
             border-top-color: transparent;
             border-right-color: transparent;
             border-bottom-color: transparent;
             border-left-color: white;
+            opacity: 1;
         }
 
         100%
@@ -1229,6 +1231,7 @@ code {
             border-right-color: white;
             border-bottom-color: white;
             border-left-color: white;
+            opacity: 1;
         }
     }
 
@@ -1536,24 +1539,26 @@ code {
     @keyframes bord-animation-front {
         0%
         {
-            width: 5px;
+            width: 0;
             height: 0;
             transform: translate(-5%, -5px);
             border-top-color: transparent;
-            border-right-color: white;
+            border-right-color: transparent;
             border-bottom-color: transparent;
-            border-left-color: transparent;
+            border-left-color: white;
+            opacity: 1;
         }
 
         40%
         {
-            width: 5px;
+            width: 0;
             height: 50px;
             transform: translate(-5%, -5px);
             border-top-color: transparent;
             border-right-color: transparent;
             border-bottom-color: transparent;
             border-left-color: white;
+            opacity: 1;
         }
 
         100%
@@ -1565,6 +1570,7 @@ code {
             border-right-color: white;
             border-bottom-color: white;
             border-left-color: white;
+            opacity: 1;
         }
     }
     
