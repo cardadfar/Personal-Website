@@ -187,6 +187,12 @@ $(".active-cover-right").hover(function() {
     $(this).children(".cover-image-right").css({"animation": "", "animation-timing-function" : ""});
 });
 
+$("#sketcher").click(function() {
+    $("iframe").attr("src","https://player.vimeo.com/video/267934726");
+    file = "sketcher";
+    loadFrame();
+});
+
 $("#how-far-weve-come").click(function() {
     $("iframe").attr("src","https://player.vimeo.com/video/267934726");
     file = "how-far-weve-come";
