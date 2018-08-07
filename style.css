@@ -1626,7 +1626,7 @@ code {
         font-size: 12px;
         width: 85%;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 
     .course > .right-text {
