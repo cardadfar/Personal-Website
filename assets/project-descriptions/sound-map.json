@@ -1,0 +1,15 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "Sound Map.",
+  "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=7wtfhZwyrcc", "Believer by Imagine Dragons"]}, 
+          {"code-icon.png": "JavaScript • P5.JS"},
+          {"time-icon.png": "2 Weeks"}],
+  "p_1": "Sound Map was an initial project for Art & Machine Learning which uses P5.JS's sound library in combination with custom-made peak-detection algorithms to draw sound maps onto the canvas based on the audio waveform, converting songs to artwork."
+}

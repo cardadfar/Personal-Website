@@ -17,6 +17,35 @@ body,html{
     background-color: black;
 }
 
+
+
+p{
+    font-family: "UniqueDistrictThin";
+    font-size: 17px;
+    font-weight: lighter;
+    color: white;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: justify;
+    transition: all 0.5s;
+}
+
+li{
+    font-family: "UniqueDistrictThin";
+    font-size: 18px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: white;
+    width: 46%;
+    margin-left: 27%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: justify;
+    transition: all 0.5s;
+}
+
 .tab{
     width: 20%;
     height: 40px;
@@ -504,39 +533,13 @@ body,html{
     margin-left: calc(80% - 15px);
 }
 
-p{
-    font-family: "UniqueDistrictThin";
-    font-size: 17px;
-    font-weight: lighter;
-    color: white;
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    text-align: justify;
-    transition: all 0.5s;
-}
-
-li{
-    font-family: "UniqueDistrictThin";
-    font-size: 18px;
-    font-weight: lighter;
-    letter-spacing: 1px;
-    color: white;
-    width: 46%;
-    margin-left: 27%;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    text-align: justify;
-    transition: all 0.5s;
-}
-
 code {
     color: grey;
 }
 
 .indent {
-    text-indent: 1.0em; 
+    text-indent: 1.0em;
+    line-height: 22px;
 }
 
 .hi{

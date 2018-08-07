@@ -18,6 +18,13 @@ body,html{
     transition: all 0.5s;
 }
 
+.video-bg-player {
+    width: 100%;
+    height: 32vw;
+    margin-top: 10px;
+    z-index: 99;
+}
+
 .transparent-blur {
     opacity: 0;
     filter: blur(50px);
@@ -54,6 +61,7 @@ body,html{
     margin-left: 10%;
     margin-bottom: 20px;
     font-size: 15px;
+    line-height: 20px;
     word-wrap: break-word;
 }
 
@@ -62,6 +70,8 @@ body,html{
     margin-left: 15%;
     margin-bottom: 10px;
     font-size: 14px;
+    text-align: unset;
+    line-height: 18px;
 }
 
 .video-bg > a {
@@ -106,7 +116,6 @@ a:hover + .line{
 .video-bg > .subtitle {
     font-size: 28px;
     text-align: left;
-    margin-bottom: 20px;
 }
 
 .video-bg > .description {

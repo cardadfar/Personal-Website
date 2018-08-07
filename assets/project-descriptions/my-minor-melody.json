@@ -1,0 +1,32 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "My Minor Melody.",
+  "w_0": [{"software-icon.png": "Illustrator CC"},
+          {"code-icon.png": "JavaScript • P5.JS"},
+          {"time-icon.png": "3 Weeks"}],
+  "p_1": "My Minor Melody was a final project for Electronic Media Studio II which counters the traditional nice-sounding rhythm games by introducing off-tune synths to a music game about survival. The program uses P5.JS in OpenProcessing to create the interface & handle the game.",
+
+  "s_2": "How To Play.",
+  "p_3": "You control a line of music notes on a grid. For each space you occupy, that region lightens, signifying that a note has been pressed. There is a music bar that sweeps the board from left to right. There is a gap in the bar at a random position each interval. You must guide the notes through the gap in order not to get hurt. For any notes (tiles) in the region of that gap that have been lit, they will harden, while all other notes will clear. Harden notes remain until you damage your notes. You must harden at least one full column of notes. Be careful though, the music bar gets faster as the game progresses.",
+
+  "s_4": "Creating the Game.",
+  "p_5": "I divided the canvas into an n x m region and used a double for-loop to iterate over the n x m cases and draw lines sequentially at the start of the game to show the grid.",
+  "p_6": "I store all the sound effects in OpenProcessing's library so that I can call them when need be, such as at the end of every line-drawn iteration in creating the grid.",
+  "p_7": "The music notes are graphics drawn in Illustrator that track to the mouse's current position. In an array, I store the previous k positions of the mouse and use those positions on the k music notes behind the main music note to act as a trailing effect.",
+  "p_8": "The music bar itself is a combination of two lines with a matching horizontal position. Every call to the Update() function updates their horizontal position to move them forward. A random number b in [0,m-1] is chosen to represent the gap, where the first line's vertical positions are from 0 to (b * (hgt / m) and the second line from ( (b + 1) * (hgt / m) ) to hgt.",
+  "p_9": "As the bars traverses the board, whenever its horizontal position is divisible by n, it checks for two things: tiles in the area & the position of the main note. If the main note is within range of the music bars and is not on the row with the gap, then the game terminates. Else, all the notes on the column of the music bar are traversed. If a note is dark, nothing happens. If a note is light, then it resets to dark. If a note is hardened, nothing happens. But, if a note is light and in the gap region, it hardens.",
+  "p_10": "In order to keep track of these notes, I use an array of size n x m to represent all the locations on the board. I create a note object with positions [x,y] to store all the activated note positions on the board. Likewise, I create an array of stones with positions [x,y] to store the hardened notes. When an area of the board is activated, its position is added to the notes array, and when it hardens, it is removed from the notes array and added to the stones array.",
+  "p_11": "Every time a note hardens to a stone, a sound is played depending on its height on the board. Higher notes cue higher sounds. After each music bar pass, a screeching noise is played as circle graphics jitter on screen for a brief moment. This sound is a combination of all the notes and represents that the same sound must be replicated to beat the game. The only way to do so is to turn on all the notes within one column.",
+
+  "s_12": "Inspiration.",
+  "p_13": "This game takes strong inspiration from Dinahmoe Labs and their extensive library of music games, particularly their most famous title Plink.",
+  "a_14": "http://dinahmoelabs.com/plink",
+  "p_15": "I originally wanted to create a game like it with colors and rhythmic sounds that would all go hand-in-hand with one another to improve the experience. But when the sounds fell flat and sounded more off-tune than on-tune, I improvised by trying to create an anti-rhythmic game."
+}

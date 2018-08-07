@@ -1,0 +1,32 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "Food Drive.",
+  "w_0": [{"software-icon.png": "After Effects CC • Illustrator CC"},
+          {"code-icon.png": "Javascript Expressions"},
+          {"time-icon.png": "4 Weeks"}],
+  "p_1": "Food Drive is a 30-second animation produced during my internship with Move For Hunger. The animation uses vector-based animation & After Effects animation tools to bring to life vectors created in Illustrator.",
+  "s_2": "Storyboarding",
+  "p_3": "All the key vectors of each scene were vectored and saved as separate Illustrator files. I spent some time regrouping vectors and breaking them apart depending on if the vectors would stay attached or move independently from other vectors. Some of the vectors were taken from older Move For Hunger advertisings.",
+  "i_3": "food-drive/scene-05-06-storyboard.png",
+  "d_3": "Scene 05-06 Storyboard.",
+  "s_4": "After Effects Animations",
+  "p_5": "I imported the storyboards as a composition format with layers. Within each composition, I could animate each scene separately and combine the scenes into a global composition with audio.",
+  "i_6": "food-drive/scene-02.gif",
+  "d_7": "Scene 02 Animated Composition.",
+  "p_8": "Because some scenes had heavy vector animations, sometimes I saved the vectoring for in After Effects so I could directly animate on the path property rather than be limited by the transformation properties. Sometimes this gave me trouble when I realized I would have to re-vector something already vectored in Illustrator, but now in After Effects. Another reason why After Effects should have a live-trace feature...",
+  "p_9": "All the animations were custom. No animation presets or plug-ins were used. To animate the human, I separated his vector into arms, body & legs, neck, head, & box. This way I could use the puppet tool to approximate his joints.",
+  "i_10": "food-drive/scene-05-06.gif",
+  "d_11": "Scene 05-06 Human Puppet Composition.",
+  "p_12": "For other animations, I used Extendscript to batch animate repeated segments such as in Scene 01 with the people figures popping up. I used a script to have their scale direcly proportional to their y position from the bottom of the screen. I added another script that randomly assigned their starting time to trigger the pop-up animation.",
+  "i_13": "food-drive/scene-01.gif",
+  "d_13": "Scene 01 Pop-Up Animation Scripting",
+  "p_14": "In order to ensure quick and smooth movements throughout the animation, I used equal yet significant easing on the keyframes. To finish things up, I added the audio files for vocals and background music."
+
+}
