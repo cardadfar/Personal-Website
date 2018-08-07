@@ -264,11 +264,16 @@ $(".dark-frame").click(function() {
 });
 
 
+
 var url = window.location.href;
 var end_val = url.substring(url.lastIndexOf('#') + 1);
 console.log(url);
 console.log(end_val);
 
 if( url.indexOf('#') > -1 ) {
-    $("#" + end_val)[0].click();
+    
+    setTimeout(function() {
+        $("#" + end_val)[0].click();
+    }, 2000);
+    
 }
