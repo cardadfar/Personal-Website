@@ -265,6 +265,9 @@ $(".dark-frame").click(function() {
 
 
 var url = window.location.href;
-var end_val = url.substring(url.lastIndexOf('/') + 1);
+var end_val = url.substring(url.lastIndexOf('#') + 1);
 
-$("#" + end_val)[0].click();
+if( end_val != "projects") {
+    window.location.href = "www.cardadfar.com/projects";
+    $("#" + end_val)[0].click();
+}
