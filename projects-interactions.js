@@ -269,6 +269,6 @@ var end_val = url.substring(url.lastIndexOf('#') + 1);
 console.log(url);
 console.log(end_val);
 
-if( end_val != "projects") {
+if( url.indexOf('#') > -1 ) {
     $("#" + end_val)[0].click();
 }
