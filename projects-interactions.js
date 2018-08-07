@@ -270,6 +270,6 @@ console.log(url);
 console.log(end_val);
 
 if( end_val != "projects") {
-    window.location.href = "www.cardadfar.com/projects";
+    window.location.href = "projects";
     $("#" + end_val)[0].click();
 }
