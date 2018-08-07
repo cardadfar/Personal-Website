@@ -189,7 +189,7 @@ $(".active-cover-right").hover(function() {
 
 
 
-/*
+
 $("#C-F17-01").click(function() {
     window.open('http://www.cs.cmu.edu/~15122/', '_blank');
 });
@@ -258,7 +258,7 @@ $("#F18-05").click(function() {
 $("#F18-05").click(function() {
     window.open("http://coursecatalog.web.cmu.edu/melloncollegeofscience/departmentofphysics/courses/", '_blank');
 });
-*/
+
 
 function openTab(tabName, tab) {
 
