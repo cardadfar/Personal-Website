@@ -27,6 +27,46 @@
   "hibikase": {
     "l": ["Kinetic Typography", "Spring 2018"],
     "t": ["hibikase"]
+  },
+
+  "idance": {
+    "l": ["Vector-Based Animation", "Spring 2018"],
+    "t": ["idance"]
+  },
+
+  "number-one": {
+    "l": ["Video Edit", "Spring 2018"],
+    "t": ["number one"]
+  },
+
+  "peace-sign": {
+    "l": ["Hand-Drawn Animation", "Fall 2017"],
+    "t": ["peace sign"]
+  },
+
+  "infinite": {
+    "l": ["Kinetic Typography", "Fall 2017"],
+    "t": ["infinite"]
+  },
+
+  "null-space": {
+    "l": ["Kinetic Typography", "Fall 2017"],
+    "t": ["null space"]
+  },
+
+  "plastic-promises": {
+    "l": ["Kinetic Typography", "Fall 2017"],
+    "t": ["plastic promises"]
+  },
+
+  "stitches": {
+    "l": ["Kinetic Typography", "Fall 2017"],
+    "t": ["stitches"]
+  },
+
+  "rondo": {
+    "l": ["Motion Graphics", "Fall 2016"],
+    "t": ["rondo"]
   }
 
 }

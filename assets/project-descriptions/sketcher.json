@@ -15,7 +15,7 @@
   "p_1": "Sketcher is a real-time polygon rendering environment in After Effects written in C++ that links OpenGL with the After Effects SDK to render a sketch overlay on footage. It breaks down footage into its primitive 'sketch' form that remains as an editable layer in After Effects",
   "a_1": "https://github.com/cardadfar/Sketcher",
   "s_1": "Animation Comparisons.",
-  "v_1": "https://player.vimeo.com/video/250281441",
+  "v_1": "https://player.vimeo.com/video/283946985",
   "d_1": "[Left: Solo Sketcher] • [Right: Original w/ Sketcher overlay]",
   "s_2": "Initial Processing Development.",
   "p_3": "Within the first 2 days, I wrote a script in Processing to open an image and draw arcs on a separate canvas that would replicate the shape of the original image and export the separate canvas as an image. I created two separate drawing algorithms to achieve this.",

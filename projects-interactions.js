@@ -1,13 +1,43 @@
 
 
+$(".active-cover").hover(function() {
+
+    $(this).children(".cover-image").addClass("video-screen-on");
+    //$(".video-skills").children().css({"transform": "scale(1)", "margin-left" : "6%"});
+    $(this).children(".cover-image").css({"animation": "0.5s mask", "animation-timing-function" : "cubic-bezier(0,.26,.61,1)"});
+
+
+    }, function() {
+
+
+    $(this).children(".cover-image").removeClass("video-screen-on");
+    //$(".video-skills").children().css({"transform": "", "margin-left" : "8%"});
+    $(this).children(".cover-image").css({"animation": "", "animation-timing-function" : ""});
+});
+
+$(".active-cover-right").hover(function() {
+
+    $(this).children(".cover-image-right").addClass("video-screen-on");
+    //$(".video-skills").children().css({"transform": "scale(1)", "margin-left" : "6%"});
+    $(this).children(".cover-image-right").css({"animation": "0.5s mask", "animation-timing-function" : "cubic-bezier(0,.26,.61,1)"});
+
+
+    }, function() {
+
+
+    $(this).children(".cover-image-right").removeClass("video-screen-on");
+    //$(".video-skills").children().css({"transform": "", "margin-left" : "8%"});
+    $(this).children(".cover-image-right").css({"animation": "", "animation-timing-function" : ""});
+});
+
 $("#sketcher").click(function() {
-    $("iframe").attr("src","https://player.vimeo.com/video/267934726");
+    $("iframe").attr("src","https://player.vimeo.com/video/283946326");
     file = "sketcher";
     loadFrame();
 });
 
 $("#food-drive").click(function() {
-    $("iframe").attr("src","https://player.vimeo.com/video/267934726");
+    $("iframe").attr("src","https://www.youtube.com/embed/m64gcFp4nro");
     file = "food-drive";
     loadFrame();
 });

@@ -16,6 +16,3 @@ $.getJSON( "assets/project-descriptions/projects-list.json", function( data ) {
 
     });
 });
-
-$(".all").append("<script type='text/javascript' src='interactions.js'></script>");
-$(".all").append("<script type='text/javascript' src='project-interactions.js'></script>");
