@@ -53,11 +53,13 @@ function loadData(str) {
                             all_cs = true;
                             cs_text = false;
                             $("#cs-projects > .no-results").remove();
+                            $(".cs-learn-more").removeClass("no-display");
                         }
                         else {
                             all_art = true;
                             art_text = false;
                             $("#art-projects > .no-results").remove();
+                            $(".art-learn-more").removeClass("no-display");
                         }
 
                         $('.' + key).css('display', 'unset');
@@ -81,12 +83,14 @@ function loadData(str) {
 
 
     if(!all_art && !art_text) {
-        $("#art-projects").append("<p class='no-results'>Sorry, no results</p>");
+        $("#art-projects").append("<p class='no-results'>No results. Try searching by project name, type, or year.</p>");
+        $(".art-learn-more").addClass("no-display");
         art_text = true;
     }
 
     if(!all_cs && !cs_text) {
-        $("#cs-projects").append("<p class='no-results'>Sorry, no results</p>");
+        $("#cs-projects").append("<p class='no-results'>No results. Try searching by project name, type, or year.</p>");
+        $(".cs-learn-more").addClass("no-display");
         cs_text = true;
     }
 
