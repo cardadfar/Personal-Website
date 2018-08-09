@@ -7,6 +7,29 @@ body,html{
     overflow-x: hidden;
 }
 
+.projects-holder {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #1c1c1c;
+    overflow: auto;
+}
+
+.searchbar {
+    background-color: #1c1c1c;
+    width: calc(50% - 10px);
+    margin-left: 25%;
+    border: 1px solid #004b5e;
+    text-decoration-color: blue;
+    line-height: 30px;
+}
+
+input.searchbar {
+    color: white;
+    font-family: "UniqueDistrictThin";
+    padding-left: 10px;
+}
+
 .video-player {
     width: 65vw;
     height: 36.5625vw;
@@ -257,6 +280,12 @@ a:hover + .line{
     #start-text {
         margin-bottom: 20px;
         font-size: 30px;
+    }
+
+    .projects-holder {
+        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 
     .video-bg {

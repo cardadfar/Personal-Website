@@ -1,72 +1,109 @@
 {
   "sketcher": {
     "l": ["Hand-Drawn Animation", "Fall 2018"],
-    "t": ["sketcher"]
+    "t": ["sketcher", "hand drawn animation", "hand-drawn animation", "fall 2018"]
   },
 
   "food-drive": {
-    "l": ["Vector-Based Animation, Fall 2018"],
-    "t": ["food drive, move for hunger"]
+    "l": ["Vector-Based Animation", "Fall 2018"],
+    "t": ["food drive", "move for hunger", "vector based animation", "vector-based animation", "fall 2018"]
   },
 
   "how-far-weve-come": {
     "l": ["Video Edit", "Spring 2018"],
-    "t": ["how far we've come", "how far weve come"]
+    "t": ["how far we've come", "how far weve come", "video edit", "spring 2018"]
   },
 
   "la-da-dee": {
     "l": ["Hand-Drawn Animation", "Spring 2018"],
-    "t": ["la da dee"]
+    "t": ["la da dee", "hand drawn animation", "hand-drawn animation", "spring 2018"]
   },
 
   "build-our-machine": {
     "l": ["Kinetic Typography", "Spring 2018"],
-    "t": ["build our machine"]
+    "t": ["build our machine", "kinetic typography", "spring 2018"]
   },
 
   "hibikase": {
     "l": ["Kinetic Typography", "Spring 2018"],
-    "t": ["hibikase"]
+    "t": ["hibikase", "kinetic typography", "spring 2018"]
   },
 
   "idance": {
     "l": ["Vector-Based Animation", "Spring 2018"],
-    "t": ["idance"]
+    "t": ["idance", "vector based animation", "vector-based animation", "spring 2018"]
   },
 
   "number-one": {
     "l": ["Video Edit", "Spring 2018"],
-    "t": ["number one"]
+    "t": ["number one", "video edit", "spring 2018"]
+  },
+
+  "break-free": {
+    "l": ["Video Edit", "Spring 2018"],
+    "t": ["break free", "video edit", "spring 2018"]
   },
 
   "peace-sign": {
     "l": ["Hand-Drawn Animation", "Fall 2017"],
-    "t": ["peace sign"]
+    "t": ["peace sign", "hand drawn animation", "hand-drawn animation", "fall 2017"]
   },
 
   "infinite": {
     "l": ["Kinetic Typography", "Fall 2017"],
-    "t": ["infinite"]
+    "t": ["infinite", "kinetic typography", "fall 2017"]
   },
 
   "null-space": {
     "l": ["Kinetic Typography", "Fall 2017"],
-    "t": ["null space"]
+    "t": ["null space", "kinetic typography", "fall 2017"]
   },
 
   "plastic-promises": {
     "l": ["Kinetic Typography", "Fall 2017"],
-    "t": ["plastic promises"]
+    "t": ["plastic promises", "kinetic typography", "fall 2017"]
   },
 
   "stitches": {
     "l": ["Kinetic Typography", "Fall 2017"],
-    "t": ["stitches"]
+    "t": ["stitches", "kinetic typography", "fall 2017"]
   },
 
   "rondo": {
     "l": ["Motion Graphics", "Fall 2016"],
-    "t": ["rondo"]
+    "t": ["rondo", "motion graphics", "fall 2016"]
+  },
+
+  "comp-art": "break",
+
+  "gan-theft-auto": {
+    "l": ["Generative Environments", "Spring 2018"],
+    "t": ["gan theft auto", "generative environments", "spring 2018"]
+  },
+
+  "ar-typography": {
+    "l": ["Augmented Reality", "Spring 2018"],
+    "t": ["ar typography", "augmented reality", "spring 2018"]
+  },
+
+  "web-dev": {
+    "l": ["Web Development", "Spring 2018"],
+    "t": ["web dev weekend", "web development", "spring 2018"]
+  },
+
+  "worm-park": {
+    "l": ["Interactive Graphics", "Spring 2018"],
+    "t": ["worm park", "interactive graphics", "spring 2018"]
+  },
+
+  "sound-map": {
+    "l": ["Audio Artist", "Spring 2018"],
+    "t": ["sound map", "audio artist", "spring 2018"]
+  },
+
+  "my-minor-melody": {
+    "l": ["Audio Builder Game", "Fall 2017"],
+    "t": ["my minor melody", "audio builder game", "fall 2017"]
   }
 
 }
