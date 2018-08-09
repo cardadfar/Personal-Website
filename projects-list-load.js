@@ -1,4 +1,7 @@
 
+var art_text = false;
+var cs_text = false;
+
 
 function loadDataInitial() {
 
@@ -24,9 +27,13 @@ function loadDataInitial() {
 
 function loadData(str) {
 
+
     var param = str.toLowerCase();
 
     var first = false;
+    var all_art = false;
+    var cs_field = false;
+    var all_cs = false;
 
     $.getJSON( "assets/project-descriptions/projects-list.json", function( data ) {
 
@@ -42,6 +49,17 @@ function loadData(str) {
                     {
 
                         first = true;
+                        if(cs_field) {
+                            all_cs = true;
+                            cs_text = false;
+                            $("#cs-projects > .no-results").remove();
+                        }
+                        else {
+                            all_art = true;
+                            art_text = false;
+                            $("#art-projects > .no-results").remove();
+                        }
+
                         $('.' + key).css('display', 'unset');
 
                     }
@@ -53,7 +71,25 @@ function loadData(str) {
                 }   
             }
 
+            else { 
+
+                cs_field = true;
+
+            }
+
         });
+
+
+    if(!all_art && !art_text) {
+        $("#art-projects").append("<p class='no-results'>Sorry, no results</p>");
+        art_text = true;
+    }
+
+    if(!all_cs && !cs_text) {
+        $("#cs-projects").append("<p class='no-results'>Sorry, no results</p>");
+        cs_text = true;
+    }
+
     });
 
 }
