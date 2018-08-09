@@ -268,3 +268,28 @@ function flicker(tab) {
     }, 2*delay);
 
 }
+
+
+//-----------------------------------  VIDEO-SCREEN TRIGGER   -----------------------------------
+
+var triggerCount = 0;
+
+function trigger() {
+    triggerCount++;
+    $("trigger").css("max-height", "300px");
+    if(triggerCount % 2 == 1) {
+        document.getElementById("animation-to-check1").beginElement();
+        document.getElementById("animation-to-check2").beginElement();
+        document.getElementById("animation-to-check3").beginElement();
+        $(".collapse-menu").css("max-height", "300px");
+        $(".drop-shadow").css("opacity", "0.65");
+    }
+    else
+    {
+        document.getElementById("animation-to-origin1").beginElement();
+        document.getElementById("animation-to-origin2").beginElement();
+        document.getElementById("animation-to-origin3").beginElement();
+        $(".collapse-menu").css("max-height", "");
+        $(".drop-shadow").css("opacity", "");
+    }
+}

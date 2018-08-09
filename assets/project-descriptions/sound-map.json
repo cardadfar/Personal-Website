@@ -11,5 +11,14 @@
   "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=7wtfhZwyrcc", "Believer by Imagine Dragons"]}, 
           {"code-icon.png": "JavaScript • P5.JS"},
           {"time-icon.png": "2 Weeks"}],
-  "p_1": "Sound Map was an initial project for Art & Machine Learning which uses P5.JS's sound library in combination with custom-made peak-detection algorithms to draw sound maps onto the canvas based on the audio waveform, converting songs to artwork."
+  "p_1": "Sound Map was an initial project for Art & Machine Learning which uses P5.JS's sound library in combination with custom-made peak-detection algorithms to draw sound maps onto the canvas based on the audio waveform, converting songs to artwork.",
+  "s_2": "Custom Audio Analysis Algorithm",
+  "p_3": "Using P5.JS's sound library, I extracted the waveform data of the audio at every interval of time and saved it to an array. I would group the bands together to simplify it, and look for peaks in audio based on recent history of the audio. By comparing the current bands to bands a few frames ago, I could detect the magnitude of peaks in the audio. I made the acceleration of the pointer directly proportional to the magnitude of the peak in audio.",
+  "s_4": "Pointer movements",
+  "p_5": "The pointer had 3 fundamental properties: position, velocity, & acceleration. Over time, the velocity would add to the position, and the acceleration would add to the velocity. Thus, if a high peak were to suddenly change the acceleration, it would take a few frames for it to have an effect on the position, thus replicating basic kinematics. If the pointer were to collide with a wall, its velocity and acceleration would simply be inversed, keeping the pointer still in play.",
+  "p_6": "An array would store the location of the pointers position, and use it to draw out the paths and fills on the canvas. For the n most recent points, the algorithm would scan to see if the current position of the pointer overlapped any of these n points. If so, then the path the pointer took would close, & the pointer path and color would change. The color was randomly selected rgb vales between [125,255], giving it a bright yet dull look.",
+  "s_7": "Dual Pointer Movements",
+  "p_8": "I also added another algorithm to accompany two pointers on a screen.",
+  "a_9": "https://www.openprocessing.org/sketch/502585",
+  "p_10": "The algorithm holds most of the same features as the original, except a shape closes when a pointer intersects the path of the other pointer, not its own path."
 }

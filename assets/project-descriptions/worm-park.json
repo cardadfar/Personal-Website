@@ -1,0 +1,31 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "Worm Park.",
+  "w_0": [{"code-icon.png": "JavaScript • P5.JS"},
+          {"time-icon.png": "4 Days"}],
+  "p_1": "Worm Park was a quick experiment to make interactive graphics in a limited amount of time with no assets whatsoever. It is a simple interactive experience with no particular meaning other than to provide a simple enjoyable experience.",
+  "s_2": "Controls",
+  "p_3": "Worm Park comes with an abundance of controls to differ the interactive experience. The following keys can be used to adjust the settings:",
+  "l_4": "[H] to disable hints.",
+  "l_5": "[C] to switch to drawing circle chains.",
+  "l_6": "[S] to switch to drawing square chains.",
+  "l_7": "[T] to switch to drawing triangle chains.",
+  "l_8": "[R] to switch to repeat mode (automatically draws chains.",
+  "l_9": "[LEFT] to decrease particle size.",
+  "l_10": "[RIGHT] to increase particle size.",
+  "l_11": "[UP] to increase size of chains.",
+  "l_12": "[DOWN] to decrease size of chains.",
+  "l_13": "[ANY] to toggle between outline & stroke mode.",
+  "p_14": "Clicking will generate worm chains. To automatically generate worm chains periodically, switch to repeat mode [R].",
+  "s_15": "Creation",
+  "p_16": "Worm Park uses a simple algorithm to generate worm chains by drawing shapes at positions [x + t*cos(k), y + t*sin(k)] for k in [0, 2*pi] and connects each location with a line to [x,y], where this is the point most recently clicked clicked. As time t progresses, the worm chains will grow farther out and decrease in size before they disappear. Tweaking with the [UP] and [DOWN] keys will increase/decrease the magnitude of t such that chains will grow farther/shorter out. [LEFT] and [RIGHT] modify the size of the shapes being drawn.",
+  "p_17": "In repeat [R]mode, for every 3-5 frames, the draw() function is automatically called, and worm chains will generate themselves depending on where your mouse is on the screen. Without repeat mode, a click to the screen will call the draw() function."
+
+}

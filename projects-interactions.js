@@ -121,6 +121,29 @@ $(document).ready(function(){
         loadFrame();
     });
 
+    var triggerCount = 0;
+
+    function trigger() {
+        triggerCount++;
+        $("trigger").css("max-height", "300px");
+        if(triggerCount % 2 == 1) {
+            document.getElementById("animation-to-check1").beginElement();
+            document.getElementById("animation-to-check2").beginElement();
+            document.getElementById("animation-to-check3").beginElement();
+            $(".collapse-menu").css("max-height", "300px");
+            $(".drop-shadow").css("opacity", "0.65");
+        }
+        else
+        {
+            document.getElementById("animation-to-origin1").beginElement();
+            document.getElementById("animation-to-origin2").beginElement();
+            document.getElementById("animation-to-origin3").beginElement();
+            $(".collapse-menu").css("max-height", "");
+            $(".drop-shadow").css("opacity", "");
+        }
+    }
+
+
     function loadFrame() {
         scroll = $(window).scrollTop();
         $(".video-player").addClass("video-player-on");
@@ -204,28 +227,7 @@ $(document).ready(function(){
         });
     }
 
-    var triggerCount = 0;
-
-    function trigger() {
-        triggerCount++;
-        $("trigger").css("max-height", "300px");
-        if(triggerCount % 2 == 1) {
-            document.getElementById("animation-to-check1").beginElement();
-            document.getElementById("animation-to-check2").beginElement();
-            document.getElementById("animation-to-check3").beginElement();
-            $(".collapse-menu").css("max-height", "300px");
-            $(".drop-shadow").css("opacity", "0.65");
-        }
-        else
-        {
-            document.getElementById("animation-to-origin1").beginElement();
-            document.getElementById("animation-to-origin2").beginElement();
-            document.getElementById("animation-to-origin3").beginElement();
-            $(".collapse-menu").css("max-height", "");
-            $(".drop-shadow").css("opacity", "");
-        }
-    }
-
+    
 
     function bounceText() {
         $("#text-bounce").css("transform", "translate(0,15px)");
@@ -253,7 +255,7 @@ $(document).ready(function(){
 
     $("#worm-park").click(function() {
         $("iframe").attr("src","https://www.openprocessing.org/sketch/505150/embed/");
-        file = "rondo";
+        file = "worm-park";
         loadFrame();
     });
 
