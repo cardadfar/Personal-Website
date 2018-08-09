@@ -16,111 +16,263 @@ $(document).ready(function(){
         $(this).children(".cover-image").css({"animation": "", "animation-timing-function" : ""});
     });
 
-    $(".active-cover-right").hover(function() {
-
-        $(this).children(".cover-image-right").addClass("video-screen-on");
-        //$(".video-skills").children().css({"transform": "scale(1)", "margin-left" : "6%"});
-        $(this).children(".cover-image-right").css({"animation": "0.5s mask", "animation-timing-function" : "cubic-bezier(0,.26,.61,1)"});
 
 
-        }, function() {
+    //------------------------ FOR DESKTOP -------------------------------
 
+    if ($(window).width() > 650) {
 
-        $(this).children(".cover-image-right").removeClass("video-screen-on");
-        //$(".video-skills").children().css({"transform": "", "margin-left" : "8%"});
-        $(this).children(".cover-image-right").css({"animation": "", "animation-timing-function" : ""});
-    });
+        $("#sketcher").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/283946326");
+            file = "sketcher";
+            loadFrame();
+        });
 
-    $("#sketcher").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/283946326");
-        file = "sketcher";
-        loadFrame();
-    });
+        $("#food-drive").click(function() {
+            $("iframe").attr("src","https://www.youtube.com/embed/m64gcFp4nro");
+            file = "food-drive";
+            loadFrame();
+        });
 
-    $("#food-drive").click(function() {
-        $("iframe").attr("src","https://www.youtube.com/embed/m64gcFp4nro");
-        file = "food-drive";
-        loadFrame();
-    });
+        $("#how-far-weve-come").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/267934726");
+            file = "how-far-weve-come";
+            loadFrame();
+        });
 
-    $("#how-far-weve-come").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/267934726");
-        file = "how-far-weve-come";
-        loadFrame();
-    });
+        $("#la-da-dee").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/268613841");
+            file = "la-da-dee";
+            loadFrame();
+        });
 
-    $("#la-da-dee").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/268613841");
-        file = "la-da-dee";
-        loadFrame();
-    });
+        $("#build-our-machine").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/269202925");
+            file = "build-our-machine";
+            loadFrame();
+        });
 
-    $("#build-our-machine").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/269202925");
-        file = "build-our-machine";
-        loadFrame();
-    });
+        $("#hibikase").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/268214437");
+            file = "hibikase";
+            loadFrame();
+        });
 
-    $("#hibikase").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/268214437");
-        file = "hibikase";
-        loadFrame();
-    });
+        $("#idance").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/257607289");
+            file = "idance";
+            loadFrame();
+        });
 
-    $("#idance").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/257607289");
-        file = "idance";
-        loadFrame();
-    });
+        $("#number-one").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/269206599");
+            file = "number-one";
+            loadFrame();
+        });
 
-    $("#number-one").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/269206599");
-        file = "number-one";
-        loadFrame();
-    });
+        $("#break-free").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/253337182");
+            file = "break-free";
+            loadFrame();
+        });
 
-    $("#break-free").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/253337182");
-        file = "break-free";
-        loadFrame();
-    });
+        $("#peace-sign").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/250210552");
+            file = "peace-sign";
+            loadFrame();
+        });
 
-    $("#peace-sign").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/250210552");
-        file = "peace-sign";
-        loadFrame();
-    });
+        $("#null-space").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/249094937");
+            file = "null-space";
+            loadFrame();
+        });
 
-    $("#null-space").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/249094937");
-        file = "null-space";
-        loadFrame();
-    });
+        $("#infinite").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/249187332");
+            file = "infinite";
+            loadFrame();
+        });
 
-    $("#infinite").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/249187332");
-        file = "infinite";
-        loadFrame();
-    });
+        $("#plastic-promises").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/249258739");
+            file = "plastic-promises";
+            loadFrame();
+        });
 
-    $("#plastic-promises").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/249258739");
-        file = "plastic-promises";
-        loadFrame();
-    });
+        $("#stitches").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/249324773");
+            file = "stitches";
+            loadFrame();
+        });
 
-    $("#stitches").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/249324773");
-        file = "stitches";
-        loadFrame();
-    });
+        $("#rondo").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/250281441");
+            file = "rondo";
+            loadFrame();
+        });
 
-    $("#rondo").click(function() {
-        $("iframe").attr("src","https://player.vimeo.com/video/250281441");
-        file = "rondo";
-        loadFrame();
-    });
+        $("#gan-theft-auto").click(function() {
+        window.open("https://drive.google.com/file/d/1jlcmtAxiU-ts4C86HRvTA_b7mhQ_92yf/view", '_blank');
+        });
 
+        $("#ar-typography").click(function() {
+            window.open("https://github.com/cardadfar/AR-Typography", '_blank');
+        });
+
+        $("#web-dev").click(function() {
+            $("iframe").attr("src","https://cardadfar.github.io/Web-Dev-Weekend-Website/index.html");
+            file = "rondo";
+            loadFrame();
+        });
+
+        $("#worm-park").click(function() {
+            $("iframe").attr("src","https://www.openprocessing.org/sketch/505150/embed/");
+            file = "worm-park";
+            loadFrame();
+        });
+
+        $("#sound-map").click(function() {
+            $("iframe").attr("src","https://www.openprocessing.org/sketch/500725/embed/");
+            file = "sound-map";
+            loadFrame();
+        });
+
+        $("#my-minor-melody").click(function() {
+            $("iframe").attr("src","https://www.openprocessing.org/sketch/478222/embed/");
+            file = "my-minor-melody";
+            loadFrame();
+        });
+
+    }
+
+    //------------------------ FOR MOBILE -------------------------------
+
+    else {
+
+        $(".sketcher").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/283946326");
+            file = "sketcher";
+            loadFrame();
+        });
+
+        $(".food-drive").click(function() {
+            $("iframe").attr("src","https://www.youtube.com/embed/m64gcFp4nro");
+            file = "food-drive";
+            loadFrame();
+        });
+
+        $(".how-far-weve-come").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/267934726");
+            file = "how-far-weve-come";
+            loadFrame();
+        });
+
+        $(".la-da-dee").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/268613841");
+            file = "la-da-dee";
+            loadFrame();
+        });
+
+        $(".build-our-machine").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/269202925");
+            file = "build-our-machine";
+            loadFrame();
+        });
+
+        $(".hibikase").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/268214437");
+            file = "hibikase";
+            loadFrame();
+        });
+
+        $(".idance").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/257607289");
+            file = "idance";
+            loadFrame();
+        });
+
+        $(".number-one").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/269206599");
+            file = "number-one";
+            loadFrame();
+        });
+
+        $(".break-free").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/253337182");
+            file = "break-free";
+            loadFrame();
+        });
+
+        $(".peace-sign").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/250210552");
+            file = "peace-sign";
+            loadFrame();
+        });
+
+        $(".null-space").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/249094937");
+            file = "null-space";
+            loadFrame();
+        });
+
+        $(".infinite").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/249187332");
+            file = "infinite";
+            loadFrame();
+        });
+
+        $(".plastic-promises").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/249258739");
+            file = "plastic-promises";
+            loadFrame();
+        });
+
+        $(".stitches").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/249324773");
+            file = "stitches";
+            loadFrame();
+        });
+
+        $(".rondo").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/250281441");
+            file = "rondo";
+            loadFrame();
+        });
+
+        $(".gan-theft-auto").click(function() {
+        window.open("https://drive.google.com/file/d/1jlcmtAxiU-ts4C86HRvTA_b7mhQ_92yf/view", '_blank');
+        });
+
+        $(".ar-typography").click(function() {
+            window.open("https://github.com/cardadfar/AR-Typography", '_blank');
+        });
+
+        $(".web-dev").click(function() {
+            $("iframe").attr("src","https://cardadfar.github.io/Web-Dev-Weekend-Website/index.html");
+            file = "rondo";
+            loadFrame();
+        });
+
+        $(".worm-park").click(function() {
+            $("iframe").attr("src","https://www.openprocessing.org/sketch/505150/embed/");
+            file = "worm-park";
+            loadFrame();
+        });
+
+        $(".sound-map").click(function() {
+            $("iframe").attr("src","https://www.openprocessing.org/sketch/500725/embed/");
+            file = "sound-map";
+            loadFrame();
+        });
+
+        $(".my-minor-melody").click(function() {
+            $("iframe").attr("src","https://www.openprocessing.org/sketch/478222/embed/");
+            file = "my-minor-melody";
+            loadFrame();
+        });
+
+    }
     
 
 
@@ -145,7 +297,7 @@ $(document).ready(function(){
         $(".video-bg").append("<div id='margin-top'></div>");
         $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;' id='text-bounce'>v</p>");
         bounceText();
-        $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;'>scroll down for more info</p>");
+        $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;'>Scroll down for more info. Click on the sides of the screen to exit.</p>");
 
           $.each( data, function( key, val ) {
 
@@ -219,37 +371,7 @@ $(document).ready(function(){
         }, 2000);
     }
 
-    $("#gan-theft-auto").click(function() {
-        window.open("https://drive.google.com/file/d/1jlcmtAxiU-ts4C86HRvTA_b7mhQ_92yf/view", '_blank');
-    });
-
-    $("#ar-typography").click(function() {
-        window.open("https://github.com/cardadfar/AR-Typography", '_blank');
-    });
-
-    $("#web-dev").click(function() {
-        $("iframe").attr("src","https://cardadfar.github.io/Web-Dev-Weekend-Website/index.html");
-        file = "rondo";
-        loadFrame();
-    });
-
-    $("#worm-park").click(function() {
-        $("iframe").attr("src","https://www.openprocessing.org/sketch/505150/embed/");
-        file = "worm-park";
-        loadFrame();
-    });
-
-    $("#sound-map").click(function() {
-        $("iframe").attr("src","https://www.openprocessing.org/sketch/500725/embed/");
-        file = "sound-map";
-        loadFrame();
-    });
-
-    $("#my-minor-melody").click(function() {
-        $("iframe").attr("src","https://www.openprocessing.org/sketch/478222/embed/");
-        file = "my-minor-melody";
-        loadFrame();
-    });
+    
 
     $(".dark-frame").click(function() {
         $(".video-player").addClass("transparent-blur");
