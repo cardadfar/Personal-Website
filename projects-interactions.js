@@ -20,7 +20,6 @@ $(document).ready(function(){
 
     //------------------------ FOR DESKTOP -------------------------------
 
-    if ($(window).width() > 650) {
 
         $("#sketcher").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/283946326");
@@ -144,11 +143,9 @@ $(document).ready(function(){
             loadFrame();
         });
 
-    }
 
     //------------------------ FOR MOBILE -------------------------------
 
-    else {
 
         $(".sketcher").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/283946326");
@@ -272,7 +269,7 @@ $(document).ready(function(){
             loadFrame();
         });
 
-    }
+    
     
 
 
