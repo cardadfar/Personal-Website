@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     
 
-        $(".sketcher").click(function(event) {
+        $(".sketcher").click(function() {
             $(this).css("width", "50%");
             /*
             $("iframe").attr("src","https://player.vimeo.com/video/283946326");
