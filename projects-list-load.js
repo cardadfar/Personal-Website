@@ -99,8 +99,6 @@ function loadData(str) {
 }
 
 
-loadDataInitial();
-
 $(document).ready(function(){
 
     $(".searchbar").keyup(function(event) {
