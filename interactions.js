@@ -293,3 +293,6 @@ function trigger() {
         $(".drop-shadow").css("opacity", "");
     }
 }
+
+
+console.log("done, interactions");

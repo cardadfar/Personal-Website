@@ -285,3 +285,6 @@ $(document).ready(function(){
         
     }
 });
+
+
+console.log("done, projects-interactions");
