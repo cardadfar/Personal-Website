@@ -111,3 +111,5 @@ $(document).ready(function(){
         console.log(k);
     });
 });
+
+console.log("done, project-list-load");
