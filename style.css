@@ -105,12 +105,12 @@ li{
 @keyframes positionShift {
     0% {
         opacity: 0;
-        left: calc(50% - 8px);
+        left: 49%;
     }
 
     100% {
         opacity: 1;
-        left: calc(45% - 8px);
+        left: 44%;
     }
 }
 
