@@ -208,22 +208,18 @@ $("#C-S18-06").click(function() {
 
 
 $("#F18-01").click(function() {
-    window.open("https://www.cmucoursefind.xyz/courses/17-428/f18", '_blank');
+    window.open("http://www.cs.cmu.edu/~15251/", '_blank');
 });
 
 $("#F18-02").click(function() {
-    window.open("https://www.cmu.edu/mits/files/syllabi/core%20courses/05-834%20MachineLearningInPractice%20Syllabus%20SP2015.pdf", '_blank');
+    window.open("https://www.cs.cmu.edu/~213/", '_blank');
 });
 
 $("#F18-03").click(function() {
-    window.open("http://www.cs.cmu.edu/~charlie/courses/17-214/2018-spring/", '_blank');
-});
-
-$("#F18-04").click(function() {
     window.open("https://www.math.cmu.edu/undergraduate/crs/36217.html", '_blank');
 });
 
-$("#F18-05").click(function() {
+$("#F18-04").click(function() {
     window.open("http://coursecatalog.web.cmu.edu/melloncollegeofscience/departmentofphysics/courses/", '_blank');
 });
 
