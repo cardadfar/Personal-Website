@@ -207,23 +207,23 @@ $("#C-S18-06").click(function() {
 });
 
 
-$("#F18-01").click(function() {
+$("#C-F18-01").click(function() {
     window.open("http://www.cs.cmu.edu/~15251/", '_blank');
 });
 
-$("#F18-02").click(function() {
+$("#C-F18-02").click(function() {
     window.open("https://www.cs.cmu.edu/~213/", '_blank');
 });
 
-$("#F18-03").click(function() {
-    window.open("https://www.math.cmu.edu/undergraduate/crs/36217.html", '_blank');
+$("#C-F18-03").click(function() {
+    window.open("http://www.stat.cmu.edu/academics/courselist", '_blank');
 });
 
-$("#F18-04").click(function() {
+$("#C-F18-04").click(function() {
     window.open("http://coursecatalog.web.cmu.edu/melloncollegeofscience/departmentofphysics/courses/", '_blank');
 });
 
-$("#F18-05").click(function() {
+$("#C-F18-05").click(function() {
     window.open("http://coursecatalog.web.cmu.edu/melloncollegeofscience/departmentofphysics/courses/", '_blank');
 });
 
