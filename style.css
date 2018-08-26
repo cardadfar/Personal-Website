@@ -213,6 +213,10 @@ li{
     background-image: url(assets/experience-icons/bgs/ldr4.png);
 }
 
+#ldr5.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/ldr5.png);
+}
+
 .experience-icon:hover:before {
 
     animation: bord-animation-front 0.8s forwards;
