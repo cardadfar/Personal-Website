@@ -1,0 +1,17 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "Web Dev Weekend.",
+  "w_0": [{"code-icon.png": "HTML • CSS • JQuery • P5.JS"},
+          {"time-icon.png": "4 Weeks"}],
+  "p_1": "Web Dev Weekend was a site made for Scotty Labs's Web Dev Weekend event used to teach students proper front & back-end web development practices.",
+
+  "s_2": "Initial Concept",
+  "p_3": "The Web Dev Weekend website was an experimental look at merging fundamental web development (HTML & CSS) with P5.JS for graphical components. The content of the website (text, images) were laid out & organized using HTML & CSS. Certain elements were given special IDs that could be tracked by JQuery and sent over to P5.JS for graphical rendering."
+}

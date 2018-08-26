@@ -122,7 +122,7 @@ $(document).ready(function(){
 
         $(".web-dev").click(function() {
             $("iframe").attr("src","https://cardadfar.github.io/Web-Dev-Weekend-Website/index.html");
-            file = "rondo";
+            file = "web-dev-weekend";
             loadFrame();
         });
 
