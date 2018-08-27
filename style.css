@@ -901,7 +901,7 @@ code {
     width: 45%;
     margin-left: 15%;
     overflow: hidden;
-    background-color: #232528;
+    background-color: #1c1c1c;
 }
 
 .tab-year {
@@ -911,14 +911,14 @@ code {
 }
 
 .tab-year:hover {
-    background-color: #34383d;
+    background-color: rgb(43, 43, 43);
 }
 
 .tab-content {
     width: 80%;
     margin-left: 10%;
     overflow: hidden;
-    background-color: #232528;
+    background-color: #1c1c1c;
 }
 
 .tab-content > #left {
@@ -1028,7 +1028,7 @@ code {
   font-size: 12px;
   width: 11.25%;
   margin: 0 0 0 0;
-  background: rgba(62, 66, 71, 0.72);
+  background: rgba(43, 43, 43, 0.72);
   color: #fff;
   visibility: hidden;
   opacity: 0;

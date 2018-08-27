@@ -237,7 +237,7 @@ function openTab(tabName, tab) {
             tablinks[i].style.background = null;
         }
 
-    document.getElementById(tab).style.background = "#34383d";
+    document.getElementById(tab).style.background = "rgb(43, 43, 43)";
 
     tabcontent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabcontent.length; i++) {
