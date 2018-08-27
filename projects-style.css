@@ -328,6 +328,11 @@ a:hover + .line{
         margin-top: 0;
     }
 
+    .video-bg > a {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
     .more-info {
         height: 35px;
         margin-left: 5%;
