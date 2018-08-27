@@ -113,7 +113,10 @@ $(document).ready(function(){
         });
 
         $(".gan-theft-auto").click(function() {
-        window.open("https://drive.google.com/file/d/1jlcmtAxiU-ts4C86HRvTA_b7mhQ_92yf/view", '_blank');
+            $("iframe").attr("src","https://www.youtube.com/embed/eP5hHKne_gE");
+            file = "gan-theft-auto";
+            loadFrame();
+            //window.open("https://drive.google.com/file/d/1jlcmtAxiU-ts4C86HRvTA_b7mhQ_92yf/view", '_blank');
         });
 
         $(".ar-typography").click(function() {

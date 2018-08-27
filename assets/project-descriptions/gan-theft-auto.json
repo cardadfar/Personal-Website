@@ -1,0 +1,33 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "GAN Theft Auto.",
+  "w_0": [{"software-icon.png": "Unity 2017 • Pix2Pix • Premiere Pro CC"},
+          {"code-icon.png": "C# • Python • TensorFlow"},
+          {"time-icon.png": "5 Weeks"}],
+
+  "p_1": "GAN Theft Auto is an autonomously textured procedurally-generated Unity environment using semantic city data and a trained model of Pix2Pix on the GTA V dataset. The GTA V dataset can be found here.",
+  "a_2": "https://download.visinf.tu-darmstadt.de/data/from_games/",
+  "p_3": "GAN Theft Auto was a collaboration among 3 other members in computer science & art fields (2 of which were not assigned the project but provided substantial help in certain areas). For the full report, follow the link below.",
+  "a_4": "https://drive.google.com/file/d/1jlcmtAxiU-ts4C86HRvTA_b7mhQ_92yf/view",
+
+  "s_5": "Procedurally Generated Environments",
+  "p_6": "Using C# scripting, we created a canvas that was divided into smaller sections procedurally, giving way to roads and blocks. Within each block could be populated assets of trees & buildings. Each asset was assigned a certain rule of position and scale depending on how close it was to the roads.",
+  "p_7": "The car assets were placed onto the road and followed the paths using a simple traffic algorithm that prevented them from colliding. Cars on the left were always given priority to turn as to prevent any traffic jams.",
+  "p_8": "In order to match the GTA V dataset, each asset had to be a solid color of a specific hex color value in order for the style-transfer to recognize objects. A hex color of dark blue would recognize the object as a car regardless of its shape.",
+  "i_9": "gan-theft-auto/color-coded-city.png",
+  "d_10": "Coloring assets in specific hex color values in order to be recognized by the style transfer algorithm",
+
+  "s_11": "Pix2Pix Training",
+  "p_12": "Using the GTA V dataset, we used a simple Python algorithm to combine the images into label-original image pairs and fed them into Pix2PixHD. In one pix2pixHD model, we trained on all 25,000 images available in the GTA dataset. In another pix2pixHD model, we trained on only 2,500 images, taking every 10th image in the dataset for a total of 10% the original dataset. In the third pix2pixHD model, we trained on just sunset/nighttime images, which we gathered based on an algorithm that detects perceived brightness in an image, and only kept those below 60/255. Unfortunately only 600 images matched this dataset. And finally, we trained a pix2pix-pytorch model on all 25,000 images. This model had our converted dataset, creating a AtoB dataset with max 1024px wide images.",
+
+  "s_13": "Real-Time Style Transfer",
+  "p_14": "The Unity city was traditionally rigged to export an image sequence to a local directory that then would manually have to be loaded in batch into Pix2Pix for style transfer, then download the frames and convert them to a video. Rather than locally saving them, we included a script to the Character Camera that would send the frames over zmq to a local server on another machine given their host address . We created a new camera and render texture that would receive the style-transferred images from the machine and overlay them on top of the semantic segmented city. Because the training data were of size 512x256, we had to lock the Unity canvas resolution to the same size.",
+  "p_15": "We were surprised to find that the real-time style transfer did not look as good as anticipated. The frame rate reached a max of 3 frames each second, and the colors looked very muddy. This could be a result of the CPU we are using to style transfer the images being slow in transferring the images over. The delay in frame retention hurts the interactivity of the piece. The muddy colors could be a result of incorrect or skewed color mapping when sending the images over between computers. Despite this drawback, the colors make the frames seem more surreal and paint-like. It gives a greater artistic quality to the images that the previous style transfers could not."
+}

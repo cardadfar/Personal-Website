@@ -98,6 +98,7 @@ input.searchbar {
     font-size: 15px;
     line-height: 20px;
     word-wrap: break-word;
+    letter-spacing: 0.5px;
 }
 
 .video-bg > li {
@@ -150,6 +151,9 @@ a:hover + .line{
 
 .video-bg > .subtitle {
     font-size: 28px;
+    line-height: 28px;
+    margin-top: 40px;
+    margin-bottom: 30px;
     text-align: left;
 }
 
@@ -343,6 +347,15 @@ a:hover + .line{
 
     #text-bounce {
         display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .video-bg > p {
+        line-height: 15px;
     }
 
 }

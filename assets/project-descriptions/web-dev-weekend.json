@@ -10,8 +10,18 @@
   "t_0": "Web Dev Weekend.",
   "w_0": [{"code-icon.png": "HTML • CSS • JQuery • P5.JS"},
           {"time-icon.png": "4 Weeks"}],
+
+  "a_0": "https://cardadfar.github.io/Web-Dev-Weekend-Website/index.html",
   "p_1": "Web Dev Weekend was a site made for Scotty Labs's Web Dev Weekend event used to teach students proper front & back-end web development practices.",
 
-  "s_2": "Initial Concept",
-  "p_3": "The Web Dev Weekend website was an experimental look at merging fundamental web development (HTML & CSS) with P5.JS for graphical components. The content of the website (text, images) were laid out & organized using HTML & CSS. Certain elements were given special IDs that could be tracked by JQuery and sent over to P5.JS for graphical rendering."
+  "s_2": "Communication Between Elements",
+  "p_3": "The Web Dev Weekend website was an experimental look at merging fundamental web development (HTML & CSS) with P5.JS for graphical components. The content of the website (text, images) were laid out & organized using HTML & CSS. Certain elements were given special IDs that could be tracked by JQuery and sent over to P5.JS for graphical rendering. Such instances included locating the position of a specific text field in order to draw wireframes around the text.",
+  "i_4": "web-dev-weekend/id-tracking.png",
+  "d_5": "The locations of 'How to Attend' and 'Register' are used to draw a proportional centered graphic around the points of interest.",
+  "p_6": "The trailing mouse pointer is a P5.JS rectangle over the mouse position that uses an array of n elements to store the n previous locations of the mouse and draw the corresponding lines. For the lines to be rigid, it takes the x and y distance between neighboring points and draws a line in the direction of the max distance of the points.",
+  "i_7": "web-dev-weekend/mouse-trails.gif",
+  "d_8": "Computing the mouse trail by saving the previous points and drawing in the vertical direction if the distance between neighboring points has a vertical max, and horizontal else.",
+  "p_9": "When the user clicks, lines sporadically spawn around the position that was clicked. These lines follow a similar algorithm as above, where points are randomly chosen and the direction of the max difference determines the orientation of the line. To save memory, these lines recede when multiple lines have already spawned.",
+  "i_10": "web-dev-weekend/clicks.gif",
+  "d_11": "Lines sporadically appear when the canvas is clicked somewhere"
 }
