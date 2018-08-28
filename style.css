@@ -142,8 +142,9 @@ li{
 }
 
 .experience-icon img{
+    height: 50px;
     margin-left: 30px;
-    position: relative;
+    position: absolute;
     opacity: 0.5;
     transition: all 1s;
 }
@@ -836,13 +837,13 @@ code {
 }
 
 #experience-side-text{
-    position: relative;
+    position: absolute;
     text-align: left;
     font-size: 17px;
     text-shadow: 2px 2px 2px black;
     width: 75%;
     float: left;
-    margin-left: 2%;
+    margin-left: 100px;
     margin-top: 5px;
     margin-bottom: 0px;
     transition: all 0.5s;
