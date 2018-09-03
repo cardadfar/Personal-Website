@@ -142,8 +142,9 @@ li{
 }
 
 .experience-icon img{
+    height: 50px;
     margin-left: 30px;
-    position: relative;
+    position: absolute;
     opacity: 0.5;
     transition: all 1s;
 }
@@ -836,13 +837,13 @@ code {
 }
 
 #experience-side-text{
-    position: relative;
+    position: absolute;
     text-align: left;
     font-size: 17px;
     text-shadow: 2px 2px 2px black;
     width: 75%;
     float: left;
-    margin-left: 2%;
+    margin-left: 100px;
     margin-top: 5px;
     margin-bottom: 0px;
     transition: all 0.5s;
@@ -1253,13 +1254,17 @@ code {
         }
     }
 
+    .experience-icon img {
+        height: 40px;
+    }
+
     .experience-side {
         margin-top: 20px;
     }
 
     #experience-side-text{
         font-size: 14px;
-        margin-left: 5%;
+        margin-left: 90px;
         width: 70%;
     }
 
@@ -1594,7 +1599,7 @@ code {
     
     #experience-side-text{
         font-size: 12px;
-        margin-left: 5%;
+        margin-left: 80px;
         width: 70%;
     }
 
@@ -1682,4 +1687,30 @@ code {
     #contact-icon:hover #tab-box5 {
         visibility: hidden;
     }
+}
+
+@media screen and (max-width: 450px) {
+
+    #experience-side-text{
+            font-size: 11px;
+        }
+}
+
+@media screen and (max-width: 400px) {
+
+    #experience-side-text{
+            font-size: 10px;
+        }
+
+    #experience-sub-text {
+        font-size: 10px;
+        
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    #experience-side-text{
+            font-size: 9px;
+        }
 }

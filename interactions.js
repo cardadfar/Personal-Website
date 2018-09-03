@@ -293,5 +293,3 @@ function trigger() {
     }
 }
 
-
-console.log("done, interactions");
