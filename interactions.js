@@ -227,6 +227,9 @@ $("#C-F18-05").click(function() {
     window.open("http://coursecatalog.web.cmu.edu/melloncollegeofscience/departmentofphysics/courses/", '_blank');
 });
 
+$("#C-F18-06").click(function() {
+    window.open("http://coursecatalog.web.cmu.edu/collegeoffinearts/schoolofart/courses/", '_blank');
+});
 
 function openTab(tabName, tab) {
 
