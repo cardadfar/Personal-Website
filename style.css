@@ -1190,6 +1190,36 @@ code {
     opacity: 100;
 }
 
+#C-S19-01:hover #course-box-S19-01 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-S19-02:hover #course-box-S19-02 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-S19-03:hover #course-box-S19-03 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-S19-04:hover #course-box-S19-04 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-S19-05:hover #course-box-S19-05 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-S19-06:hover #course-box-S19-06 {
+    visibility: visible;
+    opacity: 100;
+}
+
 
 
 @media screen and (max-width: 900px) {
