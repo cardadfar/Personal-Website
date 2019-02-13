@@ -169,6 +169,9 @@ $(document).ready(function(){
 
         $.getJSON( "assets/project-descriptions/" + file +".json", function( data ) {
 
+        $(".video-bg").css("max-height", "0px");
+        $(".video-bg").css("overflow", "hidden");
+
         $(".video-bg").append("<div id='margin-top'></div>");
         $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;' id='text-bounce'>v</p>");
         bounceText();
@@ -231,6 +234,13 @@ $(document).ready(function(){
 
         $(".video-bg").append("<div style='height: 25px'></div>");
 
+        setTimeout(
+          function() 
+          {
+            $(".video-bg").css("transition", "max-height 2s ease-in-out");
+            $(".video-bg").css("max-height", "15000px");
+          }, 500);
+
         });
     }
 
@@ -266,6 +276,8 @@ $(document).ready(function(){
             $(".video-player").removeClass("transparent-blur");
             $(".video-bg").removeClass("transparent-blur");
             $(".video-bg").removeClass("video-bg-error");
+            $(".video-bg").css("max-height", "0px");
+            $(".video-bg").css("transition", "unset");
             $("iframe").attr("src","");
             var myNode = document.getElementsByClassName("video-bg");
             myNode.innerHTML = '';
