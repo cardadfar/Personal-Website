@@ -14,7 +14,8 @@
           {"time-icon.png": "5 Weeks"}],
 
   "p_1": "The following is a novel light-stabilization algorithm that takes into account object BRDFs to relight sequences of frames subjected to variable lighting conditions. A paper can be found at the following location:",
-  "a_1": "paper",
+  "a_1": "http://cardadfar.com/assets/project-descriptions/images/light-stabilization/paper.pdf",
+  "p_2": "The code can be accessed here:",
   "a_2": "https://github.com/cardadfar/Object-Illum"
 
 }
