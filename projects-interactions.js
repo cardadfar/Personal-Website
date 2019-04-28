@@ -186,10 +186,11 @@ $(document).ready(function(){
             $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;' id='text-bounce'>v</p>");
             bounceText();
             $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;'>Scroll down for more info. Click on the sides of the screen to exit.</p>");
+            $(".video-player").removeClass("video-player-off");
         }
         else {
             $(".video-bg").append("<div style='margin-top: 50px;'></div>");
-            $(".video-player").css("height", "0");
+            $(".video-player").addClass("video-player-off");
         }
         
 
