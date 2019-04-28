@@ -112,6 +112,15 @@ $(document).ready(function(){
             loadFrame();
         });
 
+        $(".light-stabilization").click(function() {
+            $("iframe").attr("src","");
+            console.log('clicked');
+            $("#margin-top").css("margin-top","0 !important");
+            file = "light-stabilization";
+            noVideo = true;
+            loadFrame(noVideo);
+        });
+
         $(".gan-theft-auto").click(function() {
             $("iframe").attr("src","https://www.youtube.com/embed/eP5hHKne_gE");
             file = "gan-theft-auto";
@@ -151,7 +160,7 @@ $(document).ready(function(){
     
 
 
-    function loadFrame() {
+    function loadFrame(noVideo) {
         scroll = $(window).scrollTop();
         $(".video-player").addClass("video-player-on");
         $(".video-bg").addClass("video-player-on");
@@ -159,23 +168,30 @@ $(document).ready(function(){
         $(".all").css("position", "fixed");
         $(".all").css("overflow-y", "hidden");
         $(".vid").css("overflow-y", "auto");
-        loadData();
+        loadData(noVideo);
         setTimeout(function() {
             $(".video-bg").addClass("video-bg-error");
         }, 2000);
     }
 
-    function loadData() {
+    function loadData(noVideo) {
 
         $.getJSON( "assets/project-descriptions/" + file +".json", function( data ) {
 
         $(".video-bg").css("max-height", "0px");
         $(".video-bg").css("overflow", "hidden");
 
-        $(".video-bg").append("<div id='margin-top'></div>");
-        $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;' id='text-bounce'>v</p>");
-        bounceText();
-        $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;'>Scroll down for more info. Click on the sides of the screen to exit.</p>");
+        if(!noVideo) {
+            $(".video-bg").append("<div id='margin-top'></div>");
+            $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;' id='text-bounce'>v</p>");
+            bounceText();
+            $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;'>Scroll down for more info. Click on the sides of the screen to exit.</p>");
+        }
+        else {
+            $(".video-bg").append("<div style='margin-top: 50px;'></div>");
+            $(".video-player").css("height", "0");
+        }
+        
 
           $.each( data, function( key, val ) {
 

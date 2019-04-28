@@ -1,0 +1,19 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "i_0": "light-stabilization/cover.png",
+  "d_0": "Takes a variably-unstable lighting sequence [Top Rows] and relights the foreground and back- ground scenes [Bottom Rows] based on relighting weights.",
+  "t_0": "Light Stabilization.",
+  "w_0": [{"code-icon.png": "Python • PIL"},
+          {"time-icon.png": "5 Weeks"}],
+
+  "p_1": "The following is a novel light-stabilization algorithm that takes into account object BRDFs to relight sequences of frames subjected to variable lighting conditions.",
+  "a_2": "https://github.com/cardadfar/Object-Illum"
+
+}

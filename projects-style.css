@@ -271,7 +271,7 @@ a:hover + .line{
 }
 
 #margin-top {
-    margin-top: calc(36.5625vw + 25px)
+    margin-top: calc(36.5625vw + 25px);
 }
 
 @media screen and (max-width: 900px) {
