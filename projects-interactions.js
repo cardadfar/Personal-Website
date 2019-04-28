@@ -128,10 +128,6 @@ $(document).ready(function(){
             //window.open("https://drive.google.com/file/d/1jlcmtAxiU-ts4C86HRvTA_b7mhQ_92yf/view", '_blank');
         });
 
-        $(".ar-typography").click(function() {
-            window.open("https://github.com/cardadfar/AR-Typography", '_blank');
-        });
-
         $(".web-dev").click(function() {
             $("iframe").attr("src","https://cardadfar.github.io/Web-Dev-Weekend-Website/index.html");
             file = "web-dev-weekend";
