@@ -112,11 +112,9 @@ $(document).ready(function(){
             loadFrame();
         });
 
-        $(".light-stabilization").click(function() {
+        $(".object-illum").click(function() {
             $("iframe").attr("src","");
-            console.log('clicked');
-            $("#margin-top").css("margin-top","0 !important");
-            file = "light-stabilization";
+            file = "object-illum";
             noVideo = true;
             loadFrame(noVideo);
         });

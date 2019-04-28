@@ -7,31 +7,33 @@
     "p": "text"
   },
 
-  "i_0": "light-stabilization/cover.png",
+  "i_0": "object-illum/cover.png",
   "d_0": "Takes a variably-unstable lighting sequence [Top Rows] and relights the foreground and back- ground scenes [Bottom Rows] based on relighting weights.",
-  "t_0": "Light Stabilization.",
+  "t_0": "Object Illum.",
   "w_0": [{"code-icon.png": "Python • PIL"},
           {"time-icon.png": "5 Weeks"}],
 
   "p_1": "The following is a novel light-stabilization algorithm that takes into account object BRDFs to relight sequences of frames subjected to variable lighting conditions. A paper can be found at the following location:",
-  "a_1": "http://cardadfar.com/assets/project-descriptions/images/light-stabilization/paper.pdf",
+  "a_1": "http://cardadfar.com/assets/project-descriptions/images/object-illum/paper.pdf",
   "p_2": "The code can be accessed here:",
   "a_2": "https://github.com/cardadfar/Object-Illum",
 
   "s_3": "Concept.",
   "p_4": "The algorithm takes as input an image sequence and breaks it down into global and local components using OpenCV. For each local component, it samples a discrete uniform grid-like region of points for illumination values across all frames. When proceeding to relight the image, it analyzes the average illumination of the object and uses bilinear interpolation to create a relight mask for the object for each frame.",
-  "i_5": "light-stabilization/local-relight.png",
+  "i_5": "object-illum/local-relight.png",
   "d_6": "Captures discrete illumination points on each local object. Uses bilinear interpolation to computer relight mask.",
   "p_7": "For global illumination, the algorithm partitions the hues of the first image using k-means into k discrete hue ranges and calculates illumination differences compared to the global illumination value of each hue bucket to compute the relight mask at each location.",
-  "i_8": "light-stabilization/global-partitioning.png",
+  "i_8": "object-illum/global-partitioning.png",
   "d_9": "Splitting a sequence of images into their hue buckets based on the hues of each pixel.",
   "p_10": "For each mask, the algorithm applies a 3x3 gaussian smoothening matrix to reduce harsh relighting edge artifacts. The mask is then taken and, given a relighting strength coefficient, pixels for each image are converted to HLS space, relight, and converted back to RGB space.",
 
 
   "s_11": "Results.",
-  "p_12": "When relighting images, the algorithm allows each hue bucket to approach its global average, thus providing multiple illumination re-mapping.",
-  "i_13": "light-stabilization/patches.png",
-  "d_14": "Global relighting patches on 18 discrete hue buckets."
+  "i_12": "object-illum/results.png",
+  "d_13": "Top rows are original images. Bottom rows are relit images.",
+  "p_14": "When relighting images, the algorithm allows each hue bucket to approach its global average, thus providing multiple illumination re-mapping.",
+  "i_15": "object-illum/patches.png",
+  "d_16": "Global relighting patches on 18 discrete hue buckets."
 
 
 }
