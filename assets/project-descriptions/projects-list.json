@@ -76,6 +76,11 @@
 
   "comp-art": "break",
 
+  "dsg-university": {
+    "l": ["Web Application", "Fall 2019"],
+    "t": ["dsg university", "dsgu", "web application", "internship", "fall 2019"]
+  },
+
   "object-illum": {
     "l": ["Relighting Algorithm", "Spring 2019"],
     "t": ["object illum", "computer graphics", "spring 2019"]

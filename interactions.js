@@ -231,6 +231,31 @@ $("#C-F18-06").click(function() {
     window.open("http://coursecatalog.web.cmu.edu/collegeoffinearts/schoolofart/courses/", '_blank');
 });
 
+
+$("#C-S19-01").click(function() {
+    window.open("http://15462.courses.cs.cmu.edu/spring2019/", '_blank');
+});
+
+$("#C-S19-02").click(function() {
+    window.open("http://www.cs.cmu.edu/~ninamf/courses/315sp19/", '_blank');
+});
+
+$("#C-S19-03").click(function() {
+    window.open("http://coursecatalog.web.cmu.edu/melloncollegeofscience/departmentofphysics/courses/", '_blank');
+});
+
+$("#C-S19-04").click(function() {
+    window.open("http://coursecatalog.web.cmu.edu/melloncollegeofscience/departmentofphysics/courses/", '_blank');
+});
+
+$("#C-S19-05").click(function() {
+    window.open("http://www.cs.cmu.edu/~motoole2/16823-s19/", '_blank');
+});
+
+$("#C-S19-06").click(function() {
+    window.open("http://coursecatalog.web.cmu.edu/dietrichcollegeofhumanitiesandsocialsciences/departmentofphilosophy/courses/", '_blank');
+});
+
 function openTab(tabName, tab) {
 
     var i, tabcontent, tablinks;

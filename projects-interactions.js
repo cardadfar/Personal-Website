@@ -112,6 +112,13 @@ $(document).ready(function(){
             loadFrame();
         });
 
+        $(".dsg-university").click(function() {
+            $("iframe").attr("src","");
+            file = "dsg-university";
+            noVideo = true;
+            loadFrame(noVideo);
+        });
+
         $(".object-illum").click(function() {
             $("iframe").attr("src","");
             file = "object-illum";

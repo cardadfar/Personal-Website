@@ -202,6 +202,10 @@ li{
     background-image: url(assets/experience-icons/bgs/wrk6.png);
 }
 
+#wrk7.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/wrk7.png);
+}
+
 #ldr1.experience-icon:before {
     background-image: url(assets/experience-icons/bgs/ldr1.png);
 }
@@ -221,6 +225,15 @@ li{
 #ldr5.experience-icon:before {
     background-image: url(assets/experience-icons/bgs/ldr5.png);
 }
+
+#ldr6.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/ldr6.png);
+}
+
+#ldr7.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/ldr7.png);
+}
+
 
 .experience-icon:hover:before {
 
@@ -1259,6 +1272,32 @@ code {
 }
 
 #C-S19-06:hover #course-box-S19-06 {
+    visibility: visible;
+    opacity: 100;
+}
+
+
+#C-F19-01:hover #course-box-F19-01 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F19-02:hover #course-box-F19-02 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F19-03:hover #course-box-F19-03 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F19-04:hover #course-box-F19-04 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F19-05:hover #course-box-F19-05 {
     visibility: visible;
     opacity: 100;
 }
