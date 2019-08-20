@@ -347,6 +347,7 @@ li{
     line-height: 40px;
     float: left;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .tab:hover{
@@ -373,6 +374,7 @@ li{
     line-height: 40px;
     float: left;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .bottom-tab:hover{
@@ -821,6 +823,7 @@ code {
     width: 34.5%;
     height: 19.6875vw;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .cover-image{
@@ -842,6 +845,7 @@ code {
     height: 19.6875vw;
     margin-left: 5%;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .cover-image-right{
@@ -981,6 +985,10 @@ code {
 .tab-content > #left {
     width: 50%;
     float: left;
+}
+
+.course {
+    cursor: pointer;
 }
 
 .course > .left-text {
