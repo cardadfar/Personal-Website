@@ -25,96 +25,112 @@ $(document).ready(function(){
         $(".sketcher").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/283946326");
             file = "sketcher";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".food-drive").click(function() {
             $("iframe").attr("src","https://www.youtube.com/embed/m64gcFp4nro");
             file = "food-drive";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".how-far-weve-come").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/267934726");
             file = "how-far-weve-come";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".la-da-dee").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/268613841");
             file = "la-da-dee";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".build-our-machine").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/269202925");
             file = "build-our-machine";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".hibikase").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/268214437");
             file = "hibikase";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".idance").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/257607289");
             file = "idance";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".number-one").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/269206599");
             file = "number-one";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".break-free").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/253337182");
             file = "break-free";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".peace-sign").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/250210552");
             file = "peace-sign";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".null-space").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/249094937");
             file = "null-space";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".infinite").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/249187332");
             file = "infinite";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".plastic-promises").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/249258739");
             file = "plastic-promises";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".stitches").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/249324773");
             file = "stitches";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".rondo").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/250281441");
             file = "rondo";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".dsg-university").click(function() {
             $("iframe").attr("src","");
             file = "dsg-university";
+            window.location.hash = file;
             noVideo = true;
             loadFrame(noVideo);
         });
@@ -122,6 +138,7 @@ $(document).ready(function(){
         $(".object-illum").click(function() {
             $("iframe").attr("src","");
             file = "object-illum";
+            window.location.hash = file;
             noVideo = true;
             loadFrame(noVideo);
         });
@@ -129,6 +146,7 @@ $(document).ready(function(){
         $(".gan-theft-auto").click(function() {
             $("iframe").attr("src","https://www.youtube.com/embed/eP5hHKne_gE");
             file = "gan-theft-auto";
+            window.location.hash = file;
             loadFrame();
             //window.open("https://drive.google.com/file/d/1jlcmtAxiU-ts4C86HRvTA_b7mhQ_92yf/view", '_blank');
         });
@@ -136,24 +154,28 @@ $(document).ready(function(){
         $(".web-dev").click(function() {
             $("iframe").attr("src","https://cardadfar.github.io/Web-Dev-Weekend-Website/index.html");
             file = "web-dev-weekend";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".worm-park").click(function() {
             $("iframe").attr("src","https://www.openprocessing.org/sketch/505150/embed/");
             file = "worm-park";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".sound-map").click(function() {
             $("iframe").attr("src","https://www.openprocessing.org/sketch/500725/embed/");
             file = "sound-map";
+            window.location.hash = file;
             loadFrame();
         });
 
         $(".my-minor-melody").click(function() {
             $("iframe").attr("src","https://www.openprocessing.org/sketch/478222/embed/");
             file = "my-minor-melody";
+            window.location.hash = file;
             loadFrame();
         });
 
@@ -282,6 +304,8 @@ $(document).ready(function(){
         $(".dark-frame").removeClass("dark-frame-on");
         $(".all").css("position", "");
         $(".all").css("overflow-y", "");
+
+        window.location.hash = ''
         triggerCount = 0;
 
         setTimeout(function() {
@@ -301,6 +325,8 @@ $(document).ready(function(){
             myNode.innerHTML = '';
             $('.video-bg').empty();
         }, 500);
+
+
     });
 
 
@@ -314,7 +340,7 @@ $(document).ready(function(){
         
         setTimeout(function() {
             $("#" + end_val)[0].click();
-        }, 2000);
+        }, 500);
         
     }
 });
