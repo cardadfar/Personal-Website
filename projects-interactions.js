@@ -78,13 +78,6 @@ $(document).ready(function(){
             loadFrame();
         });
 
-        $(".break-free").click(function() {
-            $("iframe").attr("src","https://player.vimeo.com/video/253337182");
-            file = "break-free";
-            window.location.hash = file;
-            loadFrame();
-        });
-
         $(".peace-sign").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/250210552");
             file = "peace-sign";
