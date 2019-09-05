@@ -1310,6 +1310,11 @@ code {
     opacity: 100;
 }
 
+#C-F19-06:hover #course-box-F19-06 {
+    visibility: visible;
+    opacity: 100;
+}
+
 
 
 @media screen and (max-width: 900px) {

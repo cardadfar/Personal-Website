@@ -256,6 +256,31 @@ $("#C-S19-06").click(function() {
     window.open("http://coursecatalog.web.cmu.edu/dietrichcollegeofhumanitiesandsocialsciences/departmentofphilosophy/courses/", '_blank');
 });
 
+
+$("#C-F19-01").click(function() {
+    window.open("https://deeplearning-cmu-10417.github.io/index.html", '_blank');
+});
+
+$("#C-F19-02").click(function() {
+    window.open("http://www.cs.cmu.edu/~16385/", '_blank');
+});
+
+$("#C-F19-03").click(function() {
+    window.open("http://www.cs.cmu.edu/~15210/", '_blank');
+});
+
+$("#C-F19-04").click(function() {
+    window.open("https://www.coursicle.com/cmu/courses/ART/60201/", '_blank');
+});
+
+$("#C-F19-05").click(function() {
+    window.open("https://www.coursicle.com/cmu/courses/ART/60105/", '_blank');
+});
+
+$("#C-F19-06").click(function() {
+    window.open("https://www.coursicle.com/cmu/courses/PHY/33889/", '_blank');
+});
+
 function openTab(tabName, tab) {
 
     var i, tabcontent, tablinks;
