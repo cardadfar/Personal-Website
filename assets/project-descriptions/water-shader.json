@@ -1,0 +1,58 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "Water Shader.",
+  "w_0": [{"code-icon.png": "JavaScript • Three.JS • GLSL"},
+          {"time-icon.png": "12 Weeks"}],
+
+  "p_1": "The following is a representation of toon-based water shader inspired by the Japanese water artwork The Great Wave off Kanagawa by artist Katsushika Hokusai. The full demo can be accessed her:",
+  "a_1": "https://cardadfar.github.io/japanese_water_shader/",
+  "p_2": "The paper can be accessed here:",
+  "a_2": "https://cardadfar.github.io/japanese_water_shader/images/paper.pdf",
+  "p_3": "The code can be accessed here:",
+  "a_3": "https://github.com/cardadfar/japanese_water_shader",
+
+  "s_3": "Single Wave.",
+  "p_4": "Using a triangulated mesh grid, the system injects height displacements into the mesh at specific vertex locations. The height Laplacian from vertex neighbors is calculated in the vertex shader to smooth out vertex positions at each time-step. The sudden rise in height in localized regions of the mesh that create each wave component is a result of calculating a burst location (wave center) for each component. Spline curves were used to interpolate burst locations in the mesh. The shader uses Euclidian distance from each vertex point (u,v) to the burst target before calculating the cosine of the distance to create a 3D cosine-wave distri- bution over the mesh.",
+
+  "i_4": "water-shader/wave_single_wireframe.gif",
+  "d_4": "Wireframe of single-wave mesh.",
+  
+  "p_5": "The fragment shader thresholds over the height of each fragment in order to determine one of 4 colors to use (white foam, light blue, mid blue, dark blue). To provide a more robust means of foam formation on each wave component, the normal at each component is considered in the fragment shading process. For regions with large normals components in the z-direction (flat regions) above a certain height threshold, these regions are where the derivative of the wave change sign, indicating high curvature. Areas with large normal z-components are then also shaded a white foam color.",
+
+  "i_5": "water-shader/wave_single_rigid.gif",
+  "d_5": "Rigid single-wave shading.",
+
+  "s_6": "Multi Wave.",
+  
+  "p_7": "The user is able to define a guide spline that can be used in computing a system of N splines. For each spline, some gaussian noise is added to each parameter to disrupt the uniform spread of splines and encourage overlap of wave components in the overall system.",
+
+  "i_7": "water-shader/wave_group_burst_lines.png",
+  "d_7": "Multiple waves with simmilar gude paths with gaussian offsets.",
+
+  "p_8": "For each vertex, the cosine of its Euclidean distance is computed and accumulated against all burst locations. This allows burst locations in the same region to superimpose as with real water.",
+
+  "i_8": "water-shader/wave_group_height.gif",
+  "d_8": "Multi-wave system with variable heightmap.",
+
+  "s_9": "Riff Component.",
+
+  "p_10": "To achieve the trailing effect of the water component, the system needs to record previous height information for each fragment. The current heightmap in the vertex shader is configured as a 3-vector, but only uses the first two components to store the previous and current height used in calculating Laplacian diffusion. The third value in the vector can be used to store temporal information indicating how long ago a burst location passed through the current fragment.",
+
+  "i_10": "water-shader/wave_group_rigid.gif",
+  "d_10": "Close-up of riff trail components.",
+
+  "p_11": "On each update in the vertex shader, if the vertex coordinate is within some threshold distance of any burst location, then it is given a rift value inversely proportional to its distance from the nearest burst location that is stored in the z-component of the heightmap.",
+
+  "i_11": "water-shader/wave_group_rigid_top.png",
+  "d_11": "Overhead riff view"
+
+  
+
+}

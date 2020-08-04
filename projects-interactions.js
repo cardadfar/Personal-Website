@@ -136,6 +136,13 @@ $(document).ready(function(){
             loadFrame(noVideo);
         });
 
+        $(".water-shader").click(function() {
+            $("iframe").attr("src","https://cardadfar.github.io/japanese_water_shader/");
+            file = "water-shader";
+            window.location.hash = file;
+            loadFrame();
+        });
+
         $(".gan-theft-auto").click(function() {
             $("iframe").attr("src","https://www.youtube.com/embed/eP5hHKne_gE");
             file = "gan-theft-auto";

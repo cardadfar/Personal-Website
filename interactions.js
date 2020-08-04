@@ -281,6 +281,30 @@ $("#C-F19-06").click(function() {
     window.open("https://www.coursicle.com/cmu/courses/PHY/33889/", '_blank');
 });
 
+$("#C-S20-01").click(function() {
+    window.open("http://www.cs.cmu.edu/~418/", '_blank');
+});
+
+$("#C-S20-02").click(function() {
+    window.open("https://www.cs.cmu.edu/~./15780/", '_blank');
+});
+
+$("#C-S20-03").click(function() {
+    window.open("http://graphics.cs.cmu.edu/nsp/course/15464-s20/www/", '_blank');
+});
+
+$("#C-S20-04").click(function() {
+    window.open("http://brickisland.net/DDGSpring2020/", '_blank');
+});
+
+$("#C-S20-05").click(function() {
+    window.open("https://courses.ideate.cmu.edu/60-461/s2020/", '_blank');
+});
+
+$("#C-S20-06").click(function() {
+    window.open("https://www.cmu.edu/interdisciplinary/academics/courses.html", '_blank');
+});
+
 function openTab(tabName, tab) {
 
     var i, tabcontent, tablinks;

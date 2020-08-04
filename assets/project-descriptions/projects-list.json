@@ -79,6 +79,11 @@
     "t": ["object illum", "computer graphics", "spring 2019"]
   },
 
+  "water-shader": {
+    "l": ["GLSL Shader", "Fall 2019"],
+    "t": ["water shader", "computer graphics", "fall 2019"]
+  },
+
   "gan-theft-auto": {
     "l": ["Generative Environments", "Spring 2018"],
     "t": ["gan theft auto", "generative environments", "spring 2018"]
