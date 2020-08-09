@@ -209,6 +209,10 @@ li{
     background-image: url(assets/experience-icons/bgs/wrk7.png);
 }
 
+#wrk8.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/wrk8.png);
+}
+
 #ldr1.experience-icon:before {
     background-image: url(assets/experience-icons/bgs/ldr1.png);
 }
@@ -235,6 +239,14 @@ li{
 
 #ldr7.experience-icon:before {
     background-image: url(assets/experience-icons/bgs/ldr7.png);
+}
+
+#ldr8.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/ldr8.png);
+}
+
+#ldr9.experience-icon:before {
+    background-image: url(assets/experience-icons/bgs/ldr9.png);
 }
 
 
