@@ -30,8 +30,7 @@
   "d_10": "Placing hard drop shadows onto text by creating multiple black objects behind them",
 
   "s_11": "Rendering Environments.",
-  "p_11": "I began by installing AR Core for Unity and playing around with the ground tracking features in the HelloAR example.",
-  "a_11": "https://developers.google.com/ar/develop/",
+  "p_11": "I began by installing <a href='https://developers.google.com/ar/develop/' style='color: yellow' target=_blank>AR Core for Unity</a> and playing around with the ground tracking features in the HelloAR example.",
   "i_11": "how-far-weve-come/ground-text.png",
   "d_11": "Using ground tracking to modulate over preloaded strings",
   "p_12": "Using the point cloud data from Unity's AR Core, I wrote the script TextCore to handle text placement and adjustment.",
@@ -46,7 +45,7 @@
 
   "s_16": "Using AR Typography.",
   "p_17": "AR Typography runs in Unity with the AR Core plugin. Download the main TextCore.cs file and place it in the scripts folder of the HelloAR Example in the AR Core extension pack.",
-  "a_18": "https://github.com/cardadfar/AR-Typography",
+  "b_18": ["code-button.png", "https://github.com/cardadfar/AR-Typography"],
   "p_19": "Create a new 3D text object and attach it to the script's textLayer. Adding TrackedPoint & GeneratePoint prefabs are optional and visualize the point cloud data for you, but can interefere with filming. It is reccomended to keep these fields blank.",
   "p_20": "Add multiple (or one) strings in the Start function. An example has been provided. Changing the string will change the text being presented. Likewise, adding additional copies with the string inside change will add to a list of strings that can be modulated over for each tap.",
   "c_21": "void Start() { <br /> content.Add('How Far We've Come'); <br /> }"

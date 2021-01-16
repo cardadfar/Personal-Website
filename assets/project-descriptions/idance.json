@@ -12,16 +12,14 @@
           {"software-icon.png": "After Effects CC • ExtendScript Toolkit CC"},
           {"code-icon.png": "ExtendScript"},
           {"time-icon.png": "3 Days"}],
-  "p_1": "This was an assignment for my Creativity and Computation class in which we had to use motion capture data (real-time or pre-recorded) in some way, for some form of art. One of the options we had was to use OpenPose, a newly developed human motion tracker developed by Carnegie Mellon's Perceptual Computing Lab.",
-  "a_2": "https://github.com/CMU-Perceptual-Computing-Lab/openpose",
+  "b_1": ["code-button.png", "https://github.com/cardadfar/OpenPose-After-Effects"],
+  "p_1": "This was an assignment for my Creativity and Computation class in which we had to use motion capture data (real-time or pre-recorded) in some way, for some form of art. One of the options we had was to use <a href='https://github.com/CMU-Perceptual-Computing-Lab/openpose' style='color: yellow' target=_blank>OpenPose</a>, a newly developed human motion tracker developed by Carnegie Mellon's Perceptual Computing Lab.",
   "p_3": "OpenPose tracks key points of the human body from 2D video and saves the data to a JSON file.",
   "i_4": "idance/data.png",
   "d_5": "body part: [x-pos, y-pos, confidence]",
   "p_6": "The data above was produced from running OpenPose on the infamous Napoleon Dynamite scene.",
-  "p_7": "Having experience in video editing, I had some ideas to use the motion tracking data in After Effects, but that required me to build an interpreter for the data first. After Effect's scripting platform is ExtendScript, an old, and maybe quite obsolete, scripting language that merges javascript with Adobe classes. There was little results on StackOverflow and other forums for ExtendScript, with the only available resource being the official manual.",
-  "a_8": "https://blogs.adobe.com/creativecloud/files/2012/06/After-Effects-CS6-Scripting-Guide.pdf",
-  "p_9": "First thing first, I needed a JSON interpreter, since ExtendScript did not have one built in. I was able to find one online and import it into the script.",
-  "a_10": "https://raw.githubusercontent.com/douglascrockford/JSON-js/master/json2.js",
+  "p_7": "Having experience in video editing, I had some ideas to use the motion tracking data in After Effects, but that required me to build an interpreter for the data first. After Effect's scripting platform is ExtendScript, an old, and maybe quite obsolete, scripting language that merges javascript with Adobe classes. There was little results on StackOverflow and other forums for ExtendScript, with the only available resource being the <a href='https://blogs.adobe.com/wp-content/blogs.dir/48/files/2012/06/After-Effects-CS6-Scripting-Guide.pdf?file=2012/06/After-Effects-CS6-Scripting-Guide.pdf' style='color: yellow' target=_blank>official manual</a>.",
+  "p_9": "First, I needed a JSON interpreter, since ExtendScript did not have one built in. I was able to find one <a href='https://raw.githubusercontent.com/douglascrockford/JSON-js/master/json2.js' style='color: yellow' target=_blank>online</a> and import it into the script.",
   "s_11": "Design.",
   "p_12": "I began the process of drawing important body segments using ellipses in After Effects. Of the available body segments, I used the following data:",
   "l_1": "left/right_wrist",
@@ -51,8 +49,6 @@
   "d_25": "Hey buddy, is your arm okay?",
   "p_26": "After going through all the compositions, I was left with 14 unique dance cycles averaging 5 seconds each. I did some additional layering edits with the cycles before I went into editing. The reason I wanted to use motion capture in After Effects was to be able to animate text over the dancing figures.",
   "i_27": "idance/workflow.png",
-  "d_27": "After Effects interface with procedurally-generated poses",
-  "s_28": "Results.",
-  "a_29": "https://github.com/cardadfar/OpenPose-After-Effects"
+  "d_27": "After Effects interface with procedurally-generated poses"
 
 }

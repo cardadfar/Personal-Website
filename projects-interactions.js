@@ -143,6 +143,22 @@ $(document).ready(function(){
             loadFrame();
         });
 
+        $(".multicore-maps").click(function() {
+            $("iframe").attr("src","");
+            file = "multicore-maps";
+            window.location.hash = file;
+            noVideo = true;
+            loadFrame(noVideo);
+        });
+
+        $(".history-city").click(function() {
+            $("iframe").attr("src","");
+            file = "history-city";
+            window.location.hash = file;
+            noVideo = true;
+            loadFrame(noVideo);
+        });
+
         $(".gan-theft-auto").click(function() {
             $("iframe").attr("src","https://www.youtube.com/embed/eP5hHKne_gE");
             file = "gan-theft-auto";
@@ -154,6 +170,22 @@ $(document).ready(function(){
         $(".web-dev").click(function() {
             $("iframe").attr("src","https://cardadfar.github.io/Web-Dev-Weekend-Website/index.html");
             file = "web-dev-weekend";
+            window.location.hash = file;
+            loadFrame();
+        });
+
+
+        $(".stuco-site").click(function() {
+            $("iframe").attr("src","http://tinyurl.com/stuco-bpw");
+            file = "stuco-site";
+            window.location.hash = file;
+            loadFrame();
+        });
+
+
+        $(".personal-website").click(function() {
+            $("iframe").attr("src","http://cardadfar.com");
+            file = "personal-website";
             window.location.hash = file;
             loadFrame();
         });
@@ -227,7 +259,8 @@ $(document).ready(function(){
                 var anim_origin1 = "<animate fill='freeze' id='animation-to-origin1' begin='indefinite' attributeName='points' dur='500ms' to='0,0 10,0 20,0' />";
                 var anim_origin2 = "<animate fill='freeze' id='animation-to-origin2' begin='indefinite' attributeName='points' dur='500ms' to='0,5 10,5 20,5' />";
                 var anim_origin3 = "<animate fill='freeze' id='animation-to-origin3' begin='indefinite' attributeName='points' dur='500ms' to='0,10 10,10 20,10' />";
-                $(".video-bg").append("<svg class='trigger' onclick='trigger()' width='20' height='10' style='margin-left:10%; padding: 15px'> <polygon points='0,0 10,0 20,0' style='stroke:white;stroke-width:0.75;'>" + anim_change1 + anim_origin1 + "</polygon> <polygon points='0,5 10,5 20,5' style='stroke:white;stroke-width:0.75;'>" + anim_change2 + anim_origin2 + "</polygon> <polygon points='0,10 10,10 20,10' style='stroke:white;stroke-width:1;'>" + anim_change3 + anim_origin3 + "</polygon> </svg>");
+                $(".video-bg").append("<svg class='trigger' onclick='trigger()' width='20' height='10' style='cursor:pointer; margin-left:10%; padding: 15px; vertical-align:top;'> <polygon points='0,0 10,0 20,0' style='stroke:white;stroke-width:0.75;'>" + anim_change1 + anim_origin1 + "</polygon> <polygon points='0,5 10,5 20,5' style='stroke:white;stroke-width:0.75;'>" + anim_change2 + anim_origin2 + "</polygon> <polygon points='0,10 10,10 20,10' style='stroke:white;stroke-width:1;'>" + anim_change3 + anim_origin3 + "</polygon> </svg>");
+                $(".video-bg").append("<div onclick='trigger()' style='cursor:pointer; font-family:UniqueDistrictThin; color:white; display:inline-block; line-height:40px;'>(click to expand stats)</div>");
             }
 
             else if (key.charAt(0) == 's')   //subtitle
@@ -238,6 +271,9 @@ $(document).ready(function(){
 
             else if (key.charAt(0) == 'i')   //image
                 $(".video-bg").append("<img src='assets/project-descriptions/images/" + val + "'>");
+            
+            else if (key.charAt(0) == 'b')   //button
+                $(".video-bg").append("<a href=" + val[1] + " target='_blank'><img class=video-bg-button src='assets/project-descriptions/images/buttons/" + val[0] + "'></a>");
 
             else if (key.charAt(0) == 'v')
                 $(".video-bg").append("<iframe class='video-bg-player' src=" + val + " frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>");
@@ -246,7 +282,7 @@ $(document).ready(function(){
                 $(".video-bg").append("<li>" + val + "</li>");
 
             else if (key.charAt(0) == 'a') {  //link element
-                $(".video-bg").append("<a href='" + val + "'  target='_blank'>" + val + "</a>");
+                $(".video-bg").append("<a href='" + val + "'  target='_blank' style=text-decoration:underline;>" + val + "</a>");
                 $(".video-bg").append("<div class='line'></div>");
             }
 

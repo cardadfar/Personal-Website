@@ -1,0 +1,40 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "i_0": "multicore-maps/evolution_forward_crop.gif",
+  "d_0": "Evolution of map generation over increasing mountain generation.",
+  "t_0": "Multicore Map.",
+  "w_0": [{"code-icon.png": "OpenMP • Raylib • C++"},
+          {"time-icon.png": "5 Weeks"}],
+
+  "p_1": "The above algorithm parallelizes <a href='http://mewo2.com/notes/terrain/' style='color: yellow' target=_blank>O'Leary's map generation</a> algorithm originally implemented in JS. Our team ported both the generation and rendering code over to C++ and were able to get speedups using both SIMD and OpenMP parallel execution, as well as GPU hardware acceleration on the render side. We test the performance of our map generation algorithm on a fixed-size map as we increase threads, and also demonstrate that we are able to generate much larger maps than the sequential version in the same time.",
+  "b_1": ["code-button.png","https://github.com/bhaprayan/m3"],
+  "s_1": "Algorithm.",
+  "p_2": "We use a custom map data-structure that records all of the voxels of our discretized maps, as well as the heightmap of each voxel. For each voxel, we record its centroid as a 2D coordinate, as well as a list of the 2D coordinates of all vertices around the voxel. These vertex locations are useful during the rendering stage when we rasterize each voxel, while the centroid locations are useful for computing the height of each voxel during the generation stage.",
+  "p_3": "The key operations we perform on this data structure are Voronoi, Parsing, Slope, Mountain, Normalize, Mean, and Render. Their operations are described as follows:",
+  "i_3": "multicore-maps/block_diagram.png",
+  "d_3": "Generation pipeline block diagram.",
+  "l_4": "Voronoi - Compute a random Voronoi map with N voxels using the Fortune Sweep Library.",
+  "l_5": "Parsing - Iterate over the centroids and edges of the returned Voronoi map and store them in the custom map data structure, making sure to clip any voxels outside the screen space. Allocate a zeroed out heightmap of the same size as the number of voxels.",
+  "l_6": "Slope - Generate a random 2D vector representation of a line and compute the dot product of each voxel centroid to the line. Store this distance in the voxel's heightmap.",
+  "l_7": "Mountain - Generate $M$ 2D mountain locations. For each voxel, compute the distance between the voxel and mountain center. The height increase as a result of the mountain is inversely proportional to this distance (voxels closer to the mountain will be influenced more).",
+  "l_8": "Normalize - Retrieve the max and min value in the heightmap list. Subtract the min from each value in the heightmap, and divide by the difference between the max and min.",
+  "l_9": "Mean - Retrieve the mean of the heightmap list.",
+  "l_10": "Render - Compute the color for each voxel as a function of its height. Before rendering each voxel, tessellate the polygon using the EarCut algorithm [5], and render each triangle using Raylib [4] with the color computed from the voxel's height.",
+  "p_11": "The color for each voxel is a function of its centroid height. A voxel is considered a part of landif its height is greater than the mean of the heightmap, and is considered a part of sea otherwise.We use a color gradient where higher patches of land are shaded a lighter green denoting highgrasslands and higher patches of the sea are shaded a lighter blue denoting shallower waters.",
+  "s_12": "Parallelization Strategies.",
+  "p_13": "Our code requires iterating over array elements when parsing and computing the heightmap foreach voxel.  We assign a static even workload to each core using OpenMP, and within each core,we use SIMD execution to process multiple array elements at once given that each element of theheightmap shares the same arithmetic commands.",
+  "s_14": "Results.",
+  "i_15": "multicore-maps/breakdown.png",
+  "d_15": "Breakdown of pipeline components in execution time as we increase OpenMP threads.",
+  "p_15": "Our biggest bottleneck when parallelizing is the Voronoi computation.  In the single-threadedcase, computing the Voronoi takes more than 3/4 of the execution time, and the speedup for Voronoialone is less than 2x in the best case.  The reason for this is that Voronoi is an iterative refinementmethod, and most of the code involved in this section cannot be parallelized due to the sequentialdependency of trying to generate sparse points."
+
+
+
+}

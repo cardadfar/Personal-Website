@@ -17,7 +17,7 @@ function loadDataInitial() {
 
             else {
 
-                $("#" + dest).append("<div class=" + key + " id='video-icon'><div class='active-cover'><img class='cover-image' id=" + key + " src='assets/project-covers/cover-" + key + ".png'></div><img id='video-image' src='assets/project-covers/project-" + key + ".jpg'><p id='video-text'>" + val["l"][0] + "</p><p id='small-video-text'>" + val["l"][1] + "</p></div>"); 
+                $("." + dest).append("<div class=" + key + " id='video-icon'><div class='active-cover'><img class='cover-image' id=" + key + " src='assets/project-covers/cover-" + key + ".png'></div><img id='video-image' src='assets/project-covers/project-" + key + ".jpg'><p id='video-text'>" + val["l"][0] + "</p><p id='small-video-text'>" + val["l"][1] + "</p></div>"); 
             }
 
         });
@@ -47,7 +47,7 @@ function loadData(str) {
                     first = true;
                     all_art = true;
                     art_text = false;
-                    $("#art-projects > .no-results").remove();
+                    $(".art-projects > .no-results").remove();
                     $(".art-learn-more").removeClass("no-display");
 
                     $('.' + key).css('display', 'unset');
@@ -66,7 +66,7 @@ function loadData(str) {
 
 
     if(!all_art && !art_text) {
-        $("#art-projects").append("<p class='no-results'>No results. Try searching by project name, type, or year.</p>");
+        $(".art-projects").append("<p class='no-results'>No results. Try searching by project name, type, or year.</p>");
         $(".art-learn-more").addClass("no-display");
         art_text = true;
     }

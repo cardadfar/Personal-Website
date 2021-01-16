@@ -12,10 +12,7 @@
           {"code-icon.png": "C# • Python • TensorFlow"},
           {"time-icon.png": "5 Weeks"}],
 
-  "p_1": "GAN Theft Auto is an autonomously textured procedurally-generated Unity environment using semantic city data and a trained model of Pix2Pix on the GTA V dataset. The GTA V dataset can be found here.",
-  "a_2": "https://download.visinf.tu-darmstadt.de/data/from_games/",
-  "p_3": "GAN Theft Auto was a collaboration among 3 other members in computer science & art fields (2 of which were not assigned the project but provided substantial help in certain areas). For the full report, follow the link below.",
-  "a_4": "https://drive.google.com/file/d/1jlcmtAxiU-ts4C86HRvTA_b7mhQ_92yf/view",
+  "p_1": "GAN Theft Auto is an autonomously textured procedurally-generated Unity environment using semantic city data and a trained model of Pix2Pix on the semantic-segmented <a href='https://download.visinf.tu-darmstadt.de/data/from_games/' style='color: yellow' target=_blank>GTA V dataset</a>. This project was in collaboration with 2 other computer-science/art majors.",
 
   "s_5": "Procedurally Generated Environments",
   "p_6": "Using C# scripting, we created a canvas that was divided into smaller sections procedurally, giving way to roads and blocks. Within each block could be populated assets of trees & buildings. Each asset was assigned a certain rule of position and scale depending on how close it was to the roads.",

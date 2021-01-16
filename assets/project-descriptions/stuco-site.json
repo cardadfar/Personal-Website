@@ -1,0 +1,16 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "t_0": "StuCo Website.",
+  "w_0": [{"code-icon.png": "HTML • CSS • JavaScript"},
+          {"time-icon.png": "2 Weeks"}],
+
+  "p_1": "<a target=_blank href='www.tinyurl.com/stuco-bpw'>The above site</a> was built for my student-created, managed, and taught course on web development. The course teaches students the necessary HTML, CSS, and JavaScript to build their own websites and portfolios, so it was only necessary that a the course came with it's own well-designed website",
+  "p_2": "There is another variant of the same site for the stco I also teach on <a target=_blank href='www.tinyurl.com/stuco-ave'>animation & video editing</a>"
+}

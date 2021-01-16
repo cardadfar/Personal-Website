@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Deferred Tile-Shading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <style>
+
+        body {
+          background-color: #ebebeb;
+          margin: 0;
+        }
+
+        .subtitle {
+            font-size: 22px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px;
+        }
+        th {
+            text-align: left;
+        }
+    </style>
+
+    <div style="width:70%; margin-left: calc(15% - 20px); background-color: white; padding-top: 30px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px;">
+
+    
+    <div class=subtitle>An Analysis of Deferred Tile-Shading.</div>
+    <p>
+        Oscar Dadfar (odadfar) Fall 2020
+    </p>
+    
+    <div class=subtitle>Task.</div>
+    <p>
+        This project focused on implementing deffered shading into the assignment 1 rasterization pipeline. Our results show that there is an evident trade-off in the speedup of deferring rasterizatin and the penalty of memory accessing in the G-buffer that lead to results that only mearly improve temporal performance in more compelx scenes.
+    </p>
+
+    <div class=subtitle>Approach.</div>
+    <p>
+        Using Assignment 1 as starter code, I added an extension to the Framebuffer.h class that could append G-buffer data. The following data was stored (adjacent per element):<br><br>
+        <code>
+        typedef struct gBufferContent {<br>
+            &emsp; bool visited;______//true if needs to be computed<br>
+            &emsp; int i;_____________//index into triangle buffer<br>
+            &emsp; int triID;_________//unique triangle ID<br>
+            &emsp; int t;_____________//thread bucket triangle lies in<br>
+            &emsp; float z;___________//depth of shaded pixel (used for z-test)<br>
+            &emsp; int type;__________//0-3 indicating what region of the 2x2 SIMD vector <br>
+            &emsp; __m128 gamma;______//SIMD vector of gammas<br>
+            &emsp; __m128 beta;_______//SIMD vector of betas<br>
+            &emsp; __m128 alpha;______//SIMD vector of alphas<br>
+            &emsp; int coverage;______//coverage mask of 2x2 SIMD vector<br>
+        } gBuffer_t;
+        </code><br><br>
+        In TiledRenderer.cpp where the shading instructions originally were, these calls were replaces with calls to store contents to the G-Buffer. Each frame tile had its own G-Buffer so that multiple threads wouldn't have concurrency issues when attempting to write to the same global struct. In each save to the G-Buffer, we would store SIMD-formatted info of the 2x2 region that would later be used to shade, as well as info of which of the 4 fragments in the 2x2 region would use this info. It was very likely along edges that some of the 4 fragments would require info from one triangle, and the other fragments would require info from another. In order to make this easier, the program makes sure that the 2x2 fragments are aligned, meaning that every time a 2x2 SIMD unit comes in, its top left coordinate is even in both the x and y coordinate. A diagram of how the algorithm rasterizes the red primitve can be seen below, where the pink region is the active area that we scan with 2x2 fragment SIMD vectors. We make sure the active area is evenly aligned on the x and y axis so that if SIMD vectors from other areas cross into the red primitive's active area, they will share the same coordinates.
+    
+    </p>
+
+    <img width=400px style="margin-left: calc(50% - 200px);" src="img-01.png">
+
+    <p>
+
+        The program continues iterating over all the 2x2 fragment chunks in the tile before shading any of the results. Upon shading, the program iterates through each pixel, and checks if any nearby pixels in a 1 pixel radius share the same triangle (and ultimately same texture). If so, then they are paired together in a SIMD unit and used in the same texture fetch. Thus, for 2x2 fragments completely inside the triangle, we still get the same SIMD execution as the original tiled renderer. It is when each fragment around our current fragment is a different triangle that we need to shade the current fragment individually (thus wasting SIMD units).
+
+    </p>
+
+    <div class=subtitle>Results.</div>
+
+    <p>
+
+        The below results were run on a GHC machine with _ cores and _____.
+
+    <table style="width:100%">
+        <tr>
+          <th>Scene</th>
+          <th>Avg Triangle Area (pixel^2)</th> 
+          <th>Num Triangles</th> 
+          <th>Non-Tiled (ms)</th> 
+          <th>Tiled (ms)</th>
+          <th>Tiled Deffered (ms)</th>
+        </tr>
+        <tr>
+          <td>square</td>
+          <td>87,830.28</td>
+          <td>1,152</td>
+          <td>9.7</td> 
+          <td><b>3.5</b></td> 
+          <td>9.2</td>
+        </tr>
+        <tr>
+          <td>bunny</td>
+          <td>1,644.98</td>
+          <td>69,451</td>
+          <td>23.2</td> 
+          <td><b>11.4</b></td> 
+          <td>20.1</td>
+        </tr>
+        <tr>
+          <td>sibenik</td>
+          <td>29,593.36</td>
+          <td>75,284</td>
+          <td>61.1</td> 
+          <td><b>26.3</b></td> 
+          <td>27.8</td>
+        </tr>
+        <tr>
+          <td>sponza</td>
+          <td>12,508.89</td>
+          <td>262,267</td>
+          <td>147.2</td> 
+          <td>82.3</td> 
+          <td><b>68.5</b></td>
+        </tr>
+        <tr>
+          <td>warehouse</td>
+          <td>12,053.86</td>
+          <td>248,735</td>
+          <td>190.1</td> 
+          <td>78.7</td> 
+          <td><b>71.4</b></td>
+        </tr>
+        <tr>
+          <td>station</td>
+          <td>15,132.10</td>
+          <td>176,617</td>
+          <td>92.4</td> 
+          <td><b>48.5</b></td> 
+          <td>49.7</td>
+        </tr>
+      </table>
+
+      <br>The above table showcases the temporal results on different scenes. An interesting point to observe is that our tiled deferred renderer performs better only if there is a high primitive count. Each scene was rendered at the same resolution (1024x768), so higher primitive counts direclty led to more overlap in primitives. This means that scenes with more overlap were more likely to do uneccessary shading in the non-deferred case that we were able to avoid (and cut down time on) in the defferred case. Otherwise, if there is a lack of significant overlap in the primitives, then our overhead for creating and storing/reading from the G-Buffer outweight the temporal gain we get from deferring shading, thus leading to higher deferred times than in the non-deffered case.<br><br>
+
+      <div style="text-align: center"><img style="display: inline-block; height: 250px" src="plot-01.png"><img style="display: inline-block; height: 250px" src="plot-02.png"></div>
+
+      
+      The first plot shows the number of triangles per scene and the second plot multiplies the triangles per scene with the average triangle size per scene to get the triangle coverage per scene, thus giving us intuition for how much overlap occurs per scene. The conclusion to draw here is that the scene geometry matters. Having a scene without much primitive overlap will make an algorithm such as deferred shading potentially useless. We need to have significant primitive overlap for the benefits of deferred shading to be evident.
+
+    </p>
+    
+    </div>
+
+</body>
+</html>

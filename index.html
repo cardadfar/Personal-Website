@@ -51,46 +51,50 @@
         <div class="circle-dashed" id="circle-dashed2" style="border: 0.35px solid white"></div>
         <div class="circle"><img class="icon" src="assets/grey-icon.png"></div>
         <p class="hi">Hi.</p>
-        <p class="indent">I'm Oscar. I'm a digital artist focusing on 2D time-based mediums such as video-editing, animation, graphic design, computational arts, front-end development & software engineering. Most of my work integrates digital art with computer science & computational physics to create interactive digital experiences and computational tools to help non-artists without traditional artistic abilities (ex: drawing, painting) create art and animations.</p>
+        <p class="indent">I'm Oscar. I'm a computer scientist, but I'm also an artist.</p>
+        <p class="indent">I use Computer Graphics, Machine Learning & Computer Architecture Systems to research new solutions to help me make art, and to build applications and algorithms to help others without traditional artistic abilities make art.</p>
         
         
         <div id="line-grey"></div>
         <div id="line-grey-small"></div>
-        <div class="adobe-icon" style="padding-bottom:25px;">
+        <div class="adobe-icon">
+            <img src="assets/skills-icons/masters-icon.png" style="height: 100%; float: left;">
+            <p id="side-text">Masters's of Computer Science</p>
+            <p id="small-side-text">Carnegie Mellon University • Spring 2022</p>
+        </div>
+        <div class="adobe-icon">
             <img src="assets/skills-icons/art-icon.png" style="height: 100%; float: left;">
             <p id="side-text">Bachelor's of Computer Science & Art</p>
             <p id="small-side-text">Carnegie Mellon University • Spring 2021</p>
         </div>
-        <div class="adobe-icon" style="padding-bottom:25px;">
+        <div class="adobe-icon" style="padding-top:5px; padding-left:calc(25% + 50px);">
             <img src="assets/skills-icons/graphics-icon.png" style="height: 100%; float: left;">
             <p id="side-text">Minor in Computer Graphics</p>
-            <p id="small-side-text">Carnegie Mellon University • Spring 2021</p>
+            <p id="small-side-text">Carnegie Mellon University</p>
         </div>
-        <div class="adobe-icon adobe-icon-bottom" style="padding-bottom:35px;">
+        <div class="adobe-icon" style="padding-top:5px; padding-left:calc(25% + 50px);">
             <img src="assets/skills-icons/ml-icon.png" style="height: 100%; float: left;">
             <p id="side-text">Minor in Machine Learning</p>
-            <p id="small-side-text">Carnegie Mellon University • Spring 2021</p>
+            <p id="small-side-text">Carnegie Mellon University</p>
         </div>
-        <div class="adobe-icon adobe-icon-bottom" style="padding-bottom:35px;">
+        <div class="adobe-icon adobe-icon-bottom" style="padding-top:5px; padding-bottom:35px; padding-left:calc(25% + 50px);">
             <img src="assets/skills-icons/physics-icon.png" style="height: 100%; float: left;">
             <p id="side-text">Minor in Computational Physics</p>
-            <p id="small-side-text">Carnegie Mellon University • Spring 2021</p>
+            <p id="small-side-text">Carnegie Mellon University</p>
         </div>
         <div id="line-grey-small" style="margin-bottom:10px;"></div>
         <div id="line-grey" style="margin-bottom:30px;"></div>
         
-        
-        <p class="indent">Here you can find more information about me, what I do, and even get in touch with me. Most of the content on this website is independent projects and portfolio content. To view additional content, such as Leadership, Coursework, and Activities, you can refer to my resume below.</p>
         <div class="resume-button">
             <img class="resume-button-hover" src="assets/resume-button-hover.png">
-            <img src="assets/resume-button.png" style="height:100%; box-shadow: 0px 0px 25px;">
+            <img src="assets/resume-button.png" style="height:100%;">
         </div>
 
 
 
 
         <div class="tabs">
-          <div class="tab tab-year" id="year1-tab" onclick="openTab('year1', 'year1-tab')" style="background: rgb(43, 43, 43);">
+          <div class="tab tab-year" id="year1-tab" onclick="openTab('year1', 'year1-tab')" style="background: rgb(60, 60, 70);">
               <p class="year-text">'17 - '18</p>
               <p class="year-box" id="year-box1">Freshman</p>
           </div>
@@ -105,6 +109,10 @@
           <div class="tab tab-year" id="year4-tab" onclick="openTab('year4', 'year4-tab')">
               <p class="year-text">'20 - '21</p>
               <p class="year-box" id="year-box4">Senior</p>
+          </div>
+          <div class="tab tab-year" id="year5-tab" onclick="openTab('year5', 'year5-tab')">
+              <p class="year-text">'21 - '22</p>
+              <p class="year-box" id="year-box5">Masters</p>
           </div>
         </div>
 
@@ -231,7 +239,7 @@
                     <p class="course-box" id="course-box-S19-01">Transformations, Curves & Surfaces, Animation, Visibility Algorithms, Sshading, Ray Tracing</p>
                 </div>
                 <div class="course" id="C-S19-05" onmouseover="flicker('S19-05')">
-                    <p class="left-text" id="S19-05">Appearance Modeling [Grad]</p>
+                    <p class="left-text" id="S19-05">Graduate Appearance Modeling</p>
                     <p class="right-text">CG</p>
                     <p class="course-box" id="course-box-S19-05">Light Field Photography, Light Transport, Inverse Rendering, BRDF Measurements & Representations</p>
                 </div>
@@ -308,7 +316,7 @@
                     <p class="course-box" id="course-box-S20-01">OpenMP, MPI, Synchronization, Locking</p>
                 </div>
                 <div class="course" id="C-S20-02" onmouseover="flicker('S20-02')">
-                    <p class="left-text" id="S20-02">Artificial Intelligence [Grad]</p>
+                    <p class="left-text" id="S20-02">Graduate Artificial Intelligence</p>
                     <p class="right-text">CS</p>
                     <p class="course-box" id="course-box-S20-02">Convex Optimization, Linear Programming, Game Theory, Social Choice</p>
                 </div>
@@ -342,6 +350,56 @@
                     <p class="left-text-title" style="float: none; margin-bottom: 0;">Fall 2020</p>
                     <div id="underline"></div>
                 </div>
+                <div class="course" id="C-F20-01" onmouseover="flicker('F20-01')">
+                    <p class="left-text" id="F20-01">Visual Computing Systems (Self-Studied)</p>
+                    <p class="right-text">CG</p>
+                    <p class="course-box" id="course-box-F20-01">Real-Time Graphics, Graphics Hardware, High-Performance Rasterization, Vision System</p>
+                </div>
+                <div class="course" id="C-F20-02" onmouseover="flicker('F20-02')">
+                    <p class="left-text" id="F20-02">Graduate Computer Architechture</p>
+                    <p class="right-text">CS</p>
+                    <p class="course-box" id="course-box-F20-02">ISAs, Pipelining, SuperScalar Processors, CPU & GPU Hardware</p>
+                </div>
+                <div class="course" id="C-F20-03" onmouseover="flicker('F20-03')">
+                    <p class="left-text" id="F20-03">Deep Reinforcement Learning</p>
+                    <p class="right-text">ML</p>
+                    <p class="course-box" id="course-box-F20-03">On-Policy & Off-Policy Learning, Imitation Learning, Deep Q-Networks, Actor-Critic</p>
+                </div>
+                <div class="course" id="C-F20-04" onmouseover="flicker('F20-04')">
+                    <p class="left-text" id="F20-04">Machine Learning for Large Datasets</p>
+                    <p class="right-text">ML</p>
+                    <p class="course-box" id="course-box-F20-04">Spark, Tensorflow, Distributed Computing, Parallel Computing </p>
+                </div>
+                <div class="course" id="C-F20-05" onmouseover="flicker('F20-05')">
+                    <p class="left-text" id="F20-05">Advanced Topics in Machine Learning & Game Theory</p>
+                    <p class="right-text">CS</p>
+                    <p class="course-box" id="course-box-F20-05">Reinforcement Learning, Adversarial Attacks, Security in Machine Learning</p>
+                </div>
+                <div class="course" id="C-F20-06" onmouseover="flicker('F20-06')">
+                    <p class="left-text" id="F20-06">BXA Seminar IV</p>
+                    <p class="right-text">Gen ED</p>
+                    <p class="course-box" id="course-box-F20-06">Senior Year Capstone</p>
+                </div>
+            </div>
+            <div id="left">
+                <p></p>
+                <div class="course-title">
+                    <p class="left-text-title" style="float: none; margin-bottom: 0;">Spring 2021</p>
+                    <div id="underline"></div>
+                </div>
+                <div class="course-title">
+                    <p class="left-text-title" id="F17-01">Coming Soon...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content" id="year5" style="display: none;">
+            <div id="left">
+                <p></p>
+                <div class="course-title">
+                    <p class="left-text-title" style="float: none; margin-bottom: 0;">Fall 2021</p>
+                    <div id="underline"></div>
+                </div>
                 <div class="course-title">
                     <p class="left-text-title" id="F17-01">Coming Soon...</p>
                 </div>
@@ -349,7 +407,7 @@
             <div id="left">
                 <p></p>
                 <div class="course-title">
-                    <p class="left-text-title" style="float: none; margin-bottom: 0;">Spring 2021</p>
+                    <p class="left-text-title" style="float: none; margin-bottom: 0;">Spring 2022</p>
                     <div id="underline"></div>
                 </div>
                 <div class="course-title">

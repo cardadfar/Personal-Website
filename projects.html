@@ -59,226 +59,323 @@
         <div class="bridge"><img id='start-image' src="assets/tab-backgrounds/home-blur.jpg"></div>
         <div class="body-background">
             <p class="hi" id="start-text">Projects.</p>
-            <p style="text-align:center;">Hand-Drawn Animation •  Vector-Based Animation •  Kinetic Typography •  Motion Graphics •  Video Editing</p>
-            <p  class="indent">Below is a list of projects, ranging from independent work to classwork. All works are time-based. Clicking the video cards will load the selected work for viewing and offer additional information about production details.</p>
-
-            <input class='searchbar' type="text" placeholder="Search For a Project..">
-
-            <p  class="indent">You can search for projects by name, type, or year For example, searching 'Spring 2018' will show all projects from the Spring 2018 semester, while 'Kinetic Typography' will show all Kinetic Typographies.</p>
+            <p  class="indent">Below is a list of projects, ranging from independent work and research to classwork. Clicking the video cards will load the selected work for viewing and offer additional information about production details. You can switch between tabs to view animations, research, graphics applications, and websites I've build and created. Happy viewing!</p>
+            <div style='height:20px'></div>
             
-            <div id="skill-icon" style="margin-left:10%;">
-                <img src="assets/play-icon.png" style="height: 100%; float: left;">
-                <p id="skill-type">Projects.</p>
-            </div>
-            <div id="line-grey" style="width:80%; margin-left:10%"></div>
-            <div id="line-grey-small" style="width:84%; margin-left:8%"></div>
-            <p class="art-learn-more" id="learn-more">hover/click to learn more.</p>
-
-            <div class="projects-holder" id="art-projects">
-
-                <div class="water-shader" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="water-shader" src="assets/project-covers/cover-water-shader.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-water-shader.jpg">
-                    <p id="video-text">GLSL Shader</p>
-                    <p id="small-video-text">Fall 2019</p>
+            <div class="tabs">
+                <div class="tab tab-year" id="year1-tab" onclick="openTab('year1', 'year1-tab')" style="background: rgb(60, 60, 70);">
+                    <p class="year-text">Graphics Applications</p>
                 </div>
-
-                <div class="dsg-university" id="video-icon">
+                <div class="tab tab-year" id="year2-tab" onclick="openTab('year2', 'year2-tab')">
+                    <p class="year-text">Research</p>
+                </div>
+                <div class="tab tab-year" id="year3-tab" onclick="openTab('year3', 'year3-tab')">
+                    <p class="year-text">Animations</p>
+                </div>
+                <div class="tab tab-year" id="year4-tab" onclick="openTab('year4', 'year4-tab')">
+                    <p class="year-text">Web Development</p>
+                </div>
+                <div class="tab tab-year" id="year5-tab" onclick="openTab('year5', 'year5-tab')">
+                    <p class="year-text">Misc</p>
+                </div>
+              </div>
+      
+              <div class="tab-content" id="year1">
+                <div class="projects-holder art-projects">
+    
+                    <div class="water-shader" id="video-icon">
                         <div class="active-cover">
-                            <img class="cover-image" id="dsg-university" src="assets/project-covers/cover-dsg-university.png">
+                            <img class="cover-image" id="water-shader" src="assets/project-covers/cover-water-shader.png">
                         </div>
-                        <img id="video-image" src="assets/project-covers/project-dsg-university.jpg">
-                        <p id="video-text">Web Application</p>
+                        <img id="video-image" src="assets/project-covers/project-water-shader.jpg">
+                        <p id="video-text">GLSL Shader</p>
                         <p id="small-video-text">Fall 2019</p>
                     </div>
+                    
+                    <div class="history-city" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="history-city" src="assets/project-covers/cover-history-city.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-history-city.jpg">
+                        <p id="video-text">Data-Driven City Generator</p>
+                        <p id="small-video-text">Spring 2020</p>
+                    </div>
+    
+                    <div class="gan-theft-auto" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="gan-theft-auto" src="assets/project-covers/cover-gan-theft-auto.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-gan-theft-auto.jpg">
+                        <p id="video-text">Deep Generative Environments</p>
+                        <p id="small-video-text">Spring 2018</p>
+                    </div>
+    
+                    <div class="how-far-weve-come" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="how-far-weve-come" src="assets/project-covers/cover-how-far-weve-come.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-how-far-weve-come.jpg">
+                        <p id="video-text">AR Typography</p>
+                        <p id="small-video-text">Spring 2018</p>
+                    </div>
+    
+                    <div class="sketcher" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="sketcher" src="assets/project-covers/cover-sketcher.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-sketcher.jpg">
+                        <p id="video-text">AE Plug-In Development</p>
+                        <p id="small-video-text">Fall 2018</p>
+                    </div>
+    
+                    <div class="idance" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="idance" src="assets/project-covers/cover-idance.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-idance.jpg">
+                        <p id="video-text">Motion Capture Parser</p>
+                        <p id="small-video-text">Spring 2018</p>
+                    </div>
+
+                    <div class="multicore-maps" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="multicore-maps" src="assets/project-covers/cover-multicore-maps.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-multicore-maps.jpg">
+                        <p id="video-text">OpenMP Rasterization</p>
+                        <p id="small-video-text">Spring 2020</p>
+                    </div>
+
+                </div>
+              </div>
+      
+              <div class="tab-content" id="year2" style="display: none;">
+                <div class="projects-holder art-projects">
+
+
+
+                    <div class="research-icon" onclick="window.open('http://cardadfar.com/assets/projects/Frequency_Based_Texture_Caching.pdf','mywindow');">
+                        <img src="assets/project-covers/research-texture-cache.png">
+                        <div class="research-side">
+                            <p id="research-side-text">Frequency-Based Texture Caching</p>
+                            <p id="research-sub-tag" style='background:#d4fffe;'>Computer Graphics</p>
+                            <p id="research-sub-tag" style='background:#fcd3d0;'>Computer Architechture</p>
+                            <p id="research-sub-text">During rasterization we know all the textures referenced by each primitive, and thus the total number of accesses per texture over the scene's rasterization lifetime. This data can be used to help predict how likely the same texture will be accessed in the near future, which is essential in determining whether to keep certain texture data in the cache. We propose a new cache eviction policy that combines a baseline LRU ranking with texture access frequency to compute an eviction score that evicts textures from the cache that have not been recently used and have a low probability of being accessed in the future. We evaluate our results for multiple cache configurations across different scenes with varying primitive and texture quantities and find that our algorithm does increasingly better than pure LRU for higher cache associativities.</p>
+                        </div>
+                    </div>
+
+                    <div class="research-icon" onclick="window.open('https://cardadfar.github.io/japanese_water_shader/images/paper.pdf','mywindow');">
+                        <img src="assets/project-covers/research-water-shader.png">
+                        <div class="research-side">
+                            <p id="research-side-text">Japanese-Style Toon-Based Water Shader</p>
+                            <p id="research-sub-tag" style='background:#d4fffe;'>Computer Graphics</p>
+                            <p id="research-sub-text">This paper looks at a Non-Photo-Realistic (NPR) representation of water inspired by the famous Japanese water-art painting The Great Wave off Kanagawa by Katsushika Hokusai and attempts to produce a modular toon-based water shader based on the work. Such a system requires vertex position updates based on interpolated spline calculations on the CPU, laplacian height diffusion in the vertex shader, as well as thresholding on position, curvature, and heightmap information in the fragment shader.</p>
+                        </div>
+                    </div>
+
+                    <div class="research-icon" onclick="window.open('http://cardadfar.com/assets/projects/Deferred_Tile_Shading.html','mywindow');">
+                        <img src="assets/project-covers/research-deferred-tile-shading.png">
+                        <div class="research-side">
+                            <p id="research-side-text">An Analysis of Deferred Tile-Shading</p>
+                            <p id="research-sub-tag" style='background:#d4fffe;'>Computer Graphics</p>
+                            <p id="research-sub-tag" style='background:#fcd3d0;'>Computer Architechture</p>
+                            <p id="research-sub-text">This project focused on implementing deffered shading into a tile-based rasterization pipeline coded on the CPU using intel intrinsics. Our results show that there is an evident trade-off in the speedup of deferring rasterizatin and the penalty of memory accessing in the G-buffer that lead to results that only mearly improve temporal performance in more compelx scenes.</p>
+                        </div>
+                    </div>
+
+                    <div class="research-icon" onclick="window.open('http://cardadfar.com/assets/projects/3D_Global_Registration.pdf','mywindow');">
+                        <img src="assets/project-covers/research-icp-bnb.png">
+                        <div class="research-side">
+                            <p id="research-side-text">3D Global Registration Using ICP & Branch-and-Bound Search</p>
+                            <p id="research-sub-tag" style='background:#d4fffe;'>Computer Graphics</p>
+                            <p id="research-sub-tag" style='background: #e2ffde;'>Computer Vision</p>
+                            <p id="research-sub-text">Point cloud registration is a staple for many different applications in robotics and graphics communities. Iterative Closest Point (ICP), which is the standard method for this task suffers from local minimas and hence is only useful given a good initial alignment. We focus on the task of global registration of 2 point clouds, without the use of a priori information with regards to alignment, using a Branch and Bound (BnB) search over the euclidean transformation space with ICP sub-routines. We explore the idea that a BnB method can help in overcoming the local minimas that ICP would succumb to by comparing multiple methods using this framework.</p>
+                        </div>
+                    </div>
+
+                    <div class="research-icon" onclick="window.open('http://cardadfar.com/assets/project-descriptions/images/object-illum/paper.pdf','mywindow');">
+                        <img src="assets/project-covers/research-object-illum.png">
+                        <div class="research-side">
+                            <p id="research-side-text">Stabilizing Object Lighting Under Variable Lighting Conditions In Video</p>
+                            <p id="research-sub-tag" style='background:#d4fffe;'>Computer Graphics</p>
+                            <p id="research-sub-tag" style='background: #e2ffde;'>Computer Vision</p>
+                            <p id="research-sub-text">We present a novel light-stabilization algorithm that takes into account object BRDFs to relight sequences of frames subjected to variable lighting conditions. By assuming no objects in scene share the same BRDF, we calculate illumination changes in objects independently and apply a calculated relighting mask to a sequence of video frames to stabilize changes in illumination. OpenCV is used to calculate object bounding boxes to perform local lighting re-weighting. Pixels outside local objects are considered a part of the global lighting scale and are relight using k-means clustering to separate hues in HSL space and perform relighting independently on separate clusters. Global relighting does not respect BRDF properties and assumes all objects in the same hue group share a uniform BRDF. We test our algorithm on manually-relit and real-life variable lighting scenes and discover that our algorithm is translation and scale-invariant but not rotation-invariant.</p>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+      
+              <div class="tab-content" id="year3" style="display: none;">
+                <div class="projects-holder art-projects">
+                    
+                    <div class="food-drive" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="food-drive" src="assets/project-covers/cover-food-drive.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-food-drive.jpg">
+                        <p id="video-text">Vector-Based Animation</p>
+                        <p id="small-video-text">Fall 2018</p>
+                    </div>
+    
+                    <div class="la-da-dee" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="la-da-dee" src="assets/project-covers/cover-la-da-dee.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-la-da-dee.jpg">
+                        <p id="video-text">Hand-Drawn Animation</p>
+                        <p id="small-video-text">Spring 2018</p>
+                    </div>
+    
+                    <div class="build-our-machine" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="build-our-machine" src="assets/project-covers/cover-build-our-machine.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-build-our-machine.jpg">
+                        <p id="video-text">Kinetic Typography</p>
+                        <p id="small-video-text">Spring 2018</p>
+                    </div>
+    
+                    <div class="hibikase" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="hibikase" src="assets/project-covers/cover-hibikase.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-hibikase.jpg">
+                        <p id="video-text">Kinetic Typography</p>
+                        <p id="small-video-text">Spring 2018</p>
+                    </div>
+    
+                    <div class="number-one" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="number-one" src="assets/project-covers/cover-number-one.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-number-one.jpg">
+                        <p id="video-text">Video Edit</p>
+                        <p id="small-video-text">Spring 2018</p>
+                    </div>
+    
+                    <div class="peace-sign" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="peace-sign" src="assets/project-covers/cover-peace-sign.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-peace-sign.jpg">
+                        <p id="video-text">Hand-Drawn Animation</p>
+                        <p id="small-video-text">Fall 2017</p>
+                    </div>
+    
+                    <div class="infinite" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="infinite" src="assets/project-covers/cover-infinite.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-infinite.jpg">
+                        <p id="video-text">Kinetic Typography</p>
+                        <p id="small-video-text">Fall 2017</p>
+                    </div>
+    
+                    <div class="null-space" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="null-space" src="assets/project-covers/cover-null-space.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-null-space.jpg">
+                        <p id="video-text">Kinetic Typography</p>
+                        <p id="small-video-text">Fall 2017</p>
+                    </div>
+    
+                    <div class="plastic-promises" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="plastic-promises" src="assets/project-covers/cover-plastic-promises.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-plastic-promises.jpg">
+                        <p id="video-text">Kinetic Typography</p>
+                        <p id="small-video-text">Fall 2017</p>
+                    </div>
+    
+                    <div class="stitches" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="stitches" src="assets/project-covers/cover-stitches.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-stitches.jpg">
+                        <p id="video-text">Kinetic Typography</p>
+                        <p id="small-video-text">Fall 2017</p>
+                    </div>
+    
+                    <div class="rondo" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="rondo" src="assets/project-covers/cover-rondo.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-rondo.jpg">
+                        <p id="video-text">Motion Graphics</p>
+                        <p id="small-video-text">Fall 2016</p>
+                    </div>
+                </div>
+              </div>
+      
+              <div class="tab-content" id="year4" style="display: none;">
+                <div class="projects-holder art-projects">
+
+                    <div class="dsg-university" id="video-icon">
+                            <div class="active-cover">
+                                <img class="cover-image" id="dsg-university" src="assets/project-covers/cover-dsg-university.png">
+                            </div>
+                            <img id="video-image" src="assets/project-covers/project-dsg-university.jpg">
+                            <p id="video-text">Web Application</p>
+                            <p id="small-video-text">Fall 2019</p>
+                        </div>
+    
+                    <div class="web-dev" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="web-dev" src="assets/project-covers/cover-web-dev.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-web-dev.jpg">
+                        <p id="video-text">Web Development</p>
+                        <p id="small-video-text">Spring 2018</p>
+                    </div>
+    
+                    <div class="stuco-site" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="stuco-site" src="assets/project-covers/cover-stuco-site.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-stuco-site.jpg">
+                        <p id="video-text">Course Website</p>
+                        <p id="small-video-text">Fall 2017</p>
+                    </div>
+                        
+                </div>
+              </div>
+      
+              <div class="tab-content" id="year5" style="display: none;">
+                <div class="projects-holder art-projects">
+
+                    <div class="worm-park" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="worm-park" src="assets/project-covers/cover-worm-park.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-worm-park.jpg">
+                        <p id="video-text">Interactive Graphics</p>
+                        <p id="small-video-text">Spring 2018</p>
+                    </div>
+
+                    <div class="my-minor-melody" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="my-minor-melody" src="assets/project-covers/cover-my-minor-melody.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-my-minor-melody.jpg">
+                        <p id="video-text">Audio Builder Game</p>
+                        <p id="small-video-text">Fall 2017</p>
+                    </div>
+
+                    <div class="sound-map" id="video-icon">
+                        <div class="active-cover">
+                            <img class="cover-image" id="sound-map" src="assets/project-covers/cover-sound-map.png">
+                        </div>
+                        <img id="video-image" src="assets/project-covers/project-sound-map.jpg">
+                        <p id="video-text">Audio Artist</p>
+                        <p id="small-video-text">Spring 2018</p>
+                    </div>
+                    
+                </div>
+              </div>
             
-                <div class="object-illum" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="object-illum" src="assets/project-covers/cover-object-illum.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-object-illum.jpg">
-                    <p id="video-text">Relighting Algorithm</p>
-                    <p id="small-video-text">Spring 2019</p>
-                </div>
-
-                <div class="sketcher" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="sketcher" src="assets/project-covers/cover-sketcher.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-sketcher.jpg">
-                    <p id="video-text">Hand-Drawn Animation</p>
-                    <p id="small-video-text">Fall 2018</p>
-                </div>
-
-                <div class="food-drive" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="food-drive" src="assets/project-covers/cover-food-drive.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-food-drive.jpg">
-                    <p id="video-text">Vector-Based Animation</p>
-                    <p id="small-video-text">Fall 2018</p>
-                </div>
-
-                <div class="gan-theft-auto" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="gan-theft-auto" src="assets/project-covers/cover-gan-theft-auto.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-gan-theft-auto.jpg">
-                    <p id="video-text">Generative Environments</p>
-                    <p id="small-video-text">Spring 2018</p>
-                </div>
-
-                <div class="web-dev" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="web-dev" src="assets/project-covers/cover-web-dev.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-web-dev.jpg">
-                    <p id="video-text">Web Development</p>
-                    <p id="small-video-text">Spring 2018</p>
-                </div>
-
-                <div class="how-far-weve-come" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="how-far-weve-come" src="assets/project-covers/cover-how-far-weve-come.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-how-far-weve-come.jpg">
-                    <p id="video-text">Video Edit</p>
-                    <p id="small-video-text">Spring 2018</p>
-                </div>
-
-                <div class="la-da-dee" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="la-da-dee" src="assets/project-covers/cover-la-da-dee.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-la-da-dee.jpg">
-                    <p id="video-text">Hand-Drawn Animation</p>
-                    <p id="small-video-text">Spring 2018</p>
-                </div>
-
-                <div class="build-our-machine" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="build-our-machine" src="assets/project-covers/cover-build-our-machine.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-build-our-machine.jpg">
-                    <p id="video-text">Kinetic Typography</p>
-                    <p id="small-video-text">Spring 2018</p>
-                </div>
-
-                <div class="hibikase" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="hibikase" src="assets/project-covers/cover-hibikase.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-hibikase.jpg">
-                    <p id="video-text">Kinetic Typography</p>
-                    <p id="small-video-text">Spring 2018</p>
-                </div>
-
-                <div class="idance" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="idance" src="assets/project-covers/cover-idance.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-idance.jpg">
-                    <p id="video-text">Vector-Based Animation</p>
-                    <p id="small-video-text">Spring 2018</p>
-                </div>
-
-                <div class="number-one" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="number-one" src="assets/project-covers/cover-number-one.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-number-one.jpg">
-                    <p id="video-text">Video Edit</p>
-                    <p id="small-video-text">Spring 2018</p>
-                </div>
-
-                <div class="worm-park" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="worm-park" src="assets/project-covers/cover-worm-park.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-worm-park.jpg">
-                    <p id="video-text">Interactive Graphics</p>
-                    <p id="small-video-text">Spring 2018</p>
-                </div>
-
-                <div class="sound-map" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="sound-map" src="assets/project-covers/cover-sound-map.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-sound-map.jpg">
-                    <p id="video-text">Audio Artist</p>
-                    <p id="small-video-text">Spring 2018</p>
-                </div>
-
-                <div class="peace-sign" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="peace-sign" src="assets/project-covers/cover-peace-sign.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-peace-sign.jpg">
-                    <p id="video-text">Hand-Drawn Animation</p>
-                    <p id="small-video-text">Fall 2017</p>
-                </div>
-
-                <div class="my-minor-melody" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="my-minor-melody" src="assets/project-covers/cover-my-minor-melody.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-my-minor-melody.jpg">
-                    <p id="video-text">Audio Builder Game</p>
-                    <p id="small-video-text">Fall 2017</p>
-                </div>
-
-                <div class="infinite" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="infinite" src="assets/project-covers/cover-infinite.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-infinite.jpg">
-                    <p id="video-text">Kinetic Typography</p>
-                    <p id="small-video-text">Fall 2017</p>
-                </div>
-
-                <div class="null-space" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="null-space" src="assets/project-covers/cover-null-space.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-null-space.jpg">
-                    <p id="video-text">Kinetic Typography</p>
-                    <p id="small-video-text">Fall 2017</p>
-                </div>
-
-                <div class="plastic-promises" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="plastic-promises" src="assets/project-covers/cover-plastic-promises.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-plastic-promises.jpg">
-                    <p id="video-text">Kinetic Typography</p>
-                    <p id="small-video-text">Fall 2017</p>
-                </div>
-
-                <div class="stitches" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="stitches" src="assets/project-covers/cover-stitches.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-stitches.jpg">
-                    <p id="video-text">Kinetic Typography</p>
-                    <p id="small-video-text">Fall 2017</p>
-                </div>
-
-                <div class="rondo" id="video-icon">
-                    <div class="active-cover">
-                        <img class="cover-image" id="rondo" src="assets/project-covers/cover-rondo.png">
-                    </div>
-                    <img id="video-image" src="assets/project-covers/project-rondo.jpg">
-                    <p id="video-text">Motion Graphics</p>
-                    <p id="small-video-text">Fall 2016</p>
-                </div>
-            </div>
-            
-            <div id="line-grey-small" style="margin-bottom:10px; width:84%; margin-left:8%"></div>
-            <div id="line-grey" style="margin-bottom:30px; width:80%; margin-left:10%"></div>
-            
-
             <img class="bottom-icon-jump" id="linkedin-icon-jump" src="assets/linkedin-icon.png">
             <img class="bottom-icon-jump" id="vimeo-icon-jump" src="assets/vimeo-icon.png">
             <img class="bottom-icon-jump" id="processing-icon-jump" src="assets/processing-icon.png">

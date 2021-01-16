@@ -256,7 +256,6 @@ $("#C-S19-06").click(function() {
     window.open("http://coursecatalog.web.cmu.edu/dietrichcollegeofhumanitiesandsocialsciences/departmentofphilosophy/courses/", '_blank');
 });
 
-
 $("#C-F19-01").click(function() {
     window.open("https://deeplearning-cmu-10417.github.io/index.html", '_blank');
 });
@@ -305,6 +304,30 @@ $("#C-S20-06").click(function() {
     window.open("https://www.cmu.edu/interdisciplinary/academics/courses.html", '_blank');
 });
 
+$("#C-F20-01").click(function() {
+    window.open("http://graphics.cs.cmu.edu/courses/15869/fall2014/", '_blank');
+});
+
+$("#C-F20-02").click(function() {
+    window.open("http://www.cs.cmu.edu/afs/cs/academic/class/15740-f19/www/index.html", '_blank');
+});
+
+$("#C-F20-03").click(function() {
+    window.open("https://cmudeeprl.github.io/703website/", '_blank');
+});
+
+$("#C-F20-04").click(function() {
+    window.open("https://10605.github.io", '_blank');
+});
+
+$("#C-F20-05").click(function() {
+    window.open("https://feifang.info/advanced-topics-in-machine-learning-and-game-theory-fall-2020/", '_blank');
+});
+
+$("#C-F20-06").click(function() {
+    window.open("https://www.cmu.edu/interdisciplinary/academics/courses.html", '_blank');
+});
+
 function openTab(tabName, tab) {
 
     var i, tabcontent, tablinks;
@@ -314,7 +337,7 @@ function openTab(tabName, tab) {
             tablinks[i].style.background = null;
         }
 
-    document.getElementById(tab).style.background = "rgb(43, 43, 43)";
+    document.getElementById(tab).style.background = "rgb(60, 60, 70)";
 
     tabcontent = document.getElementsByClassName("tab-content");
     for (i = 0; i < tabcontent.length; i++) {

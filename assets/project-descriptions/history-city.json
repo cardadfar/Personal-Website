@@ -1,0 +1,35 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+
+  "i_0": "history-city/purity_1.gif",
+  "d_0": "A procedurally generted city from your browsing history.",
+  "t_0": "History City.",
+  "w_0": [{"code-icon.png": "Three.JS, JavaScript, Python"},
+          {"time-icon.png": "7 Weeks"}],
+
+  "p_1": "Your browsing history says a lot about you. Often we go through hundreds of links a day, and understanding what we look at caan be difficult given the mass amount of urls we accumulate over weeks and months. What if there was a way to visualize it all? Take a look at all the pure (and not so pure) things you’ve been up to in a city-like visualization of your history. History City is a project that allows you to step back and visualize your entire browsing history all at once, with the motive of pushing people to be better and smarter in their browsing history.",
+  "b_1": ["code-button.png", "https://github.com/cardadfar/history_city"],
+  "s_1": "Algorithm.",
+  "p_2": "Given a JSON of a person’s browsing history, the parsing script initially cleans up entries by grouping together link for the same domain name and accumulating site frequency. On a second pass, the script tries mapping each url to an asset type [“building”, “house”,”tree”] depending on the contents of the webpage. The script scrapes the inner html and extracts the top K unique words that frequently occur in the site that don’t occur in other sites. Using these words and a synonym dictionary, the script maps the url to an asset type depending on the connotation of these words:",
+  "l_3": "“building” – corporate, shopping, social media",
+  "l_4": "“house” – personal, lifestyle",
+  "l_5": "“tree” – learning, donating",
+  "p_6": "After the mapping is computed, the Three.JS interface loads an instance of each asset. For each url, the corresponding asset is placed, and its size is determined by its frequency. Using Three.JS’s ray-tracer, we can compute the cursor intersection with an asset. On the instance an asset it hovered over, a portion of its material will turn to an orange highlight, and clicking the asset will open a new tab with the url that asset represents.",
+  "i_7": "history-city/assets.png",
+  "d_7": "Building, Cloud, House, and Tree assets.",
+  "p_8": "Roads are generated around 5×5 cell regions. Starting in the center and moving in a spiral motion, each new asset it placed in the initial center 5×5 region while not overlapping with any other asset. If no room exists after a set number of tries, then it moves to the next 5×5 region. This continues to expand the city the more url’s there are to load.",
+  "s_9": "Pure vs. Not-Pure.",
+  "p_10": "A purity variable captures the ratio of buildings + houses to trees. A more pure city will have no clouds/pollution and no cars on the road polluting. A non-pure city will be dark and have a lot of polluting cars on the road with a lot of dark clouds covering the sky.",
+  "i_11": "history-city/purity_0.gif",
+  "d_11": "Low-purity city with dark features, including dim lighting and more clouds",
+  "p_12": "Searching the city, we find that we can click on objects to figure out where they lead to. Objects with higher frequencies are represented as larger buildings, as seen with the Google-building being up to 3x larger than other buildings (buildings grow based on a log scale). We notice that learning websites that fall into the education category (like wolfram alpha) are represented as trees, while corporate sites (like colleges and Google) are represented as buildings. The colors of buildings offer no distinction, but are simply there to add visual variance and make the city more diverse.",
+  "i_13": "history-city/explore.gif",
+  "d_13": "Exploring a city. Clicking on highlighted assets allows you to learn which site generated the asset.",
+  "p_14": "Having a dark, non-pure city is not a bad thing, because it's the first step in helping you realize that you may need to change your browsing history habits. Small things like less time watching videos on YouTube and texting friends on social media coupled with positive things such as vising educational and volunteering sites can help grow your city to a purer environment."
+}

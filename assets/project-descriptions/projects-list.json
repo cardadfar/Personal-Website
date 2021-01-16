@@ -84,6 +84,16 @@
     "t": ["water shader", "computer graphics", "fall 2019"]
   },
 
+  "multicore-maps": {
+    "l": ["GPU Rasterization", "Spring 2020"],
+    "t": ["multicore maps", "computer graphics", "spring 2020"]
+  },
+
+  "history-city": {
+    "l": ["City Generator", "Spring 2020"],
+    "t": ["history city", "computer graphics", "three.js", "spring 2020"]
+  },
+
   "gan-theft-auto": {
     "l": ["Generative Environments", "Spring 2018"],
     "t": ["gan theft auto", "generative environments", "spring 2018"]
