@@ -126,30 +126,6 @@ $(".resume-button-hover").click(function() {
 //----------------------------------------------------------------------------------
 
 
-//-----------------------------------  BOTTOM NAV BAR ICON JUMP   -----------------------------------
-
-
-$("#linkedin-icon").hover(function() { bottomIconJump("#linkedin-icon-jump") ;})
-
-$("#vimeo-icon").hover(function() { bottomIconJump("#vimeo-icon-jump") ;})
-
-$("#processing-icon").hover(function() { bottomIconJump("#processing-icon-jump") ;})
-
-$("#git-icon").hover(function() { bottomIconJump("#git-icon-jump") ;})
-
-function bottomIconJump(str) {
-    if(!($(str).hasClass("bottom-icon-jump-anim")) && ($(window).width() > 650)) {
-        $(str).addClass("bottom-icon-jump-anim");
-        setTimeout(function() {
-            $(str).removeClass("bottom-icon-jump-anim"); 
-        }, 2000);
-    }
-}
-
-
-//---------------------------------------------------------------------------------------------------
-
-
 $(".icon").hover(function() {
     $(this).attr("src","assets/icon.png");
     }, function() {

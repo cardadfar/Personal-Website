@@ -25,6 +25,7 @@ body {
 p{
     font-family: "UniqueDistrictThin";
     font-size: 17px;
+    letter-spacing: 1px;
     font-weight: lighter;
     color: white;
     width: 50%;
@@ -359,6 +360,7 @@ li{
     opacity: 1.0;
 }
 
+/*
 .research-icon:before {
     content: '';
     position: absolute;
@@ -375,14 +377,13 @@ li{
     border-left-width: 5px;
 }
 
-
-
 .research-icon:hover:before {
 
     animation: research-bord-animation-front 0.5s forwards;
     -webkit-animation: research-bord-animation-front 0.5s forwards;
 
 }
+*/
 
 .research-icon:hover {
     background: #191919;
@@ -408,13 +409,26 @@ li{
     transition: all 0.5s;
 }
 
-.research-icon:hover #research-side-text {
-    text-decoration: underline;
+#research-authors {
+    text-align: left;
+    font-size: 15px;
+    color: #bcbcbc;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+#research-me {
+    color: white;
 }
 
 #research-sub-text {
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
     color: #bcbcbc;
     width: 100%;
     float: left;
@@ -427,10 +441,20 @@ li{
     transition: all 0.5s;
 }
 
+
+.research-icon a {
+    color: white;
+    text-decoration: none;
+}
+
+.research-icon a:hover {
+    text-decoration: underline;
+}
+
 #research-sub-tag {
     text-align: left;
     display: inline-block;
-    font-size: 14px;
+    font-size: 15px;
     background-color: #bcbcbc;
     color: black;
     text-shadow: -0.2px 0 black, 0 0.2px black, 0.2px 0 black, 0 -0.2px black;
@@ -474,22 +498,27 @@ li{
 
 .nav-bottom{
     position: relative;
-    width: 100%;
+    width: 225px;
+    margin-left: calc(50% - 115px);
     height: 40px;
     background: #0f0f0f;
     box-shadow: 0px 0px 50px;
+    text-align: center;
     z-index: 1;
     transition: all 0.5s;
+    border: 1px solid #515151;
+    border-bottom: none;
 
 }
 
 .bottom-tab{
     position: relative;
-    width: calc(20% - 10px);
+    padding-left: 20px;
+    padding-right: 20px;
     height: 100%;
     text-align: center;
     line-height: 40px;
-    float: left;
+    display: inline-block;
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -497,6 +526,11 @@ li{
 .bottom-tab:hover{
     background: #333333;
     transition: all 0.5s;
+}
+
+.nav-bottom img {
+    height: 25px;
+    margin-top: 7.5px;
 }
 
 .nav-bottom > .bottom-tab > a{
@@ -512,17 +546,12 @@ li{
     transition: all 0.5s;
 }
 
-.first_bottom_tab{
-    margin-left: 10%;
-    transition: all 0.5s;
-}
-
 .small-circle{
     position: relative;
     width: 5px;
     height: 5px;
     border-radius: 25px;
-    float: left;
+    display: inline-block;
     top: 17.5px;
     background: #8c8c8c;
     margin: 0px 5px;
@@ -683,18 +712,6 @@ li{
     color: white;
 }
 
-.bottom-icon-jump {
-    display: none;
-}
-
-.bottom-icon-jump-anim {
-    display: block;
-    position: absolute;
-    width: 30px;
-    margin-left: calc(20% - 15px);
-    animation: 2s jump cubic-bezier(.39,0,0,.99);
-}
-
 @keyframes jump {
     0% {transform: translate(0, 0);}
     50% {transform: translate(0, -50px);}
@@ -776,6 +793,10 @@ code {
     margin-left: 2%;
     margin-bottom: 0px;
     transition: all 0.5s;
+}
+
+.minor-side-text {
+    line-height: 50px;
 }
 
 #small-side-text{
@@ -1150,7 +1171,7 @@ code {
 
 .year-box {
   position: absolute;
-  font-size: 12px;
+  font-size: 14px;
   width: 11.25%;
   margin: 0 0 0 0;
   background: rgba(60, 60, 70, 0.72);
@@ -1480,6 +1501,20 @@ code {
         margin-top: 15px;
         font-size: 17px;
     }
+    
+    #side-text{
+        font-size: 16px;
+        margin-left: 3%;
+        margin-top: 0px;
+    }
+
+    #small-side-text{
+        width: 50%;
+        font-size: 12px;
+        margin-left: 3%;
+        margin-top: 0px;
+    }
+    
 
     @keyframes bord-animation-front {
         0%
@@ -1711,19 +1746,6 @@ code {
         padding-bottom: 40px;
     }
     
-    #side-text{
-        font-size: 18px;
-        margin-left: 3%;
-        margin-top: 0px;
-    }
-
-    #small-side-text{
-        width: 50%;
-        font-size: 12px;
-        margin-left: 3%;
-        margin-top: 0px;
-    }
-    
     #skill-icon{
         margin-left: 14%;
     }
@@ -1760,9 +1782,9 @@ code {
     }
 
     .resume-button{
-        width: 150px;
-        height: 20px;
-        margin-left: calc(50% - 75px);
+        width: 200px;
+        height: 30px;
+        margin-left: calc(50% - 100px);
     }
     
     .resume-button-hover{

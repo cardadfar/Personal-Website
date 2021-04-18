@@ -64,7 +64,7 @@
             
             <div class="tabs">
                 <div class="tab tab-year" id="year1-tab" onclick="openTab('year1', 'year1-tab')" style="background: rgb(60, 60, 70);">
-                    <p class="year-text">Graphics Applications</p>
+                    <p class="year-text">Graphics Apps</p>
                 </div>
                 <div class="tab tab-year" id="year2-tab" onclick="openTab('year2', 'year2-tab')">
                     <p class="year-text">Research</p>
@@ -148,65 +148,79 @@
 
                 </div>
               </div>
-      
+
               <div class="tab-content" id="year2" style="display: none;">
                 <div class="projects-holder art-projects">
 
                     <div class="research-icon" onclick="window.open('http://cardadfar.com/assets/projects/3A2A.pdf','mywindow');">
                         <img src="assets/project-covers/research-3a2a.png">
                         <div class="research-side">
-                            <p id="research-side-text">3A2A: 3D-Assisted 2D-Animation</p>
+                            <p id="research-side-text">3A2A: 3D-Assisted 2D-Animation Charater Pipeline</p>
+                            <p id="research-authors"> <span id=research-me>Dadfar</span>, Pollard</p>
                             <p id="research-sub-tag" style='background:#d4fffe;'>Computer Graphics</p>
-                            <p id="research-sub-text">2D hand-drawing animation can be a very time-consuming process, requiring years of posing and drawing experience. In an effort to help revive 2D hand-drawn animation, we researched a 2D interface that allows users to draw and edit a stick figure in 3D space, and using that information, poses a 3D character model that can then be rasterized and contour-detected to get keyframe reference images. These reference images can then be brought into any external drawing program, where users without drawing experience can use these character keyframes as guides to create their own animations. We demonstrate how this strategy helps non-artists create 2D hand-drawn animations by only requiring them to animate a sequence of stick figures in order to produce character body animations that they can they sketch over to create the feeling of 2D hand-drawn animation. We believe that if anyone can draw stick figures, then anyone can animate.</p>
+                            <p id="research-sub-text">In an effort to make 2D hand-drawn animation more accessible to non-artists, we provide a pipeline that creates character keyframe drawing references from stick figures. Our interface allows users to draw and edit stick figures in 3D space that are then used to pose and rasterize any 3D character model in order to get keyframe reference images. We believe that if anyone can draw stick figures, then anyone can animate.<br><br>  
+                                <a href="http://cardadfar.com/assets/projects/3A2A.pdf'" target=_blank>[ Paper ]</a> <a href="http://cardadfar.com/assets/projects/3A2A.pdf'" target=_blank>[ Video ]</a></p>
                         </div>
                     </div>
 
-                    <div class="research-icon" onclick="window.open('http://cardadfar.com/assets/projects/Frequency_Based_Texture_Caching.pdf','mywindow');">
+                    <div class="research-icon">
                         <img src="assets/project-covers/research-texture-cache.png">
                         <div class="research-side">
                             <p id="research-side-text">Frequency-Based Texture Caching</p>
+                            <p id="research-authors"> <span id=research-me>Dadfar</span>, Yang</p>
                             <p id="research-sub-tag" style='background:#d4fffe;'>Computer Graphics</p>
                             <p id="research-sub-tag" style='background:#fcd3d0;'>Computer Architechture</p>
-                            <p id="research-sub-text">During rasterization we know all the textures referenced by each primitive, and thus the total number of accesses per texture over the scene's rasterization lifetime. This data can be used to help predict how likely the same texture will be accessed in the near future, which is essential in determining whether to keep certain texture data in the cache. We propose a new cache eviction policy that combines a baseline LRU ranking with texture access frequency to compute an eviction score that evicts textures from the cache that have not been recently used and have a low probability of being accessed in the future. We evaluate our results for multiple cache configurations across different scenes with varying primitive and texture quantities and find that our algorithm does increasingly better than pure LRU for higher cache associativities.</p>
+                            <p id="research-sub-text">We propose a new cache eviction policy that combines a baseline LRU ranking with texture access frequency to compute an eviction score that evicts textures from the cache that have not been recently used and have a low probability of being accessed in the future. We find that our algorithm does increasingly better than pure LRU for higher cache associativities.<br><br> 
+                                <a href="http://cardadfar.com/assets/projects/Frequency_Based_Texture_Caching.pdf" target=_blank>[ Paper ]</a></p>
                         </div>
                     </div>
 
-                    <div class="research-icon" onclick="window.open('https://cardadfar.github.io/japanese_water_shader/images/paper.pdf','mywindow');">
+                    <div class="research-icon">
                         <img src="assets/project-covers/research-water-shader.png">
                         <div class="research-side">
                             <p id="research-side-text">Japanese-Style Toon-Based Water Shader</p>
+                            <p id="research-authors"> <span id=research-me>Dadfar</span>, Welling</p>
                             <p id="research-sub-tag" style='background:#d4fffe;'>Computer Graphics</p>
-                            <p id="research-sub-text">This paper looks at a Non-Photo-Realistic (NPR) representation of water inspired by the famous Japanese water-art painting The Great Wave off Kanagawa by Katsushika Hokusai and attempts to produce a modular toon-based water shader based on the work. Such a system requires vertex position updates based on interpolated spline calculations on the CPU, laplacian height diffusion in the vertex shader, as well as thresholding on position, curvature, and heightmap information in the fragment shader.</p>
+                            <p id="research-sub-text">Produces a Non-Photo-Realistic (NPR) water shader inspired by The Great Wave off Kanagawa by Katsushika Hokusai. We performvertex position updates based on interpolated spline calculations on the CPU, laplacian height diffusion in the vertex shader, and thresholding on position, curvature, and heightmap information in the fragment shader.<br><br>
+                                <a href="https://cardadfar.github.io/japanese_water_shader/images/paper.pdf" target=_blank>[ Paper ]</a>
+                                <a href="https://cardadfar.github.io/japanese_water_shader/" target=_blank>[ Demo ]</a>
+                                <a href="https://github.com/cardadfar/japanese_water_shader" target=_blank>[ Code ]</a></p>
                         </div>
                     </div>
 
-                    <div class="research-icon" onclick="window.open('http://cardadfar.com/assets/projects/Deferred_Tile_Shading.html','mywindow');">
+                    <div class="research-icon">
                         <img src="assets/project-covers/research-deferred-tile-shading.png">
                         <div class="research-side">
                             <p id="research-side-text">An Analysis of Deferred Tile-Shading</p>
+                            <p id="research-authors"> <span id=research-me>Dadfar</span>, O'Toole</p>
                             <p id="research-sub-tag" style='background:#d4fffe;'>Computer Graphics</p>
                             <p id="research-sub-tag" style='background:#fcd3d0;'>Computer Architechture</p>
-                            <p id="research-sub-text">This project focused on implementing deffered shading into a tile-based rasterization pipeline coded on the CPU using intel intrinsics. Our results show that there is an evident trade-off in the speedup of deferring rasterizatin and the penalty of memory accessing in the G-buffer that lead to results that only mearly improve temporal performance in more compelx scenes.</p>
+                            <p id="research-sub-text">Implemented deffered shading into a tile-based rasterization pipeline coded on the CPU using intel intrinsics. We find an evident trade-off in the speedup of deferring rasterizatin and the penalty of memory accessing in the G-buffer that lead to results that only mearly improve temporal performance in more compelx scenes.<br><br>
+                                <a href="http://cardadfar.com/assets/projects/Deferred_Tile_Shading.html" target=_blank>[ Writeup ]</a></p>
                         </div>
                     </div>
 
-                    <div class="research-icon" onclick="window.open('http://cardadfar.com/assets/projects/3D_Global_Registration.pdf','mywindow');">
+                    <div class="research-icon">
                         <img src="assets/project-covers/research-icp-bnb.png">
                         <div class="research-side">
-                            <p id="research-side-text">3D Global Registration Using ICP & Branch-and-Bound Search</p>
+                            <p id="research-side-text">3D Global Registration Using ICP and Branch-&-Bound Search</p>
+                            <p id="research-authors"> Pillai, <span id=research-me>Dadfar</span>, Yang</p>
                             <p id="research-sub-tag" style='background:#d4fffe;'>Computer Graphics</p>
-                            <p id="research-sub-tag" style='background: #e2ffde;'>Computer Vision</p>
-                            <p id="research-sub-text">Point cloud registration is a staple for many different applications in robotics and graphics communities. Iterative Closest Point (ICP), which is the standard method for this task suffers from local minimas and hence is only useful given a good initial alignment. We focus on the task of global registration of 2 point clouds, without the use of a priori information with regards to alignment, using a Branch and Bound (BnB) search over the euclidean transformation space with ICP sub-routines. We explore the idea that a BnB method can help in overcoming the local minimas that ICP would succumb to by comparing multiple methods using this framework.</p>
+                            <p id="research-sub-tag" style='background: #c9f1be;'>Computer Vision</p>
+                            <p id="research-sub-text">Global registration of 2 point clouds using a Branch and Bound (BnB) search over the euclidean transformation space with ICP sub-routines to overcoming the local minimas that regular ICP would get stuck in.<br><br>
+                                <a href="http://cardadfar.com/assets/projects/3D_Global_Registration.pdf" target=_blank>[ Paper ]</a></p>
                         </div>
                     </div>
 
-                    <div class="research-icon" onclick="window.open('http://cardadfar.com/assets/project-descriptions/images/object-illum/paper.pdf','mywindow');">
+                    <div class="research-icon">
                         <img src="assets/project-covers/research-object-illum.png">
                         <div class="research-side">
-                            <p id="research-side-text">Stabilizing Object Lighting Under Variable Lighting Conditions In Video</p>
+                            <p id="research-side-text">Stabilizing Object Lighting Under Variable Lighting Conditions in Video</p>
+                            <p id="research-authors"> <span id=research-me>Dadfar</span>, O'Toole</p>
                             <p id="research-sub-tag" style='background:#d4fffe;'>Computer Graphics</p>
-                            <p id="research-sub-tag" style='background: #e2ffde;'>Computer Vision</p>
-                            <p id="research-sub-text">We present a novel light-stabilization algorithm that takes into account object BRDFs to relight sequences of frames subjected to variable lighting conditions. By assuming no objects in scene share the same BRDF, we calculate illumination changes in objects independently and apply a calculated relighting mask to a sequence of video frames to stabilize changes in illumination. OpenCV is used to calculate object bounding boxes to perform local lighting re-weighting. Pixels outside local objects are considered a part of the global lighting scale and are relight using k-means clustering to separate hues in HSL space and perform relighting independently on separate clusters. Global relighting does not respect BRDF properties and assumes all objects in the same hue group share a uniform BRDF. We test our algorithm on manually-relit and real-life variable lighting scenes and discover that our algorithm is translation and scale-invariant but not rotation-invariant.</p>
+                            <p id="research-sub-tag" style='background: #c9f1be;'>Computer Vision</p>
+                            <p id="research-sub-text">Light-stabilization algorithm that takes into account object BRDFs to relight sequences of frames subjected to variable lighting conditions. We compute illumination changes in objects independently and apply a calculated relighting mask to a sequence of video frames to stabilize changes in illumination.<br><br>
+                                <a href="http://cardadfar.com/assets/project-descriptions/images/object-illum/paper.pdf" target=_blank>[ Paper ]</a></p>
                         </div>
                     </div>
 
@@ -383,29 +397,15 @@
                 </div>
               </div>
             
-            <img class="bottom-icon-jump" id="linkedin-icon-jump" src="assets/linkedin-icon.png">
-            <img class="bottom-icon-jump" id="vimeo-icon-jump" src="assets/vimeo-icon.png">
-            <img class="bottom-icon-jump" id="processing-icon-jump" src="assets/processing-icon.png">
-            <img class="bottom-icon-jump" id="git-icon-jump" src="assets/git-icon.png">
             <div class="nav-bottom">
-                <div class="bottom-tab first_bottom_tab" id="linkedin-icon">
-                    <a href="#home">LinkedIn</a>
-                    <img class="bottom-icon" src="assets/linkedin-icon.png" style="scale: 100%;">
+                <div class="bottom-tab" id="linkedin-icon">
+                    <img src="assets/linkedin-icon.png">
                 </div>
-                <div class="small-circle"></div>
                 <div class="bottom-tab" id="vimeo-icon">
-                    <a href="#home">Vimeo</a>
-                    <img class="bottom-icon" src="assets/vimeo-icon.png" style="scale: 100%;">
+                    <img src="assets/vimeo-icon.png">
                 </div>
-                <div class="small-circle"></div>
-                <div class="bottom-tab" id="processing-icon">
-                    <a href="#home">OpenProcessing</a>
-                    <img class="bottom-icon" src="assets/processing-icon.png" style="scale: 100%;">
-                </div>
-                <div class="small-circle"></div>
                 <div class="bottom-tab" id="git-icon">
-                    <a href="#home">GitHub</a>
-                    <img class="bottom-icon" src="assets/git-icon.png" style="scale: 100%;">
+                    <img src="assets/git-icon.png">
                 </div>
             </div>
         </div>
