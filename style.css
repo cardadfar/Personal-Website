@@ -777,7 +777,6 @@ code {
 
 .adobe-icon{   
     background: #232325;
-    height: 50px;
     left: 50%;
     padding-bottom: 0px;
     padding-left: 25%;
@@ -785,24 +784,30 @@ code {
     transition: all 0.5s;
 }
 
+.adobe-icon-indent {
+    padding-top:5px; 
+    padding-left:calc(25% + 50px);
+}
+
 #side-text{
+    display: inline-block;
     text-align: left;
     font-size: 20px;
     width: 75%;
-    float: left;
     margin-left: 2%;
     margin-bottom: 0px;
     transition: all 0.5s;
 }
 
 .minor-side-text {
+    display: inline-block;
     line-height: 50px;
 }
 
 #small-side-text{
+    display: inline-block;
     text-align: left;
     font-size: 15px;
-    float: left;
     margin-left: 2%;
     margin-bottom: 0px;
     color: #9b9b9b;
@@ -811,7 +816,7 @@ code {
 
 #contact-side-text{
     font-size: 20px;
-    float: left;
+    display: inline-block;
     margin-left: 2%;
     margin-top: 12px;
     margin-bottom: 0px;
@@ -1555,7 +1560,8 @@ code {
     }
 
     .experience-icon img {
-        height: 40px;
+        height: 35px;
+        margin-left: 15px;
     }
 
     .experience-side {
@@ -1745,6 +1751,9 @@ code {
     .adobe-icon-bottom{
         padding-bottom: 40px;
     }
+    .adobe-icon-indent{
+        padding-left: 18%;
+    }
     
     #skill-icon{
         margin-left: 14%;
@@ -1860,12 +1869,15 @@ code {
     
     #experience-side-text{
         font-size: 12px;
-        margin-left: 80px;
-        width: 70%;
+        margin-left: 60px;
+        width: 75%;
     }
 
     #experience-sub-text{
         font-size: 10px;
+        margin-left: 0;
+        margin-top: 0;
+        width: 80%;
     } 
 
     #experience-year-text{
