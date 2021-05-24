@@ -1,0 +1,24 @@
+{
+  "key": {
+    "t": "title",
+    "s": "subtitle",
+    "i": "img",
+    "d": "img description",
+    "p": "text"
+  },
+  
+  "t_0": "Frontline.",
+  "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=QrO1stPF2rg", "Cross the Line (Off-Vocal) by Akino with Bless4"]}, 
+          {"software-icon.png": "After Effects CC • Photoshop CC"},
+          {"time-icon.png": "10 Weeks"}],
+  "p_1": "Frontline is an opening animation inspired by the Star Wars Battlefront series. Due to time constraints, I kept the animation in animatic pro, prioritizing cleaner lines and motions for colors and shading.",
+  
+  "s_2": "Animation.",
+  "i_3": "frontline/draw-interface.png",
+  "d_3": "Photoshop drawing interface.",
+  "p_4": "Each frame was drawn independenly in photoshop. First, rough sketch keyframes were produced before going back to add rough inbetweens. As a further pass, I did cleanup to draw cleaner outlines over the sketches. Frames were drawn as separate layers and played back using Photoshop's timeline panel. The background was also drawn as a separate layer, but animated during the composition stage.",
+  "s_5": "Composition.",
+  "i_6": "frontline/composite-interface.png",
+  "d_6": "After Effects compositing interface.",
+  "p_7": "Animations were broken down into and composed as shots. Each shot consisted of several frames stiched together with their backgrounds into a separate composition. Backgrounds could additionally be keyframed and animated when combined with foregrounds. The shots compositions could further be combined into a larger composition for the entire animatic."
+}

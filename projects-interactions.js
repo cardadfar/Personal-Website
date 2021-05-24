@@ -29,6 +29,13 @@ $(document).ready(function(){
             loadFrame();
         });
 
+        $(".frontline").click(function() {
+            $("iframe").attr("src","https://player.vimeo.com/video/543421317");
+            file = "frontline";
+            window.location.hash = file;
+            loadFrame();
+        });
+
         $(".food-drive").click(function() {
             $("iframe").attr("src","https://www.youtube.com/embed/m64gcFp4nro");
             file = "food-drive";
