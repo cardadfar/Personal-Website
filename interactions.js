@@ -70,6 +70,42 @@ $(document).ready(function() {
         $(".center").addClass("center-fadeIn");
     }, 1000);
 
+
+    var url = window.location.href;
+    var end_val = url.substring(url.lastIndexOf('#') + 1);
+
+    console.log(url)
+
+    if( url.includes("projects") ) {
+        if( url.indexOf('#') > -1 ) {
+            if (end_val == "apps") {
+                setTimeout(function() {
+                    openTab('year1', 'year1-tab')
+                }, 500);
+            }
+            else if (end_val == "research") {
+                setTimeout(function() {
+                    openTab('year2', 'year2-tab')
+                }, 500);
+            }
+            else if (end_val == "animations") {
+                setTimeout(function() {
+                    openTab('year4', 'year3-tab')
+                }, 500);
+            }
+            else if (end_val == "webdev") {
+                setTimeout(function() {
+                    openTab('year4', 'year4-tab')
+                }, 500);
+            }
+            else if (end_val == "misc") {
+                setTimeout(function() {
+                    openTab('year5', 'year5-tab')
+                }, 500);
+            }
+        }
+    }
+
     //bug();
 });
 
