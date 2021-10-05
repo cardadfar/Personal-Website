@@ -167,11 +167,10 @@ $(document).ready(function(){
         });
 
         $(".gan-theft-auto").click(function() {
-            $("iframe").attr("src","https://www.youtube.com/embed/eP5hHKne_gE");
+            $("iframe").attr("src","https://www.youtube.com/watch?v=2_QP4BVXTqk");
             file = "gan-theft-auto";
             window.location.hash = file;
             loadFrame();
-            //window.open("https://drive.google.com/file/d/1jlcmtAxiU-ts4C86HRvTA_b7mhQ_92yf/view", '_blank');
         });
 
         $(".web-dev").click(function() {
