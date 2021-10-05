@@ -167,7 +167,7 @@ $(document).ready(function(){
         });
 
         $(".gan-theft-auto").click(function() {
-            $("iframe").attr("src","https://www.youtube.com/watch?v=2_QP4BVXTqk");
+            $("iframe").attr("src","https://www.youtube.com/embed/2_QP4BVXTqk");
             file = "gan-theft-auto";
             window.location.hash = file;
             loadFrame();
