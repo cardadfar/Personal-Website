@@ -378,6 +378,7 @@ $(document).ready(function(){
 
     if( url.indexOf('#') > -1 ) {
         
+        console.log(end_val)
         setTimeout(function() {
             $("#" + end_val)[0].click();
         }, 500);
