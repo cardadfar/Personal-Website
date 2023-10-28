@@ -50,13 +50,17 @@
         <div class="circle-dashed"></div>
         <div class="circle-dashed" id="circle-dashed2" style="border: 0.35px solid white"></div>
         <div class="circle"><img class="icon" src="assets/grey-icon.png"></div>
-        <p class="hi">Hi.</p>
-        <p class="indent">I'm Oscar. I'm a computer scientist, but I'm also an artist.</p>
-        <p class="indent">I use Computer Graphics, Machine Learning & Computer Architecture Systems to research new solutions to help me make art, and to build applications and algorithms to help others without traditional artistic abilities make art.</p>
+        <p class="hi">Hi. I'm Oscar.</p>
+        <p class="indent">I'm a digital artist interested in Animation, Architecture, and AI (The 3 A's). I create computational tools to help non-artists without traditional artistic abilities (ex: drawing, painting) create art & animations.</p>
+
+        <p class="indent">I'm currently at Adobe Research where I'm engineering new tehcnology around video workflows and how we think about video. I'm also a Professor of Computer Science at Carneglie Mellon University, where I teach Computer Graphics and related courses.</p>
         
         <iframe width="560" height="315" style="margin-left: calc(50% - 280px); margin-top: 15px" src="https://www.youtube.com/embed/rmuisLmO6qA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
-        <div id="line-grey-small" style="margin-top:40px"></div>
+        <div id="skill-icon" style="margin-top:40px">
+            <p id="skill-type">Academic Background.</p>
+        </div>
+        <div id="line-grey-small"></div>
         <div class="adobe-icon">
             <img src="assets/skills-icons/masters-icon.png" style="height: 50px; float: left;">
             <p id="side-text">Masters's of Computer Science</p>
@@ -67,7 +71,7 @@
             <p id="side-text">Bachelor's of Computer Science & Art</p>
             <p id="small-side-text">Carnegie Mellon University • Spring 2021</p>
         </div>
-        <div class="adobe-icon adobe-icon-indent">
+        <div class="adobe-icon adobe-icon-indent" style="padding-top: 15px;">
             <img src="assets/skills-icons/graphics-icon.png" style="height: 50px; float: left;">
             <p id=side-text class=minor-side-text>Minor in Computer Graphics</p>
         </div>
@@ -85,6 +89,52 @@
             <img class="resume-button-hover" src="assets/resume-button-hover.png">
             <img src="assets/resume-button.png" style="height:100%;">
         </div>
+
+
+
+
+        <div id="skill-icon">
+            <p id="skill-type">Course Offerings.</p>
+        </div>
+        <div id="line-grey-small"></div>
+
+        <div class="experience-icon" id="course-graphics">
+            <img src="assets/experience-icons/cg-icon.png" style="float: left;">
+            <p id="experience-side-text">15-462/662: Computer Graphics</p>
+            <div class="experience-side">
+                <p id="experience-sub-text">- Vector Rasterization, Mesh Editing, Raytracing & Kinematics. -</p>
+                <p id="experience-year-text">[ Fall 2023 ]</p>
+            </div>
+        </div>
+
+        <div class="experience-icon" id="course-vcs">
+            <img src="assets/experience-icons/parallel-icon.png" style="float: left;">
+            <p id="experience-side-text">15-469/669: Visual Computing Systems</p>
+            <div class="experience-side">
+                <p id="experience-sub-text">- The Hardware Behind Computer Graphics and Computer Vision Systems.-</p>
+                <p id="experience-year-text">[ Spring 2022, Fall 2023 ]</p>
+            </div>
+        </div>
+
+        <div class="experience-icon" id="course-ave">
+            <img src="assets/experience-icons/stuco-ave-icon.png" style="float: left;">
+            <p id="experience-side-text">98-331: Animation & Video Editing</p>
+            <div class="experience-side">
+                <p id="experience-sub-text">- Video Editing, Motion Graphics, Kinetic Typography, Hand-Drawn & Vector-Based Animation. -</p>
+                <p id="experience-year-text">[ Fall 2018, Fall 2019, Fall 2020, Fall 2021 ]</p>
+            </div>
+        </div>
+
+        <div class="experience-icon" id="course-bpw">
+            <img src="assets/experience-icons/stuco-bpw-icon.png" style="float: left;">
+            <p id="experience-side-text">98-177: Building Personal Websites</p>
+            <div class="experience-side">
+                <p id="experience-sub-text">- HTML, CSS, & jQuery For Building Websites. -</p>
+                <p id="experience-year-text">[ Spring 2019, Spring 2020, Spring 2021, Spring 2022 ]</p>
+            </div>
+        </div>
+
+        <div id="line-grey-small" style="margin-bottom:40px;"></div>
 
 
 
@@ -383,8 +433,10 @@
                     <p class="left-text-title" style="float: none; margin-bottom: 0;">Spring 2021</p>
                     <div id="underline"></div>
                 </div>
-                <div class="course-title">
-                    <p class="left-text-title" id="F17-01">Gap Semester (Apple Internship)</p>
+                <div class="course" id="C-S21-01" onmouseover="flicker('S21-01')">
+                    <p class="left-text" id="S21-01">Apple Internship [Gap Semester]</p>
+                    <p class="right-text">Internship</p>
+                    <p class="course-box" id="course-box-S21-01">Worked On The Core Graphics Render Engine</p>
                 </div>
             </div>
         </div>
@@ -397,7 +449,31 @@
                     <div id="underline"></div>
                 </div>
                 <div class="course-title">
-                    <p class="left-text-title" id="F17-01">Coming Soon...</p>
+                    <div class="course" id="C-F21-01" onmouseover="flicker('F21-01')">
+                        <p class="left-text" id="F21-01">Deep Learning Systems</p>
+                        <p class="right-text">ML</p>
+                        <p class="course-box" id="course-box-F21-01">Writing Pytorch From Scratch</p>
+                    </div>
+                    <div class="course" id="C-F21-02" onmouseover="flicker('F21-02')">
+                        <p class="left-text" id="F21-02">Visual Learning & Recognition</p>
+                        <p class="right-text">ML</p>
+                        <p class="course-box" id="course-box-F21-02">Generative models, GANs, Conditional Adversarial Networks</p>
+                    </div>
+                    <div class="course" id="C-F21-03" onmouseover="flicker('F21-03')">
+                        <p class="left-text" id="F21-03">Web Application Development</p>
+                        <p class="right-text">CS</p>
+                        <p class="course-box" id="course-box-F21-03">Was Flagged As Cheating Because I Was Submitting Assignments So Early. Easy class</p>
+                    </div>
+                    <div class="course" id="C-F21-04" onmouseover="flicker('F21-04')">
+                        <p class="left-text" id="F21-04">Programming Language Pragmatics</p>
+                        <p class="right-text">CS</p>
+                        <p class="course-box" id="course-box-F21-04">Compilers Optimization, Assembly Parsing, Dependency Tracking</p>
+                    </div>
+                    <div class="course" id="C-F21-05" onmouseover="flicker('F21-05')">
+                        <p class="left-text" id="F21-05">Master's Thesis I</p>
+                        <p class="right-text">CS</p>
+                        <p class="course-box" id="course-box-F21-05">Research On Specular Pathfindingin Rendering</p>
+                    </div>
                 </div>
             </div>
             <div id="left">
@@ -407,7 +483,16 @@
                     <div id="underline"></div>
                 </div>
                 <div class="course-title">
-                    <p class="left-text-title" id="F17-01">Coming Soon...</p>
+                    <div class="course" id="C-S22-01" onmouseover="flicker('S22-01')">
+                        <p class="left-text" id="S22-01">Independent Professorship</p>
+                        <p class="right-text">CG</p>
+                        <p class="course-box" id="course-box-S22-01">Teaching Visual Computing Systems. This Time I'm The Professor!</p>
+                    </div>
+                    <div class="course" id="C-S22-02" onmouseover="flicker('S22-02')">
+                        <p class="left-text" id="S22-02">Master's Thesis II</p>
+                        <p class="right-text">CS</p>
+                        <p class="course-box" id="course-box-S22-02">Still Researching Those Optimal Specular Paths</p>
+                    </div>
                 </div>
             </div>
         </div>

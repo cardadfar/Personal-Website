@@ -707,7 +707,7 @@ code {
 }
 
 .hi{
-    font-size: 50px;
+    font-size: 25px;
     padding-top: 10px;
     width: 50%;
     margin-left: 25.5%;
@@ -741,7 +741,7 @@ code {
 }
 
 .adobe-icon{   
-    background: #232325;
+    background: #1c1c1c;
     left: 50%;
     padding-bottom: 0px;
     padding-left: 25%;
@@ -911,7 +911,7 @@ code {
     width: 300px;
     height: 40px;
     margin-left: calc(50% - 150px);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     transition: all 0.5s;
 }
 
@@ -937,6 +937,9 @@ code {
     padding-left: calc(25% - 30px);
     padding-top: 15px;
     transition: all 0.5s;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .experience-side {
@@ -1433,6 +1436,45 @@ code {
     opacity: 100;
 }
 
+#C-S21-01:hover #course-box-S21-01 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F21-01:hover #course-box-F21-01 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F21-02:hover #course-box-F21-02 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F21-03:hover #course-box-F21-03 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F21-04:hover #course-box-F21-04 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-F21-05:hover #course-box-F21-05 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-S22-01:hover #course-box-S22-01 {
+    visibility: visible;
+    opacity: 100;
+}
+
+#C-S22-02:hover #course-box-S22-02 {
+    visibility: visible;
+    opacity: 100;
+}
 
 @media screen and (max-width: 1150px) {
 
@@ -1587,9 +1629,6 @@ code {
         width: 150px;
         height: 150px;
         left: calc(50% - 75px);
-    }
-    .hi{
-        font-size: 30px;
     }
     
     #start-text{

@@ -340,6 +340,39 @@ $("#C-F20-06").click(function() {
     window.open("https://www.cmu.edu/interdisciplinary/academics/courses.html", '_blank');
 });
 
+$("#C-S21-01").click(function() {
+    window.open("https://www.apple.com/", '_blank');
+});
+
+$("#C-F21-01").click(function() {
+    window.open("https://dlsyscourse.org/", '_blank');
+});
+
+$("#C-F21-02").click(function() {
+    window.open("https://visual-learning.cs.cmu.edu/", '_blank');
+});
+
+$("#C-F21-03").click(function() {
+    window.open("https://csd.cmu.edu/course/web-application-development", '_blank');
+});
+
+$("#C-F21-04").click(function() {
+    window.open("https://www.cs.cmu.edu/~aldrich/courses/17-363-fa21/", '_blank');
+});
+
+$("#C-F21-05").click(function() {
+    window.open("https://i.pinimg.com/originals/6c/90/28/6c90288d7e10d46d18895f17f420a92c.gif", '_blank');
+});
+
+
+$("#C-S22-01").click(function() {
+    window.open("http://graphics.cs.cmu.edu/courses/15469/s22/", '_blank');
+});
+
+$("#C-S22-02").click(function() {
+    window.open("https://i.pinimg.com/originals/6c/90/28/6c90288d7e10d46d18895f17f420a92c.gif", '_blank');
+});
+
 function openTab(tabName, tab) {
 
     var i, tabcontent, tablinks;
@@ -377,6 +410,20 @@ function flicker(tab) {
 
 }
 
+$("#course-graphics").click(function() {
+    window.open("http://15462.courses.cs.cmu.edu/fall2023/", '_blank');
+});
+
+$("#course-vcs").click(function() {
+    window.open("http://graphics.cs.cmu.edu/courses/15469/s22/", '_blank');
+});
+$("#course-ave").click(function() {
+    window.open("https://cardadfar.github.io/stuco-animation-website/", '_blank');
+});
+
+$("#course-bpw").click(function() {
+    window.open("https://cardadfar.github.io/stuco_webdev_website/", '_blank');
+});
 
 //-----------------------------------  VIDEO-SCREEN TRIGGER   -----------------------------------
 
