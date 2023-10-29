@@ -155,7 +155,7 @@ $(".resume-button-hover").hover(function() {
 });
 
 $(".resume-button-hover").click(function() {
-    window.open("assets/college_resume.pdf", '_blank');
+    window.open("assets/resume.pdf", '_blank');
 });
 
 
