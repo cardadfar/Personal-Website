@@ -33,7 +33,7 @@
   "p_15": "Between scenes where the text changes, I apply an additional displacement map adjustment layer that spans over the entire screen. This deconstructs the text, allowing for a nice transition into the next scene.",
   
   "s_16": "Background Composition.",
-  "p_17": "The construction of the chorus background begun with a pink outwards purple radial gradient solid and multiple adjustment layers with various color toner and brightnesses. The adjustment layers were masked into fragments such that:",
+  "p_17": "The construction of the chorus background began with a pink outwards purple radial gradient solid and multiple adjustment layers with various color toner and brightnesses. The adjustment layers were masked into fragments such that:",
   "l_18": "Each mask was at edge with another layer's mask.",
   "l_19": "No two neighboring masks shared the same toner or brightnesses values.",
   "p_20": "This was essential in being able to differentiate different regions from one another without there being any stroke or divider between regions of the mask. The adjustment layers collectively preserved the radial gradient of the original solid while dividing the canvas into noticeable shards.",

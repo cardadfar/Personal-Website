@@ -1,8 +1,6 @@
 
 
 
-
-
 var file = "";
 var scroll = 0;
 
@@ -74,8 +72,6 @@ $(document).ready(function() {
     var url = window.location.href;
     var end_val = url.substring(url.lastIndexOf('#') + 1);
 
-    console.log(url)
-
     if( url.includes("projects") ) {
         if( url.indexOf('#') > -1 ) {
             if (end_val == "apps") {
@@ -90,12 +86,7 @@ $(document).ready(function() {
             }
             else if (end_val == "animations") {
                 setTimeout(function() {
-                    openTab('year4', 'year3-tab')
-                }, 500);
-            }
-            else if (end_val == "webdev") {
-                setTimeout(function() {
-                    openTab('year4', 'year4-tab')
+                    openTab('year3', 'year3-tab')
                 }, 500);
             }
             else if (end_val == "misc") {
@@ -105,22 +96,7 @@ $(document).ready(function() {
             }
         }
     }
-
-    //bug();
 });
-
-function bug() {
-    var docWidth = document.documentElement.offsetWidth;
-    [].forEach.call(
-      document.querySelectorAll('*'),
-      function(el) {
-        if (el.offsetWidth > docWidth) {
-          console.log(el);
-        }
-      }
-    );
-    bug();
-}
 
 
 //----------------------------------------------------------------------------------
@@ -168,210 +144,6 @@ $(".icon").hover(function() {
     $(this).attr("src","assets/grey-icon.png");
 });
 
-
-
-
-
-
-
-$("#C-F17-01").click(function() {
-    window.open('http://www.cs.cmu.edu/~15122/', '_blank');
-});
-
-$("#C-F17-02").click(function() {
-    window.open("http://math.cmu.edu/~cnewstea/teaching/21-127-S17/notes.pdf", '_blank');
-});
-
-$("#C-F17-03").click(function() {
-    window.open("https://www.cmu.edu/dietrich/english/first_year/index.html", '_blank');
-});
-
-$("#C-F17-04").click(function() {
-    window.open("https://www.cmucoursefind.xyz/courses/60-101/", '_blank');
-});
-
-$("#C-F17-05").click(function() {
-    window.open("http://cmuems.com/2017/60210c/", '_blank');
-});
-
-$("#C-S18-01").click(function() {
-    window.open("http://www.cs.cmu.edu/~15122/", '_blank');
-});
-
-$("#C-S18-02").click(function() {
-    window.open("https://sites.google.com/site/artml2018/", '_blank');
-});
-
-$("#C-S18-03").click(function() {
-    window.open("http://cmuems.com/2018/60212s/", '_blank');
-});
-
-$("#C-S18-04").click(function() {
-    window.open("https://www.cmucoursefind.xyz/courses/60-110", '_blank');
-});
-
-$("#C-S18-05").click(function() {
-    window.open("http://coursecatalog.web.cmu.edu/collegeoffinearts/schoolofart/courses/courses.pdf", '_blank');
-});
-
-$("#C-S18-06").click(function() {
-    window.open("http://coursecatalog.web.cmu.edu/dietrichcollegeofhumanitiesandsocialsciences/departmentofmodernlanguages/courses/", '_blank');
-});
-
-
-$("#C-F18-01").click(function() {
-    window.open("http://www.cs.cmu.edu/~15251/", '_blank');
-});
-
-$("#C-F18-02").click(function() {
-    window.open("https://www.cs.cmu.edu/~213/", '_blank');
-});
-
-$("#C-F18-03").click(function() {
-    window.open("http://www.stat.cmu.edu/academics/courselist", '_blank');
-});
-
-$("#C-F18-04").click(function() {
-    window.open("http://coursecatalog.web.cmu.edu/melloncollegeofscience/departmentofphysics/courses/", '_blank');
-});
-
-$("#C-F18-05").click(function() {
-    window.open("http://coursecatalog.web.cmu.edu/melloncollegeofscience/departmentofphysics/courses/", '_blank');
-});
-
-$("#C-F18-06").click(function() {
-    window.open("http://coursecatalog.web.cmu.edu/collegeoffinearts/schoolofart/courses/", '_blank');
-});
-
-
-$("#C-S19-01").click(function() {
-    window.open("http://15462.courses.cs.cmu.edu/spring2019/", '_blank');
-});
-
-$("#C-S19-02").click(function() {
-    window.open("http://www.cs.cmu.edu/~ninamf/courses/315sp19/", '_blank');
-});
-
-$("#C-S19-03").click(function() {
-    window.open("http://coursecatalog.web.cmu.edu/melloncollegeofscience/departmentofphysics/courses/", '_blank');
-});
-
-$("#C-S19-04").click(function() {
-    window.open("http://coursecatalog.web.cmu.edu/melloncollegeofscience/departmentofphysics/courses/", '_blank');
-});
-
-$("#C-S19-05").click(function() {
-    window.open("http://www.cs.cmu.edu/~motoole2/16823-s19/", '_blank');
-});
-
-$("#C-S19-06").click(function() {
-    window.open("http://coursecatalog.web.cmu.edu/dietrichcollegeofhumanitiesandsocialsciences/departmentofphilosophy/courses/", '_blank');
-});
-
-$("#C-F19-01").click(function() {
-    window.open("https://deeplearning-cmu-10417.github.io/index.html", '_blank');
-});
-
-$("#C-F19-02").click(function() {
-    window.open("http://www.cs.cmu.edu/~16385/", '_blank');
-});
-
-$("#C-F19-03").click(function() {
-    window.open("http://www.cs.cmu.edu/~15210/", '_blank');
-});
-
-$("#C-F19-04").click(function() {
-    window.open("https://www.coursicle.com/cmu/courses/ART/60201/", '_blank');
-});
-
-$("#C-F19-05").click(function() {
-    window.open("https://www.coursicle.com/cmu/courses/ART/60105/", '_blank');
-});
-
-$("#C-F19-06").click(function() {
-    window.open("https://www.coursicle.com/cmu/courses/PHY/33889/", '_blank');
-});
-
-$("#C-S20-01").click(function() {
-    window.open("http://www.cs.cmu.edu/~418/", '_blank');
-});
-
-$("#C-S20-02").click(function() {
-    window.open("https://www.cs.cmu.edu/~./15780/", '_blank');
-});
-
-$("#C-S20-03").click(function() {
-    window.open("http://graphics.cs.cmu.edu/nsp/course/15464-s20/www/", '_blank');
-});
-
-$("#C-S20-04").click(function() {
-    window.open("http://brickisland.net/DDGSpring2020/", '_blank');
-});
-
-$("#C-S20-05").click(function() {
-    window.open("https://courses.ideate.cmu.edu/60-461/s2020/", '_blank');
-});
-
-$("#C-S20-06").click(function() {
-    window.open("https://www.cmu.edu/interdisciplinary/academics/courses.html", '_blank');
-});
-
-$("#C-F20-01").click(function() {
-    window.open("http://graphics.cs.cmu.edu/courses/15869/fall2014/", '_blank');
-});
-
-$("#C-F20-02").click(function() {
-    window.open("http://www.cs.cmu.edu/afs/cs/academic/class/15740-f19/www/index.html", '_blank');
-});
-
-$("#C-F20-03").click(function() {
-    window.open("https://cmudeeprl.github.io/703website/", '_blank');
-});
-
-$("#C-F20-04").click(function() {
-    window.open("https://10605.github.io", '_blank');
-});
-
-$("#C-F20-05").click(function() {
-    window.open("https://feifang.info/advanced-topics-in-machine-learning-and-game-theory-fall-2020/", '_blank');
-});
-
-$("#C-F20-06").click(function() {
-    window.open("https://www.cmu.edu/interdisciplinary/academics/courses.html", '_blank');
-});
-
-$("#C-S21-01").click(function() {
-    window.open("https://www.apple.com/", '_blank');
-});
-
-$("#C-F21-01").click(function() {
-    window.open("https://dlsyscourse.org/", '_blank');
-});
-
-$("#C-F21-02").click(function() {
-    window.open("https://visual-learning.cs.cmu.edu/", '_blank');
-});
-
-$("#C-F21-03").click(function() {
-    window.open("https://csd.cmu.edu/course/web-application-development", '_blank');
-});
-
-$("#C-F21-04").click(function() {
-    window.open("https://www.cs.cmu.edu/~aldrich/courses/17-363-fa21/", '_blank');
-});
-
-$("#C-F21-05").click(function() {
-    window.open("https://i.pinimg.com/originals/6c/90/28/6c90288d7e10d46d18895f17f420a92c.gif", '_blank');
-});
-
-
-$("#C-S22-01").click(function() {
-    window.open("http://graphics.cs.cmu.edu/courses/15469/s22/", '_blank');
-});
-
-$("#C-S22-02").click(function() {
-    window.open("https://i.pinimg.com/originals/6c/90/28/6c90288d7e10d46d18895f17f420a92c.gif", '_blank');
-});
 
 function openTab(tabName, tab) {
 
@@ -431,7 +203,6 @@ var triggerCount = 0;
 
 function trigger() {
     triggerCount++;
-    $("trigger").css("max-height", "300px");
     if(triggerCount % 2 == 1) {
         document.getElementById("animation-to-check1").beginElement();
         document.getElementById("animation-to-check2").beginElement();

@@ -232,8 +232,7 @@ a:hover + .line{
 }
 
 .video-bg-button {
-    width: 250px; 
-    margin-left: calc(50%-125px);
+    width: 250px;
     margin-bottom: 15px;
 }
 

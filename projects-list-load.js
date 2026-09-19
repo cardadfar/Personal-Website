@@ -83,8 +83,5 @@ $(document).ready(function(){
         var k = $(this).val();
 
         loadData(k);
-        console.log(k);
     });
 });
-
-console.log("done, project-list-load");

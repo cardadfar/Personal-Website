@@ -131,16 +131,14 @@ $(document).ready(function(){
             $("iframe").attr("src","");
             file = "dsg-university";
             window.location.hash = file;
-            noVideo = true;
-            loadFrame(noVideo);
+            loadFrame(true);
         });
 
         $(".object-illum").click(function() {
             $("iframe").attr("src","");
             file = "object-illum";
             window.location.hash = file;
-            noVideo = true;
-            loadFrame(noVideo);
+            loadFrame(true);
         });
 
         $(".water-shader").click(function() {
@@ -154,16 +152,14 @@ $(document).ready(function(){
             $("iframe").attr("src","");
             file = "multicore-maps";
             window.location.hash = file;
-            noVideo = true;
-            loadFrame(noVideo);
+            loadFrame(true);
         });
 
         $(".history-city").click(function() {
             $("iframe").attr("src","");
             file = "history-city";
             window.location.hash = file;
-            noVideo = true;
-            loadFrame(noVideo);
+            loadFrame(true);
         });
 
         $(".gan-theft-auto").click(function() {
@@ -176,21 +172,14 @@ $(document).ready(function(){
         $(".web-dev").click(function() {
             $("iframe").attr("src","https://cardadfar.github.io/Web-Dev-Weekend-Website/index.html");
             file = "web-dev-weekend";
-            window.location.hash = file;
+            window.location.hash = "web-dev";
             loadFrame();
         });
 
-
-        $(".stuco-site").click(function() {
-            $("iframe").attr("src","http://tinyurl.com/stuco-bpw");
-            file = "stuco-site";
-            window.location.hash = file;
-            loadFrame();
-        });
 
 
         $(".personal-website").click(function() {
-            $("iframe").attr("src","http://cardadfar.com");
+            $("iframe").attr("src","https://cardadfar.com");
             file = "personal-website";
             window.location.hash = file;
             loadFrame();
@@ -328,12 +317,17 @@ $(document).ready(function(){
 
     
 
+    var bounceTimer = null;
+
     function bounceText() {
+        clearTimeout(bounceTimer);
+        // Stop looping once the overlay has been closed and the element removed.
+        if ($("#text-bounce").length === 0) { return; }
         $("#text-bounce").css("transform", "translate(0,15px)");
         setTimeout(function() {
             $("#text-bounce").css("transform", "translate(0,25px)");
         }, 1000);
-        setTimeout(function() {
+        bounceTimer = setTimeout(function() {
             bounceText();
         }, 2000);
     }
@@ -363,8 +357,6 @@ $(document).ready(function(){
             $(".video-bg").css("max-height", "0px");
             $(".video-bg").css("transition", "unset");
             $("iframe").attr("src","");
-            var myNode = document.getElementsByClassName("video-bg");
-            myNode.innerHTML = '';
             $('.video-bg').empty();
         }, 500);
 
@@ -377,14 +369,16 @@ $(document).ready(function(){
     var end_val = url.substring(url.lastIndexOf('#') + 1);
 
     if( url.indexOf('#') > -1 ) {
-        
-        console.log(end_val)
         setTimeout(function() {
-            $("#" + end_val)[0].click();
+            // Only project cover images carry project ids; ignore tab hashes
+            // like #research or anything that doesn't match an element.
+            var target = document.getElementById(end_val);
+            if (!target || !$(target).hasClass("cover-image")) { return; }
+            var pane = $(target).closest(".tab-content");
+            if (pane.length) {
+                openTab(pane.attr("id"), pane.attr("id") + "-tab");
+            }
+            target.click();
         }, 500);
-        
     }
 });
-
-
-console.log("done, projects-interactions");
