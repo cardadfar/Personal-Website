@@ -13,7 +13,7 @@ body,html{
     background-size: cover;
     z-index: -2;
     transition: all 0.5s;
-    background-color: black;
+    background-color: #171717;
 }
 
 body {
@@ -70,7 +70,7 @@ li{
     width: 100%;
     height: 40px;
     background: #171717;
-    box-shadow: 0px 0px 50px;
+    box-shadow: none;
     z-index: 99;
     transition: all 0.5s;
 
@@ -89,38 +89,28 @@ li{
 
 }
 
+/* The icon is always in the flex row, collapsed to zero width. On hover it
+   grows to 16px (+ a 9px gap), so the label glides over instead of jumping. */
 .top-icon {
-    display: none;
-}
-
-.tab:hover .top-icon{
     display: block;
-    position: relative;
-    float: left;
-    display: block;
-    width: 16px;
+    order: -1;
+    width: 0;
     height: 16px;
-    left: calc(50% - 8px);
-    top: calc(50% - 8px);
-    animation: positionShift 0.5s;
-    animation-fill-mode: forwards;
+    margin-right: 0;
+    opacity: 0;
+    transition: width 0.3s ease, margin-right 0.3s ease, opacity 0.3s ease;
 }
 
-@keyframes positionShift {
-    0% {
-        opacity: 0;
-        left: 49%;
-    }
-
-    100% {
+@media (min-width: 651px) {
+    .tab:hover .top-icon{
+        width: 16px;
+        margin-right: 9px;
         opacity: 1;
-        left: 43%;
     }
 }
 
 #home-icon:hover a{
     color: #00FFFF;
-    margin-left: 25px;
 }
 
 #home-icon:hover .top-icon{
@@ -129,7 +119,6 @@ li{
 
 #skills-icon:hover a{
     color: #00FF00;
-    margin-left: 21px;
 }
 
 #skills-icon:hover .top-icon{
@@ -138,7 +127,6 @@ li{
 
 #projects-icon:hover a{
     color: #f956ff;
-    margin-left: 36px;
 }
 
 #projects-icon:hover .top-icon{
@@ -333,7 +321,6 @@ li{
 
 #experience-icon:hover a{
     color: #ff812d;
-    margin-left: 55px;
 }
 
 #experience-icon:hover .top-icon{
@@ -439,7 +426,6 @@ li{
 
 #contact-icon:hover a{
     color: #FFFF00;
-    margin-left: 35px;
 }
 
 #contact-icon:hover .top-icon{
@@ -447,6 +433,10 @@ li{
 }
 
 .tab{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: calc(20% - 2px);
     height: 100%;
     text-align: center;
@@ -540,29 +530,211 @@ li{
     transition: all 0.5s;
 }
 
-.circle{
+/* ---- portrait + hover animation ---- */
+.portrait{
     position: relative;
+    top: 50px;
     width: 200px;
     height: 200px;
-    left: calc(50% - 100px);
-    top: 50px;
-    margin-bottom: 60px;
+    margin: 0 auto 60px;
     border-radius: 100%;
-    border: 1px solid white;
-    box-shadow: 0px 0px 50px;
-    overflow: hidden;
-    transition: all 0.5s;
 }
 
+.circle{
+    position: absolute;
+    inset: 0;
+    border-radius: 100%;
+    border: 1px solid white;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9), 0 0 0 0 rgba(255, 255, 255, 0);
+    overflow: hidden;
+    transition: box-shadow 0.6s ease, border-color 0.6s ease;
+}
+
+.portrait:hover .circle{
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9), 0 0 36px rgba(255, 255, 255, 0.18);
+}
+
+/* photo: grey at rest, colour + gentle zoom on hover */
+.icon{
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    transform: scale(1);
+    transition: filter 0.7s ease, transform 1s cubic-bezier(.2, .7, .2, 1);
+}
+
+.portrait:hover .icon{
+    filter: grayscale(0);
+    transform: scale(1.08);
+}
+
+/* two rings: expand outward and counter-rotate */
 .circle-dashed{
     position: absolute;
+    inset: -0.5px;
     border: 0.5px dashed white;
-    width: 200px;
-    height: 200px;
-    left: calc(50% - 100.5px);
-    top: 49.5px;
     border-radius: 100%;
-    transition: all 0.5s ease
+    opacity: 0.75;
+    transition: inset 0.5s cubic-bezier(.2, .7, .2, 1), opacity 0.5s ease;
+}
+
+#circle-dashed2{
+    border: 0.35px solid white;
+}
+
+.portrait:hover .circle-dashed{
+    inset: -13px;
+    opacity: 1;
+    animation: rotate 14s linear infinite;
+}
+
+.portrait:hover #circle-dashed2{
+    inset: -21px;
+    transition-delay: 0.08s;
+    animation: rotate-reverse 22s linear infinite;
+}
+
+/* comet arc orbiting the portrait */
+.portrait::after{
+    content: '';
+    position: absolute;
+    inset: -7px;
+    border-radius: 100%;
+    border: 1.5px solid transparent;
+    border-top-color: white;
+    border-right-color: rgba(255, 255, 255, 0.35);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.portrait:hover::after{
+    opacity: 1;
+    animation: rotate 1.6s cubic-bezier(.45, .05, .55, .95) infinite;
+}
+
+/* sonar ping expanding from the edge */
+.portrait::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.portrait:hover::before{
+    animation: ping 1.8s ease-out infinite;
+}
+
+@keyframes ping {
+    0%   { transform: scale(1);    opacity: 0.6; }
+    100% { transform: scale(1.45); opacity: 0; }
+}
+
+@keyframes rotate-reverse {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(-360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .portrait:hover .circle-dashed,
+    .portrait:hover #circle-dashed2,
+    .portrait:hover::after,
+    .portrait:hover::before { animation: none; }
+}
+
+/* ---- intro video: poster + play button; the YouTube player loads on click ---- */
+.video-embed{
+    position: relative;
+    width: min(640px, 88%);
+    aspect-ratio: 16 / 9;
+    margin: 22px auto 10px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #515151;
+    background: #000;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.video-embed-poster{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0.5) brightness(0.8);
+    transform: scale(1);
+    transition: filter 0.6s ease, transform 1.2s cubic-bezier(.2, .7, .2, 1);
+}
+
+.video-embed:hover .video-embed-poster,
+.video-embed:focus-visible .video-embed-poster{
+    filter: grayscale(0) brightness(0.9);
+    transform: scale(1.03);
+}
+
+.video-embed-play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 68px;
+    height: 68px;
+    margin: -34px 0 0 -34px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: rgba(23, 23, 23, 0.55);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.35s ease, transform 0.35s cubic-bezier(.2, .7, .2, 1);
+}
+
+.video-embed-play svg{
+    width: 26px;
+    height: 26px;
+    fill: white;
+    margin-left: 3px;
+    transition: fill 0.35s ease;
+}
+
+.video-embed:hover .video-embed-play,
+.video-embed:focus-visible .video-embed-play{
+    background: white;
+    transform: scale(1.08);
+}
+
+.video-embed:hover .video-embed-play svg,
+.video-embed:focus-visible .video-embed-play svg{
+    fill: #171717;
+}
+
+.video-embed-label{
+    position: absolute;
+    left: 16px;
+    bottom: 12px;
+    font-family: "UniqueDistrictThin";
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #171717;
+    opacity: 0.9;
+}
+
+.video-embed iframe{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-embed:focus-visible{
+    outline: 2px solid white;
+    outline-offset: 3px;
 }
 
 .rect-double{
@@ -618,6 +790,10 @@ li{
     transition: all 0.5s;
 }
 
+/* The title starts fully clipped to a zero-height band at its vertical
+   centre (where the two lines sit before they split). The clip opens with
+   the same duration and easing the lines use to move apart, so the word is
+   uncovered by the lines rather than fading in afterwards. */
 .center{
     position: fixed;
     font-family: "UniqueDistrictThin";
@@ -625,13 +801,14 @@ li{
     font-weight: lighter;
     text-align: center;
     top: calc(50% - 30px);
-    opacity: 0;
+    clip-path: inset(50% 0 50% 0);
+    -webkit-clip-path: inset(50% 0 50% 0);
     transition: all 0.5s;
 }
 
 .center-fadeIn{
-    opacity: 1;
-    transition: all 0.5s;
+    clip-path: inset(0 0 0 0);
+    -webkit-clip-path: inset(0 0 0 0);
     transition: all 0.5s;
 }
 
@@ -704,6 +881,25 @@ code {
     line-height: 22px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.intro-line {
+    text-align: center;
+    text-indent: 0;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(.2, .7, .2, 1);
+}
+
+.intro-line-in {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .intro-line { opacity: 1; transform: none; transition: none; }
 }
 
 .hi{
@@ -918,27 +1114,71 @@ code {
 }
 
 .resume-button{
-    width: 300px;
-    height: 40px;
-    margin-left: calc(50% - 150px);
-    margin-bottom: 30px;
+    position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
-    transition: all 0.5s;
+    gap: 14px;
+    width: 300px;
+    height: 44px;
+    margin: 0 auto 30px;
+    box-sizing: border-box;
+    border: 1px solid #8c8c8c;
+    color: white;
+    font-family: "UniqueDistrictThin";
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    overflow: hidden;
+    isolation: isolate;
+    transition: color 0.35s, border-color 0.35s, box-shadow 0.35s;
 }
 
-.resume-button-hover{
+.resume-button::before{
+    content: '';
     position: absolute;
-    height: 40px;
-    margin-bottom: 50px;
-    opacity: 0;
-    transition: all 0.5s;
-    cursor: pointer;
+    inset: 0;
+    z-index: -1;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.4s cubic-bezier(.2, .7, .2, 1);
 }
 
-.resume-button-on{
-    opacity: 1;
-    transition: all 0.5s;
+.resume-button:hover{
+    color: #171717;
+    border-color: white;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.12);
+}
+
+.resume-button:hover::before{
+    transform: scaleX(1);
+}
+
+.resume-line{
+    width: 40px;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.6;
+    transition: width 0.4s cubic-bezier(.2, .7, .2, 1);
+}
+
+.resume-button:hover .resume-line{
+    width: 18px;
+}
+
+.resume-icon{
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.4;
+    stroke-linecap: round;
+}
+
+.resume-label{
+    line-height: 1;
+    padding-top: 2px;
 }
 
 .experience-icon{
@@ -1025,7 +1265,7 @@ code {
     display: flex;
     width: 80%;
     margin-left: 10%;
-    background-color: #232325;
+    background-color: #1c1c1c;
     border: 1px solid #515151;
     border-bottom: 0px;
 }
@@ -1053,7 +1293,7 @@ code {
     width: 80%;
     margin-left: 10%;
     overflow: hidden;
-    background-color: #232325;
+    background-color: #1c1c1c;
     border: 1px solid #515151;
 }
 
@@ -1103,13 +1343,15 @@ code {
 
 .tab-box {
   position: absolute;
+  top: 100%;
+  left: 0;
   font-size: 12px;
-  width: calc(20% - 2px);
+  width: 100%;
   line-height: 20px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin: 0 0 0 0;
-  background: rgba(40,40,40,0.72);
+  background: #282828;
   color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -1167,7 +1409,7 @@ code {
   line-height: 40px;
   font-size: 14px;
   margin: 0 0 0 0;
-  background: rgba(60, 60, 70, 0.72);
+  background: rgb(60, 60, 70);
   color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -1666,12 +1908,7 @@ code {
     
     .center{
         top: calc(25% - 33px);
-    }
-    
-    .center-fadeIn{
         font-size: 30px;
-        opacity: 1;
-        transition: all 0.5s;
     }
 
     #rectangle02{
@@ -1705,13 +1942,10 @@ code {
     }
     
     .nav > .tab > .top-icon{
-        position: relative;
         display: block;
         opacity: 0.7;
         width: 26px;
         height: 26px;
-        left: calc(50% - 13px);
-        top: calc(50% - 13px);
         transition: all 0.5s;
     }
     
@@ -1796,13 +2030,14 @@ code {
 
 
     .resume-button{
-        width: 200px;
-        height: 30px;
-        margin-left: calc(50% - 100px);
+        width: 220px;
+        height: 38px;
+        font-size: 17px;
+        gap: 10px;
     }
-    
-    .resume-button-hover{
-        height: 30px;
+
+    .resume-line{
+        width: 24px;
     }
     
     .experience-icon{

@@ -8,7 +8,7 @@
   },
 
   "t_0": "My Minor Melody.",
-  "w_0": [{"software-icon.png": "Illustrator CC"},
+  "w_0": [{"software-icon.png": "Illustrator"},
           {"code-icon.png": "JavaScript • P5.JS"},
           {"time-icon.png": "3 Weeks"}],
   "p_1": "My Minor Melody was a final project for Electronic Media Studio II which counters the traditional nice-sounding rhythm games by introducing off-tune synths to a music game about survival. The program uses P5.JS in OpenProcessing to create the interface & handle the game.",

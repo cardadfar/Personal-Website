@@ -1,6 +1,11 @@
 
 $(document).ready(function(){
 
+    // Update the URL hash without the browser scrolling to the matching element.
+    function setHash(h) {
+        history.replaceState(null, "", location.pathname + location.search + (h ? "#" + h : ""));
+    }
+
     $(".active-cover").hover(function() {
 
         $(this).children(".cover-image").addClass("video-screen-on");
@@ -25,154 +30,154 @@ $(document).ready(function(){
         $(".sketcher").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/283946326");
             file = "sketcher";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".frontline").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/646028712");
             file = "frontline";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".food-drive").click(function() {
             $("iframe").attr("src","https://www.youtube.com/embed/m64gcFp4nro");
             file = "food-drive";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".how-far-weve-come").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/267934726");
             file = "how-far-weve-come";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".la-da-dee").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/268613841");
             file = "la-da-dee";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".build-our-machine").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/269202925");
             file = "build-our-machine";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".hibikase").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/268214437");
             file = "hibikase";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".idance").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/257607289");
             file = "idance";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".number-one").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/269206599");
             file = "number-one";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".peace-sign").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/250210552");
             file = "peace-sign";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".null-space").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/249094937");
             file = "null-space";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".infinite").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/249187332");
             file = "infinite";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".plastic-promises").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/249258739");
             file = "plastic-promises";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".stitches").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/249324773");
             file = "stitches";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".rondo").click(function() {
             $("iframe").attr("src","https://player.vimeo.com/video/250281441");
             file = "rondo";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".dsg-university").click(function() {
             $("iframe").attr("src","");
             file = "dsg-university";
-            window.location.hash = file;
+            setHash(file);
             loadFrame(true);
         });
 
         $(".object-illum").click(function() {
             $("iframe").attr("src","");
             file = "object-illum";
-            window.location.hash = file;
+            setHash(file);
             loadFrame(true);
         });
 
         $(".water-shader").click(function() {
             $("iframe").attr("src","https://cardadfar.github.io/japanese_water_shader/");
             file = "water-shader";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".multicore-maps").click(function() {
             $("iframe").attr("src","");
             file = "multicore-maps";
-            window.location.hash = file;
+            setHash(file);
             loadFrame(true);
         });
 
         $(".history-city").click(function() {
             $("iframe").attr("src","");
             file = "history-city";
-            window.location.hash = file;
+            setHash(file);
             loadFrame(true);
         });
 
         $(".gan-theft-auto").click(function() {
             $("iframe").attr("src","https://www.youtube.com/embed/2_QP4BVXTqk");
             file = "gan-theft-auto";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".web-dev").click(function() {
             $("iframe").attr("src","https://cardadfar.github.io/Web-Dev-Weekend-Website/index.html");
             file = "web-dev-weekend";
-            window.location.hash = "web-dev";
+            setHash("web-dev");
             loadFrame();
         });
 
@@ -181,47 +186,39 @@ $(document).ready(function(){
         $(".personal-website").click(function() {
             $("iframe").attr("src","https://cardadfar.com");
             file = "personal-website";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
         $(".worm-park").click(function() {
             $("iframe").attr("src","https://www.openprocessing.org/sketch/505150/embed/");
             file = "worm-park";
-            window.location.hash = file;
-            loadFrame();
-        });
-
-        $(".sound-map").click(function() {
-            $("iframe").attr("src","https://www.openprocessing.org/sketch/500725/embed/");
-            file = "sound-map";
-            window.location.hash = file;
-            loadFrame();
-        });
-
-        $(".my-minor-melody").click(function() {
-            $("iframe").attr("src","https://www.openprocessing.org/sketch/478222/embed/");
-            file = "my-minor-melody";
-            window.location.hash = file;
+            setHash(file);
             loadFrame();
         });
 
     
     
 
+
+    // Lock the page where it is (no jump to top) while the overlay is open.
+    function lockScroll() {
+        var sbw = window.innerWidth - document.documentElement.clientWidth;
+        document.documentElement.style.setProperty("--sbw", sbw + "px");
+        document.documentElement.classList.add("modal-open");
+    }
+
+    function unlockScroll() {
+        document.documentElement.classList.remove("modal-open");
+    }
 
     function loadFrame(noVideo) {
-        scroll = $(window).scrollTop();
+        $(".vid").removeClass("vid-closing").addClass("vid-open").scrollTop(0);
         $(".video-player").addClass("video-player-on");
         $(".video-bg").addClass("video-player-on");
         $(".dark-frame").addClass("dark-frame-on");
-        $(".all").css("position", "fixed");
-        $(".all").css("overflow-y", "hidden");
-        $(".vid").css("overflow-y", "auto");
+        lockScroll();
         loadData(noVideo);
-        setTimeout(function() {
-            $(".video-bg").addClass("video-bg-error");
-        }, 2000);
     }
 
     function loadData(noVideo) {
@@ -235,7 +232,7 @@ $(document).ready(function(){
             $(".video-bg").append("<div id='margin-top'></div>");
             $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;' id='text-bounce'>v</p>");
             bounceText();
-            $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;'>Scroll down for more info. Click on the sides of the screen to exit.</p>");
+            $(".video-bg").append("<p style='text-align: center; color: #b2b2b2;'>Scroll down for more info.</p>");
             $(".video-player").removeClass("video-player-off");
         }
         else {
@@ -334,33 +331,30 @@ $(document).ready(function(){
 
     
 
-    $(".dark-frame").click(function() {
+    function closeProject() {
+        if (!$(".vid").hasClass("vid-open") || $(".vid").hasClass("vid-closing")) { return; }
+        $(".vid").addClass("vid-closing");
         $(".video-player").addClass("transparent-blur");
         $(".video-bg").addClass("transparent-blur");
         $(".dark-frame").removeClass("dark-frame-on");
-        $(".all").css("position", "");
-        $(".all").css("overflow-y", "");
 
-        window.location.hash = ''
+        setHash('');
         triggerCount = 0;
 
         setTimeout(function() {
-            $("html, body").animate({ scrollTop: (scroll.toString()) + "px" }, 1000);
-        }, 300);
-
-        setTimeout(function() {
-            $(".video-player").removeClass("video-player-on");
-            $(".video-bg").removeClass("video-player-on");
-            $(".video-player").removeClass("transparent-blur");
-            $(".video-bg").removeClass("transparent-blur");
-            $(".video-bg").removeClass("video-bg-error");
+            $(".vid").removeClass("vid-open vid-closing");
+            $(".video-player").removeClass("video-player-on video-player-off transparent-blur").attr("src", "");
+            $(".video-bg").removeClass("video-player-on transparent-blur");
             $(".video-bg").css("max-height", "0px");
             $(".video-bg").css("transition", "unset");
-            $("iframe").attr("src","");
-            $('.video-bg').empty();
+            $(".video-bg").empty();
+            unlockScroll();
         }, 500);
+    }
 
-
+    $(".dark-frame").click(closeProject);
+    $(document).on("keydown", function(e) {
+        if (e.key === "Escape") { closeProject(); }
     });
 
 

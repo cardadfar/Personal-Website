@@ -9,7 +9,7 @@
 
   "t_0": "Plastic Promises.",
   "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=mDP4-_n3hC4", "Plastic Promises by Set It Off"]}, 
-          {"software-icon.png": "After Effects CC • Illustrator CC • Photoshop CC"},
+          {"software-icon.png": "After Effects • Illustrator • Photoshop"},
           {"time-icon.png": "2 Weeks"}],
   "p_1": "Plastic Promises was an earlier attempt at Kinetic Typography using limited graphics. The challenge was to limit myself to only two colors. Because the background would be black by default, that left me to make all other typography and graphics white. This posed a challenge by making it hard to overlay graphics on top of each other. Normally, overlayed graphics would have different colors or shadings, making them distinguishable. Since everything was white, I had to be careful that the particle systems I generated wouldn't obstruct from the clarity of the typography and other graphics.",
 

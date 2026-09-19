@@ -9,7 +9,7 @@
 
   "t_0": "iDance.",
   "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=9aJVr5tTTWk", "Peace Sign by Kenshi Yonezu"]}, 
-          {"software-icon.png": "After Effects CC • ExtendScript Toolkit CC"},
+          {"software-icon.png": "After Effects • ExtendScript Toolkit"},
           {"code-icon.png": "ExtendScript"},
           {"time-icon.png": "3 Days"}],
   "b_1": ["code-button.png", "https://github.com/cardadfar/OpenPose-After-Effects"],

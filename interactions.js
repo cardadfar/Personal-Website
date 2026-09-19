@@ -66,7 +66,7 @@ $(document).ready(function() {
     }, 500);
     setTimeout(function() {
         $(".center").addClass("center-fadeIn");
-    }, 1000);
+    }, 500);
 
 
     var url = window.location.href;
@@ -94,8 +94,81 @@ $(document).ready(function() {
                     openTab('year5', 'year5-tab')
                 }, 500);
             }
+            else if (end_val == "photography") {
+                setTimeout(function() {
+                    openTab('year6', 'year6-tab')
+                }, 500);
+            }
         }
     }
+});
+
+
+//----------------------------------------------------------------------------------
+
+//---  CONTACT  -----------------------  MESSAGE FORM  ------------------------------
+
+
+// Posts the form to the form service (Formspree-style JSON API) without leaving the page.
+$(document).ready(function() {
+    var form = document.getElementById("contact-form");
+    if (!form) { return; }
+    var status = form.querySelector(".contact-status");
+    var button = form.querySelector(".contact-submit");
+    var label = form.querySelector(".contact-submit-label");
+
+    var FALLBACK_EMAIL = "hello@cardadfar.com";
+
+    function setStatus(text, kind) {
+        status.textContent = text;
+        status.className = "contact-status" + (kind ? " is-" + kind : "");
+    }
+
+    // Error state that also offers a direct email link so a message is never lost.
+    function setFailure(text) {
+        setStatus(text + " You can also email me directly at ", "error");
+        var a = document.createElement("a");
+        a.href = "mailto:" + FALLBACK_EMAIL;
+        a.textContent = FALLBACK_EMAIL;
+        status.appendChild(a);
+        status.appendChild(document.createTextNode("."));
+    }
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        var invalid = false;
+        form.querySelectorAll("input[required], textarea[required]").forEach(function(el) {
+            var bad = !el.checkValidity();
+            el.classList.toggle("is-invalid", bad);
+            invalid = invalid || bad;
+        });
+        if (invalid) { setStatus("Please fill in every field with a valid email.", "error"); return; }
+
+
+        button.disabled = true;
+        label.textContent = "Sending\u2026";
+        setStatus("");
+
+        fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: { "Accept": "application/json" }
+        }).then(function(res) {
+            if (!res.ok) { throw new Error("HTTP " + res.status); }
+            form.reset();
+            label.textContent = "Sent";
+            setStatus("Thanks! Your message is on its way.", "success");
+        }).catch(function() {
+            button.disabled = false;
+            label.textContent = "Send Message";
+            setFailure("Something went wrong sending that.");
+        });
+    });
+
+    form.querySelectorAll("input, textarea").forEach(function(el) {
+        el.addEventListener("input", function() { el.classList.remove("is-invalid"); });
+    });
 });
 
 
@@ -104,45 +177,43 @@ $(document).ready(function() {
 //---  INDEX  -----------------------  INDEX COMPONENTS  ---------------------------
 
 
-$(".icon").hover(function() {
-    $(".circle-dashed").css({"width": "226px", "height": "226px"});
-    $(".circle-dashed").css({"left": "calc(50% - 113px)", "top": "35px"});
-    $(".circle-dashed").css("animation", "rotate 5s linear infinite");
-
-
-    $("#circle-dashed2").css({"width": "240px", "height": "240px"});
-    $("#circle-dashed2").css({"left": "calc(50% - 120px)", "top": "29px"});
-
-    $(".rect-double").css("animation", "moveMask 2s cubic-bezier(.94,0,.09,1) infinite");
-    }, function () {
-    $(".circle-dashed").css({"width": "", "height": ""});
-    $(".circle-dashed").css({"left": "", "top": ""});
-    $(".circle-dashed").css("animation", "");
-
-    $(".rect-double").css({"width": "", "height": ""});
-    $(".rect-double").css({"left": "", "top": ""});
-    $(".rect-double").css("animation", "");
+// Intro lines fade in one after another the first time they scroll into view.
+$(document).ready(function() {
+    var lines = document.querySelectorAll(".intro-line");
+    if (!lines.length) { return; }
+    if (!("IntersectionObserver" in window)) {
+        lines.forEach(function(l) { l.classList.add("intro-line-in"); });
+        return;
+    }
+    var seen = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (!entry.isIntersecting) { return; }
+            var el = entry.target;
+            setTimeout(function() { el.classList.add("intro-line-in"); }, 250 * el.dataset.order);
+            seen.unobserve(el);
+        });
+    }, { threshold: 0.4 });
+    lines.forEach(function(l, i) { l.dataset.order = i; seen.observe(l); });
 });
 
-$(".resume-button-hover").hover(function() {
-    $(this).addClass("resume-button-on");
-    }, function() {
-    $(this).removeClass("resume-button-on");
-});
 
-$(".resume-button-hover").click(function() {
-    window.open("assets/resume.pdf", '_blank');
+// Intro video: swap the poster for the YouTube player on first click / Enter / Space.
+$(".video-embed").on("click keydown", function(e) {
+    if (e.type === "keydown" && e.key !== "Enter" && e.key !== " ") { return; }
+    e.preventDefault();
+    if (this.querySelector("iframe")) { return; }
+    var frame = document.createElement("iframe");
+    frame.src = "https://www.youtube-nocookie.com/embed/" + this.dataset.videoId + "?autoplay=1&rel=0&modestbranding=1&playsinline=1";
+    frame.title = "Introduction video";
+    frame.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    frame.allowFullscreen = true;
+    this.innerHTML = "";
+    this.appendChild(frame);
+    this.style.cursor = "default";
 });
 
 
 //----------------------------------------------------------------------------------
-
-
-$(".icon").hover(function() {
-    $(this).attr("src","assets/icon.png");
-    }, function() {
-    $(this).attr("src","assets/grey-icon.png");
-});
 
 
 function openTab(tabName, tab) {
@@ -183,11 +254,15 @@ function flicker(tab) {
 }
 
 $("#course-graphics").click(function() {
-    window.open("http://15462.courses.cs.cmu.edu/fall2023/", '_blank');
+    window.open("https://15362.courses.cs.cmu.edu/fall2026/", '_blank');
+});
+
+$("#course-neural").click(function() {
+    window.open("https://graphics.cs.cmu.edu/courses/15474/f26/", '_blank');
 });
 
 $("#course-vcs").click(function() {
-    window.open("http://graphics.cs.cmu.edu/courses/15469/s22/", '_blank');
+    window.open("https://graphics.cs.cmu.edu/courses/15473/f25/", '_blank');
 });
 $("#course-ave").click(function() {
     window.open("https://cardadfar.github.io/stuco-animation-website/", '_blank');
@@ -203,19 +278,21 @@ var triggerCount = 0;
 
 function trigger() {
     triggerCount++;
-    if(triggerCount % 2 == 1) {
-        document.getElementById("animation-to-check1").beginElement();
-        document.getElementById("animation-to-check2").beginElement();
-        document.getElementById("animation-to-check3").beginElement();
-        $(".collapse-menu").css("max-height", "300px");
+    var menu = document.querySelector(".collapse-menu");
+    if (!menu) { return; }
+    var opening = (triggerCount % 2 == 1);
+    for (var i = 1; i <= 3; i++) {
+        document.getElementById((opening ? "animation-to-check" : "animation-to-origin") + i).beginElement();
+    }
+    if (opening) {
+        // Animate to the drawer's real height so the motion fills the whole duration.
+        menu.style.maxHeight = menu.scrollHeight + "px";
+        menu.classList.add("is-open");
         $(".drop-shadow").css("opacity", "0.65");
     }
-    else
-    {
-        document.getElementById("animation-to-origin1").beginElement();
-        document.getElementById("animation-to-origin2").beginElement();
-        document.getElementById("animation-to-origin3").beginElement();
-        $(".collapse-menu").css("max-height", "");
+    else {
+        menu.style.maxHeight = "";
+        menu.classList.remove("is-open");
         $(".drop-shadow").css("opacity", "");
     }
 }

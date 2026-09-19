@@ -6,9 +6,9 @@
     <title>Contact | Oscar Dadfar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The portfolio of Oscar Dadfar.">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="contact-style.css">
-    <link rel="icon" href="assets/od-logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css?v=20260920b">
+    <link rel="stylesheet" type="text/css" href="contact-style.css?v=20260920b">
+    <link rel="icon" type="image/png" sizes="256x256" href="assets/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
@@ -49,8 +49,35 @@
     <div class="bridge"><img src="assets/tab-backgrounds/home-blur.jpg" style="height: 100vh;"></div>
     <div class="body-background">
         <p class="hi" id="start-text">Contact.</p>
-        <p style="text-align:center;">You can get in touch with me at any time.</p>
-        <p style="text-align:center;">Use the below links to find me on my relevant social media accounts.</p>
+        <p class="indent intro-line">You can get in touch with me at any time.</p>
+        <p class="indent intro-line">Send a message below, or find me on the links underneath.</p>
+
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xoevjjzg" method="POST" novalidate>
+            <div class="contact-row">
+                <label class="contact-field">
+                    <span>Name</span>
+                    <input type="text" name="name" autocomplete="name" required>
+                </label>
+                <label class="contact-field">
+                    <span>Email</span>
+                    <input type="email" name="email" autocomplete="email" required>
+                </label>
+            </div>
+            <label class="contact-field">
+                <span>Message</span>
+                <textarea name="message" rows="6" required></textarea>
+            </label>
+            <input type="text" name="_gotcha" class="contact-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <input type="hidden" name="_subject" value="New message from cardadfar.com">
+            <div class="contact-actions">
+                <button class="contact-submit" type="submit">
+                    <span class="resume-line"></span>
+                    <span class="contact-submit-label">Send Message</span>
+                    <span class="resume-line"></span>
+                </button>
+                <p class="contact-status" role="status" aria-live="polite"></p>
+            </div>
+        </form>
 
         <div class="nav-bottom">
             <div class="bottom-tab" id="linkedin-icon">
@@ -65,7 +92,7 @@
         </div>
 
     </div>
-    <script type="text/javascript" src="interactions.js"></script>
+    <script type="text/javascript" src="interactions.js?v=20260920b"></script>
 </body>
 </html>
 

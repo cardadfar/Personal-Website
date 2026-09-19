@@ -6,8 +6,8 @@
     <title>Portfolio of Oscar Dadfar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The portfolio of Oscar Dadfar.">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="assets/od-logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css?v=20260920b">
+    <link rel="icon" type="image/png" sizes="256x256" href="assets/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
@@ -47,13 +47,22 @@
     </div>
     <div class="bridge"><img src="assets/tab-backgrounds/home-blur.jpg" style="height: 100vh;"></div>
     <div class="body-background">
-        <div class="circle-dashed"></div>
-        <div class="circle-dashed" id="circle-dashed2" style="border: 0.35px solid white"></div>
-        <div class="circle"><img class="icon" src="assets/grey-icon.png"></div>
+        <div class="portrait">
+            <div class="circle-dashed"></div>
+            <div class="circle-dashed" id="circle-dashed2"></div>
+            <div class="circle"><img class="icon" src="assets/icon.png" alt="Oscar Dadfar"></div>
+        </div>
         <p class="hi">Hi. I'm Oscar.</p>
-        <p class="indent">I'm a digital artist interested in Animation, Architecture, and AI (The 3 A's). I create computational tools to help non-artists without traditional artistic abilities (ex: drawing, painting) create art & animations.</p>
+        <p class="indent intro-line">I'm a digital artist interested in Animation, Architecture, and AI (The 3 A's).</p>
+        <p class="indent intro-line">I create computational tools to help non-artists without traditional artistic abilities create art &amp; animations.</p>
 
-        <iframe width="560" height="315" style="margin-left: calc(50% - 280px); margin-top: 15px" src="https://www.youtube.com/embed/rmuisLmO6qA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-embed" data-video-id="rmuisLmO6qA" role="button" tabindex="0" aria-label="Play the introduction video">
+            <img class="video-embed-poster" src="assets/intro-poster.jpg" alt="">
+            <span class="video-embed-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><polygon points="9,5.5 19,12 9,18.5"/></svg>
+            </span>
+            <span class="video-embed-label" aria-hidden="true">Hello. &middot; A short introduction</span>
+        </div>
         
         <div id="skill-icon" style="margin-top:40px">
             <p id="skill-type">Academic Background.</p>
@@ -83,10 +92,15 @@
         </div>
         <div id="line-grey-small" style="margin-bottom:40px;"></div>
         
-        <div class="resume-button">
-            <img class="resume-button-hover" src="assets/resume-button-hover.png">
-            <img src="assets/resume-button.png" style="height:100%;">
-        </div>
+        <a class="resume-button" href="assets/resume.pdf" target="_blank" rel="noopener">
+            <span class="resume-line"></span>
+            <svg class="resume-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="5" y="3" width="14" height="18" rx="1.5"/>
+                <path d="M8.5 8h7M8.5 12h7M8.5 16h4"/>
+            </svg>
+            <span class="resume-label">Resume</span>
+            <span class="resume-line"></span>
+        </a>
 
 
 
@@ -98,19 +112,28 @@
 
         <div class="experience-icon" id="course-graphics">
             <img src="assets/experience-icons/cg-icon.png" style="float: left;">
-            <p id="experience-side-text">15-462/662: Computer Graphics</p>
+            <p id="experience-side-text">15-362/662: Computer Graphics</p>
             <div class="experience-side">
                 <p id="experience-sub-text">- Vector Rasterization, Mesh Editing, Raytracing & Kinematics. -</p>
-                <p id="experience-year-text">[ Fall 2023 ]</p>
+                <p id="experience-year-text">[ Fall 2023, Fall 2024, Fall 2025, Fall 2026 ]</p>
+            </div>
+        </div>
+
+        <div class="experience-icon" id="course-neural">
+            <img src="assets/experience-icons/neural-icon.png" style="float: left;">
+            <p id="experience-side-text">15-474/674: Neural Graphics</p>
+            <div class="experience-side">
+                <p id="experience-sub-text">- Neural Methods Applied to Classical Graphics Algorithms. -</p>
+                <p id="experience-year-text">[ Fall 2026 ]</p>
             </div>
         </div>
 
         <div class="experience-icon" id="course-vcs">
             <img src="assets/experience-icons/parallel-icon.png" style="float: left;">
-            <p id="experience-side-text">15-469/669: Visual Computing Systems</p>
+            <p id="experience-side-text">15-473/673: Visual Computing Systems</p>
             <div class="experience-side">
                 <p id="experience-sub-text">- The Hardware Behind Computer Graphics and Computer Vision Systems. -</p>
-                <p id="experience-year-text">[ Spring 2022, Fall 2023 ]</p>
+                <p id="experience-year-text">[ Spring 2022, Fall 2023, Fall 2024, Fall 2025 ]</p>
             </div>
         </div>
 
@@ -512,7 +535,7 @@
 
 
     </div>
-    <script type="text/javascript" src="interactions.js"></script>
+    <script type="text/javascript" src="interactions.js?v=20260920b"></script>
 </body>
 </html>
 

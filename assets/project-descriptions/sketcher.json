@@ -9,7 +9,7 @@
 
   "t_0": "Sketcher.",
   "w_0": [{"music-icon.png": ["https://www.youtube.com/watch?v=9v2Dthlaesw", "Aoi Honoo by Itowokashi"]}, 
-          {"software-icon.png": "After Effects CC • Processing"},
+          {"software-icon.png": "After Effects • Processing"},
           {"code-icon.png": "Java • C++ • After Effects SDK • OpenGL"},
           {"time-icon.png": "3 Weeks"}],
   "p_1": "Sketcher is a real-time polygon rendering environment in After Effects written in C++ that links OpenGL with the After Effects SDK to render a sketch overlay on footage. It breaks down footage into its primitive 'sketch' form that remains as an editable layer in After Effects",
